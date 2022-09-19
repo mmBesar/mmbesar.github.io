@@ -17,7 +17,7 @@
     
     
       
-        <title>Appimages - Mohammed Besar</title>
+        <title>Debian 11 Post Install - Mohammed Besar</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#appimages" class="md-skip">
+        <a href="#debian_11_post_install" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Appimages
+              Debian 11 Post Install
             
           </span>
         </div>
@@ -476,50 +476,93 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#appimages" class="md-nav__link">
-    Appimages
+  <a href="#debian_11_post_install" class="md-nav__link">
+    Debian 11 Post Install
   </a>
   
-    <nav class="md-nav" aria-label="Appimages">
+    <nav class="md-nav" aria-label="Debian 11 Post Install">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#where_to_download" class="md-nav__link">
-    where to download
+  <a href="#install_sudo_if_not_installed" class="md-nav__link">
+    Install sudo if not installed
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#how_to_install" class="md-nav__link">
-    how to install
-  </a>
-  
-    <nav class="md-nav" aria-label="how to install">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#via_appimage_launcher" class="md-nav__link">
-    Via AppImage Launcher
+  <a href="#add_user_to_sudo_group" class="md-nav__link">
+    Add User to sudo Group
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#manual" class="md-nav__link">
-    Manual
+  <a href="#enable_none_free" class="md-nav__link">
+    Enable None Free
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#install_codecs_microsoft_fonts_and_rar_support_ubuntu_restricted-extras" class="md-nav__link">
+    Install Codecs, Microsoft Fonts and rar support (Ubuntu restricted-extras)
+  </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#make_appimages_fully_portable" class="md-nav__link">
-    Make appimages fully portable.
+  <a href="#microsoft_fonts_alternatives_for_cambria_calibri" class="md-nav__link">
+    Microsoft Fonts alternatives for "Cambria, Calibri"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install_and_enable_firewall" class="md-nav__link">
+    Install and Enable Firewall
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apps" class="md-nav__link">
+    Apps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flatpak_support" class="md-nav__link">
+    Flatpak Support
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvidia_drivers" class="md-nav__link">
+    Nvidia Drivers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpu_microcode" class="md-nav__link">
+    CPU Microcode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#better_software_center_for_xfce_only" class="md-nav__link">
+    Better Software center (for Xfce Only)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#better_battery_life_-_optional_and_for_laptops_only" class="md-nav__link">
+    Better Battery Life - Optional and for laptops only
   </a>
   
 </li>
@@ -543,104 +586,67 @@
                 
                   
 
-  <a href="https://github.com/mmBesar/Tutorials/edit/master/docs/Ideas/appimages.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/mmBesar/Tutorials/edit/master/docs/Tutorials/Debian-Post-Install.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-  <h1>Appimages</h1>
+  <h1>Debian 11 Post Install</h1>
 
-<h3 id="appimages">Appimages<a class="headerlink" href="#appimages" title="Permanent link">⚓︎</a></h3>
-<p>مهما كانت التوزيعة اللي بتستخدمها، دايمًا هتحصل على نغس التطبيق بنفس تجربة الاستخدام، هي دي الآب امدجز!، أحد أهم وأسرع الطرق للحصول على التطبيقات على لينكس.</p>
-<p>وانهارده هنعرف على كيفية التعامل معاها بشكل كامل، منين نحملها وإزاي نستخدمها وندمجها مع النظام، حتى إزاي نخليها نقالة بالكامل</p>
-<p>السلام عليكم، أنا محمد بيصار.</p>
-<p>الآب إمدج، هو التطبيق وكل ما يلزم تشغيله تقريبًا داخل ملف تنفيذي واحد، يعمل بدون تنصيب فقط ضغتين بالماوس يفتح معاك التطبيق.</p>
-<p>متحمس! إضغط اشتراك وإعجاب بالفيديو وخلينا نبدأ.</p>
-<h4 id="where_to_download">where to download<a class="headerlink" href="#where_to_download" title="Permanent link">⚓︎</a></h4>
+<h3 id="debian_11_post_install">Debian 11 Post Install<a class="headerlink" href="#debian_11_post_install" title="Permanent link">⚓︎</a></h3>
+<h4 id="install_sudo_if_not_installed">Install <code>sudo</code> if not installed<a class="headerlink" href="#install_sudo_if_not_installed" title="Permanent link">⚓︎</a></h4>
+<pre><code class="language-sh">su
+apt install sudo
+</code></pre>
+<h4 id="add_user_to_sudo_group">Add User to <code>sudo</code> Group<a class="headerlink" href="#add_user_to_sudo_group" title="Permanent link">⚓︎</a></h4>
+<pre><code class="language-sh">su
+gpasswd -a $USER sudo
+</code></pre>
+<h4 id="enable_none_free">Enable None Free<a class="headerlink" href="#enable_none_free" title="Permanent link">⚓︎</a></h4>
+<pre><code class="language-sh">cat /etc/apt/sources.list | grep &quot;contrib non-free&quot; || sudo sed -i &quot;s/main/main contrib non-free/g&quot; /etc/apt/sources.list
+</code></pre>
+<h4 id="install_codecs_microsoft_fonts_and_rar_support_ubuntu_restricted-extras">Install Codecs, Microsoft Fonts and rar support (Ubuntu restricted-extras)<a class="headerlink" href="#install_codecs_microsoft_fonts_and_rar_support_ubuntu_restricted-extras" title="Permanent link">⚓︎</a></h4>
+<pre><code class="language-sh">sudo apt install libavcodec-extra ttf-mscorefonts-installer rar unrar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
+</code></pre>
+<h4 id="microsoft_fonts_alternatives_for_cambria_calibri">Microsoft Fonts alternatives for "Cambria, Calibri"<a class="headerlink" href="#microsoft_fonts_alternatives_for_cambria_calibri" title="Permanent link">⚓︎</a></h4>
+<pre><code class="language-sh">sudo apt install fonts-crosextra-caladea fonts-crosextra-carlito
+</code></pre>
+<h4 id="install_and_enable_firewall">Install and Enable Firewall<a class="headerlink" href="#install_and_enable_firewall" title="Permanent link">⚓︎</a></h4>
+<pre><code class="language-sh">sudo apt install ufw
+sudo ufw enable
+sudo ufw allow ssh
+</code></pre>
+<h4 id="apps">Apps<a class="headerlink" href="#apps" title="Permanent link">⚓︎</a></h4>
+<pre><code class="language-sh">sudo apt install plocate htop
+sudo updatedb
+</code></pre>
+<h4 id="flatpak_support">Flatpak Support<a class="headerlink" href="#flatpak_support" title="Permanent link">⚓︎</a></h4>
+<pre><code class="language-sh">sudo apt install flatpak
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+</code></pre>
+<h4 id="nvidia_drivers">Nvidia Drivers<a class="headerlink" href="#nvidia_drivers" title="Permanent link">⚓︎</a></h4>
+<pre><code class="language-sh">sudo apt install nvidia-detect
+sudo nvidia-detect
+</code></pre>
+<h4 id="cpu_microcode">CPU Microcode<a class="headerlink" href="#cpu_microcode" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>الموقع الرسمي للتطبيق مثل Kdenlive</li>
-<li>صفحة المطور الرسمية مثل avidemux nightly</li>
+<li>For Intel CPUs</li>
 </ul>
-<h4 id="how_to_install">how to install<a class="headerlink" href="#how_to_install" title="Permanent link">⚓︎</a></h4>
-<h5 id="via_appimage_launcher">Via AppImage Launcher<a class="headerlink" href="#via_appimage_launcher" title="Permanent link">⚓︎</a></h5>
-<ul>
-<li>
-<p>Download the <a href="https://github.com/TheAssassin/AppImageLauncher">app</a></p>
-</li>
-<li>
-<p>Install it</p>
-</li>
-<li>
-<p>Run the <code>AppImage</code> Program</p>
-</li>
-</ul>
-<h5 id="manual">Manual<a class="headerlink" href="#manual" title="Permanent link">⚓︎</a></h5>
-<ul>
-<li>Make it executable</li>
-</ul>
-<pre><code class="language-sh">chmod a+x AppImageFile
+<pre><code class="language-sh">sudo apt install intel-microcode
 </code></pre>
 <ul>
-<li>
-<p>Get png icon</p>
-</li>
-<li>
-<p>create <code>.desktop</code> file</p>
-</li>
+<li>For AMD CPUs</li>
 </ul>
-<pre><code class="language-ini">[Desktop Entry]
-Type=Application
-Name=APPNAME
-Exec=PATH/TO/APP/APPIMAGE
-Icon=PATH/TO/APP/ICON
-Categories=EX&quot;AudioVideo;Video;&quot;
-Comment=ABOUT THE APP
-GenericName=APP GENERAL NAME
-Terminal=false
+<pre><code class="language-sh">sudo apt install amd64-microcode
 </code></pre>
-<ul>
-<li>Validation <code>desktop-file-utils</code></li>
-</ul>
-<pre><code class="language-sh">sudo dnf install desktop-file-utils
+<h4 id="better_software_center_for_xfce_only">Better Software center (for Xfce Only)<a class="headerlink" href="#better_software_center_for_xfce_only" title="Permanent link">⚓︎</a></h4>
+<pre><code class="language-sh">sudo apt install gnome-software
+sudo apt install gnome-software-plugin-flatpak
 </code></pre>
-<pre><code class="language-sh">desktop-file-validate app.desktop
+<h4 id="better_battery_life_-_optional_and_for_laptops_only">Better Battery Life - Optional and for laptops only<a class="headerlink" href="#better_battery_life_-_optional_and_for_laptops_only" title="Permanent link">⚓︎</a></h4>
+<pre><code class="language-sh">sudo apt install tlp
 </code></pre>
-<p>or</p>
-<ul>
-<li>Extract appimge file to get a <code>.desktop</code></li>
-</ul>
-<pre><code class="language-sh">./AppImageFile --appimage-extract
-</code></pre>
-<ul>
-<li>copy the <code>.desktop</code> file to:</li>
-</ul>
-<pre><code>$HOME/.local/share/applications/
-</code></pre>
-<p>or</p>
-<ul>
-<li>Install it</li>
-</ul>
-<pre><code class="language-sh">desktop-file-install --dir=$HOME/.local/share/applications /path/to/app.desktop
-</code></pre>
-<ul>
-<li>Update database of desktop entries</li>
-</ul>
-<pre><code class="language-sh">update-desktop-database ~/.local/share/applications
-</code></pre>
-<h4 id="make_appimages_fully_portable">Make appimages fully portable.<a class="headerlink" href="#make_appimages_fully_portable" title="Permanent link">⚓︎</a></h4>
-<ul>
-<li>Create a dir named AppImageFile.home </li>
-</ul>
-<hr />
-<blockquote>
-<p>Reference:<br />
-<a href="https://wiki.archlinux.org/title/desktop_entries">desktop entries - arch wiki</a><br />
-<a href="https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html">desktop entry specifications - freedesktop</a><br />
-<a href="https://specifications.freedesktop.org/menu-spec/menu-spec-latest.html">menu specifications - freedesktop</a><br />
-<a href="https://wiki.archlinux.org/title/Xdg-menu">Xdg-menu - arch wiki</a><br />
-<a href="https://docs.appimage.org/user-guide/portable-mode.html">portable appimage</a>  </p>
-</blockquote>
 
 
 

@@ -17,7 +17,7 @@
     
     
       
-        <title>Appimages - Mohammed Besar</title>
+        <title>Ubuntu Post Install - Mohammed Besar</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#appimages" class="md-skip">
+        <a href="#ubuntu_2204_post_installation" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Appimages
+              Ubuntu Post Install
             
           </span>
         </div>
@@ -476,56 +476,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#appimages" class="md-nav__link">
-    Appimages
+  <a href="#ubuntu_2204_post_installation" class="md-nav__link">
+    Ubuntu 22.04 Post Installation
   </a>
-  
-    <nav class="md-nav" aria-label="Appimages">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#where_to_download" class="md-nav__link">
-    where to download
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how_to_install" class="md-nav__link">
-    how to install
-  </a>
-  
-    <nav class="md-nav" aria-label="how to install">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#via_appimage_launcher" class="md-nav__link">
-    Via AppImage Launcher
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#manual" class="md-nav__link">
-    Manual
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#make_appimages_fully_portable" class="md-nav__link">
-    Make appimages fully portable.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -543,104 +496,135 @@
                 
                   
 
-  <a href="https://github.com/mmBesar/Tutorials/edit/master/docs/Ideas/appimages.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/mmBesar/Tutorials/edit/master/docs/Tutorials/Ubuntu-Post-Install.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-  <h1>Appimages</h1>
+  <h1>Ubuntu Post Install</h1>
 
-<h3 id="appimages">Appimages<a class="headerlink" href="#appimages" title="Permanent link">⚓︎</a></h3>
-<p>مهما كانت التوزيعة اللي بتستخدمها، دايمًا هتحصل على نغس التطبيق بنفس تجربة الاستخدام، هي دي الآب امدجز!، أحد أهم وأسرع الطرق للحصول على التطبيقات على لينكس.</p>
-<p>وانهارده هنعرف على كيفية التعامل معاها بشكل كامل، منين نحملها وإزاي نستخدمها وندمجها مع النظام، حتى إزاي نخليها نقالة بالكامل</p>
-<p>السلام عليكم، أنا محمد بيصار.</p>
-<p>الآب إمدج، هو التطبيق وكل ما يلزم تشغيله تقريبًا داخل ملف تنفيذي واحد، يعمل بدون تنصيب فقط ضغتين بالماوس يفتح معاك التطبيق.</p>
-<p>متحمس! إضغط اشتراك وإعجاب بالفيديو وخلينا نبدأ.</p>
-<h4 id="where_to_download">where to download<a class="headerlink" href="#where_to_download" title="Permanent link">⚓︎</a></h4>
+<h4 id="ubuntu_2204_post_installation">Ubuntu 22.04 Post Installation<a class="headerlink" href="#ubuntu_2204_post_installation" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>الموقع الرسمي للتطبيق مثل Kdenlive</li>
-<li>صفحة المطور الرسمية مثل avidemux nightly</li>
+<li>Update</li>
 </ul>
-<h4 id="how_to_install">how to install<a class="headerlink" href="#how_to_install" title="Permanent link">⚓︎</a></h4>
-<h5 id="via_appimage_launcher">Via AppImage Launcher<a class="headerlink" href="#via_appimage_launcher" title="Permanent link">⚓︎</a></h5>
-<ul>
-<li>
-<p>Download the <a href="https://github.com/TheAssassin/AppImageLauncher">app</a></p>
-</li>
-<li>
-<p>Install it</p>
-</li>
-<li>
-<p>Run the <code>AppImage</code> Program</p>
-</li>
-</ul>
-<h5 id="manual">Manual<a class="headerlink" href="#manual" title="Permanent link">⚓︎</a></h5>
-<ul>
-<li>Make it executable</li>
-</ul>
-<pre><code class="language-sh">chmod a+x AppImageFile
+<pre><code class="language-bash">sudo apt update &amp;&amp; sudo apt upgrade -y
 </code></pre>
 <ul>
 <li>
-<p>Get png icon</p>
+<p>Remove Firefox Snap and Install Firefox Deb</p>
 </li>
 <li>
-<p>create <code>.desktop</code> file</p>
+<p>Remove Firefox Snap</p>
 </li>
 </ul>
-<pre><code class="language-ini">[Desktop Entry]
-Type=Application
-Name=APPNAME
-Exec=PATH/TO/APP/APPIMAGE
-Icon=PATH/TO/APP/ICON
-Categories=EX&quot;AudioVideo;Video;&quot;
-Comment=ABOUT THE APP
-GenericName=APP GENERAL NAME
-Terminal=false
+<pre><code class="language-sh">sudo apt remove --purge firefox
+</code></pre>
+<pre><code class="language-sh">sudo snap remove --purge firefox
+</code></pre>
+<ol>
+<li>add Mozilla team PPA</li>
+</ol>
+<pre><code class="language-sh">sudo add-apt-repository ppa:mozillateam/ppa
+</code></pre>
+<ol>
+<li>set Mozilla team PPA as high Priority</li>
+</ol>
+<pre><code class="language-sh">echo '
+Package: *
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 1001
+' | sudo tee /etc/apt/preferences.d/firefox
+</code></pre>
+<p>OR</p>
+<pre><code class="language-sh">echo '
+Package: firefox*
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 501
+' | sudo tee /etc/apt/preferences.d/firefox
 </code></pre>
 <ul>
-<li>Validation <code>desktop-file-utils</code></li>
+<li>block the Ubuntu repo</li>
 </ul>
-<pre><code class="language-sh">sudo dnf install desktop-file-utils
+<pre><code class="language-sh">echo '
+Package: firefox*
+Pin: release o=Ubuntu*
+Pin-Priority: -1
+' | sudo tee /etc/apt/preferences.d/firefox
 </code></pre>
-<pre><code class="language-sh">desktop-file-validate app.desktop
-</code></pre>
-<p>or</p>
-<ul>
-<li>Extract appimge file to get a <code>.desktop</code></li>
-</ul>
-<pre><code class="language-sh">./AppImageFile --appimage-extract
-</code></pre>
-<ul>
-<li>copy the <code>.desktop</code> file to:</li>
-</ul>
-<pre><code>$HOME/.local/share/applications/
-</code></pre>
-<p>or</p>
-<ul>
-<li>Install it</li>
-</ul>
-<pre><code class="language-sh">desktop-file-install --dir=$HOME/.local/share/applications /path/to/app.desktop
-</code></pre>
-<ul>
-<li>Update database of desktop entries</li>
-</ul>
-<pre><code class="language-sh">update-desktop-database ~/.local/share/applications
-</code></pre>
-<h4 id="make_appimages_fully_portable">Make appimages fully portable.<a class="headerlink" href="#make_appimages_fully_portable" title="Permanent link">⚓︎</a></h4>
-<ul>
-<li>Create a dir named AppImageFile.home </li>
-</ul>
-<hr />
 <blockquote>
-<p>Reference:<br />
-<a href="https://wiki.archlinux.org/title/desktop_entries">desktop entries - arch wiki</a><br />
-<a href="https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html">desktop entry specifications - freedesktop</a><br />
-<a href="https://specifications.freedesktop.org/menu-spec/menu-spec-latest.html">menu specifications - freedesktop</a><br />
-<a href="https://wiki.archlinux.org/title/Xdg-menu">Xdg-menu - arch wiki</a><br />
-<a href="https://docs.appimage.org/user-guide/portable-mode.html">portable appimage</a>  </p>
+<p><strong>About Pin and PPA Priority:</strong><br />
+<em>From apt man page</em><br />
+- P &gt;= 1000:<br />
+causes a version to be installed even if this constitutes a downgrade of the package
+- 990 &lt;= P &lt; 1000:<br />
+causes a version to be installed even if it does not come from the target release, unlessthe installed version is more recent
+- 500 &lt;= P &lt; 990:<br />
+causes a version to be installed unless there is a version available belonging to the targetrelease or the installed version is more recent
+- 100 &lt;= P &lt; 500:<br />
+causes a version to be installed unless there is a version available belonging to some otherdistribution or the installed version is more recent
+- 0 &lt; P &lt; 100:<br />
+causes a version to be installed only if there is no installed version of the package
+- P &lt; 0:<br />
+prevents the version from being installed
+- P = 0:<br />
+has undefined behaviour, do not use it.</p>
 </blockquote>
+<ol>
+<li>set Firefox for automatic updates</li>
+</ol>
+<pre><code class="language-sh">echo 'Unattended-Upgrade::Allowed-Origins:: &quot;LP-PPA-mozillateam:${distro_codename}&quot;;' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
+</code></pre>
+<ol>
+<li>Update</li>
+</ol>
+<pre><code class="language-sh">sudo apt update
+</code></pre>
+<ol>
+<li>install Firefox DEB</li>
+</ol>
+<pre><code class="language-bash">sudo apt install firefox
+</code></pre>
+<ul>
+<li>Install Ubuntu Restricted Extras</li>
+</ul>
+<pre><code class="language-bash">sudo apt install ubuntu-restricted-extras
+</code></pre>
+<ul>
+<li>Minimize on Click</li>
+</ul>
+<pre><code class="language-bash">gsettings set org.gnome.shell.extensions.dash-to-dock click-action minimize
+</code></pre>
+<ul>
+<li>Flatpak</li>
+</ul>
+<pre><code class="language-bash">sudo apt install gnome-software gnome-software-plugin-flatpak flatpak
+</code></pre>
+<pre><code class="language-bash">flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+</code></pre>
+<ul>
+<li>Extensions and Tweaks</li>
+</ul>
+<pre><code class="language-bash">sudo apt install chrome-gnome-shell gnome-shell-extension-prefs
+</code></pre>
+<pre><code class="language-bash">sudo apt install gnome-tweaks gnome-shell-extension-manager
+</code></pre>
+<ul>
+<li>
+<p>Arabic Keyboard</p>
+</li>
+<li>
+<p>Backup</p>
+</li>
+<li>
+<p>Timeshift</p>
+</li>
+</ul>
+<pre><code class="language-bash">sudo apt install timeshift
+</code></pre>
+<ol>
+<li>Backup your files with <a href="https://flathub.org/apps/details/org.gnome.DejaDup">Deja Dup</a></li>
+</ol>
 
 
 

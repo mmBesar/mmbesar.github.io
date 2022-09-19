@@ -17,7 +17,7 @@
     
     
       
-        <title>Appimages - Mohammed Besar</title>
+        <title>Virt Manager KVM - Mohammed Besar</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#appimages" class="md-skip">
+        <a href="#virt_manager_kvm" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Appimages
+              Virt Manager KVM
             
           </span>
         </div>
@@ -476,38 +476,31 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#appimages" class="md-nav__link">
-    Appimages
+  <a href="#virt_manager_kvm" class="md-nav__link">
+    Virt Manager KVM
   </a>
   
-    <nav class="md-nav" aria-label="Appimages">
+    <nav class="md-nav" aria-label="Virt Manager KVM">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#where_to_download" class="md-nav__link">
-    where to download
+  <a href="#support_الدعم" class="md-nav__link">
+    support الدعم
+  </a>
+  
+    <nav class="md-nav" aria-label="support الدعم">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hardware_support_المعالج" class="md-nav__link">
+    Hardware support المعالج
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#how_to_install" class="md-nav__link">
-    how to install
-  </a>
-  
-    <nav class="md-nav" aria-label="how to install">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#via_appimage_launcher" class="md-nav__link">
-    Via AppImage Launcher
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#manual" class="md-nav__link">
-    Manual
+  <a href="#kernel_support_النواة" class="md-nav__link">
+    Kernel support النواة
   </a>
   
 </li>
@@ -518,8 +511,56 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#make_appimages_fully_portable" class="md-nav__link">
-    Make appimages fully portable.
+  <a href="#install_التنصيب" class="md-nav__link">
+    Install التنصيب
+  </a>
+  
+    <nav class="md-nav" aria-label="Install التنصيب">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fedora_36_" class="md-nav__link">
+    Fedora 36 +
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ubuntu_2204_" class="md-nav__link">
+    Ubuntu 22.04 +
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arch" class="md-nav__link">
+    Arch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_user_to_kvm_and_libvirt_groups" class="md-nav__link">
+    Add user to kvm and libvirt groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart_the_system" class="md-nav__link">
+    Restart the system
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamically_allocated_disk_in_kvm_-_إنشاء_وحدة_تخزين_ذات_مساحة_متغيرة" class="md-nav__link">
+    Dynamically Allocated Disk in KVM - إنشاء وحدة تخزين ذات مساحة متغيرة
   </a>
   
 </li>
@@ -543,104 +584,69 @@
                 
                   
 
-  <a href="https://github.com/mmBesar/Tutorials/edit/master/docs/Ideas/appimages.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/mmBesar/Tutorials/edit/master/docs/Tutorials/VirtManager.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-  <h1>Appimages</h1>
+  <h1>Virt Manager KVM</h1>
 
-<h3 id="appimages">Appimages<a class="headerlink" href="#appimages" title="Permanent link">⚓︎</a></h3>
-<p>مهما كانت التوزيعة اللي بتستخدمها، دايمًا هتحصل على نغس التطبيق بنفس تجربة الاستخدام، هي دي الآب امدجز!، أحد أهم وأسرع الطرق للحصول على التطبيقات على لينكس.</p>
-<p>وانهارده هنعرف على كيفية التعامل معاها بشكل كامل، منين نحملها وإزاي نستخدمها وندمجها مع النظام، حتى إزاي نخليها نقالة بالكامل</p>
-<p>السلام عليكم، أنا محمد بيصار.</p>
-<p>الآب إمدج، هو التطبيق وكل ما يلزم تشغيله تقريبًا داخل ملف تنفيذي واحد، يعمل بدون تنصيب فقط ضغتين بالماوس يفتح معاك التطبيق.</p>
-<p>متحمس! إضغط اشتراك وإعجاب بالفيديو وخلينا نبدأ.</p>
-<h4 id="where_to_download">where to download<a class="headerlink" href="#where_to_download" title="Permanent link">⚓︎</a></h4>
-<ul>
-<li>الموقع الرسمي للتطبيق مثل Kdenlive</li>
-<li>صفحة المطور الرسمية مثل avidemux nightly</li>
-</ul>
-<h4 id="how_to_install">how to install<a class="headerlink" href="#how_to_install" title="Permanent link">⚓︎</a></h4>
-<h5 id="via_appimage_launcher">Via AppImage Launcher<a class="headerlink" href="#via_appimage_launcher" title="Permanent link">⚓︎</a></h5>
-<ul>
-<li>
-<p>Download the <a href="https://github.com/TheAssassin/AppImageLauncher">app</a></p>
-</li>
-<li>
-<p>Install it</p>
-</li>
-<li>
-<p>Run the <code>AppImage</code> Program</p>
-</li>
-</ul>
-<h5 id="manual">Manual<a class="headerlink" href="#manual" title="Permanent link">⚓︎</a></h5>
-<ul>
-<li>Make it executable</li>
-</ul>
-<pre><code class="language-sh">chmod a+x AppImageFile
+<h3 id="virt_manager_kvm">Virt Manager KVM<a class="headerlink" href="#virt_manager_kvm" title="Permanent link">⚓︎</a></h3>
+<h4 id="support_الدعم">support الدعم<a class="headerlink" href="#support_الدعم" title="Permanent link">⚓︎</a></h4>
+<h5 id="hardware_support_المعالج">Hardware support المعالج<a class="headerlink" href="#hardware_support_المعالج" title="Permanent link">⚓︎</a></h5>
+<p>KVM requires that the virtual machine host's processor has virtualization support (named <strong>VT-x</strong> for Intel processors and <strong>AMD-V</strong> for AMD processors). You can check whether your processor supports hardware virtualization with the following command:</p>
+<pre><code class="language-sh">lscpu | grep Virtualization
 </code></pre>
-<ul>
-<li>
-<p>Get png icon</p>
-</li>
-<li>
-<p>create <code>.desktop</code> file</p>
-</li>
-</ul>
-<pre><code class="language-ini">[Desktop Entry]
-Type=Application
-Name=APPNAME
-Exec=PATH/TO/APP/APPIMAGE
-Icon=PATH/TO/APP/ICON
-Categories=EX&quot;AudioVideo;Video;&quot;
-Comment=ABOUT THE APP
-GenericName=APP GENERAL NAME
-Terminal=false
-</code></pre>
-<ul>
-<li>Validation <code>desktop-file-utils</code></li>
-</ul>
-<pre><code class="language-sh">sudo dnf install desktop-file-utils
-</code></pre>
-<pre><code class="language-sh">desktop-file-validate app.desktop
-</code></pre>
-<p>or</p>
-<ul>
-<li>Extract appimge file to get a <code>.desktop</code></li>
-</ul>
-<pre><code class="language-sh">./AppImageFile --appimage-extract
-</code></pre>
-<ul>
-<li>copy the <code>.desktop</code> file to:</li>
-</ul>
-<pre><code>$HOME/.local/share/applications/
-</code></pre>
-<p>or</p>
-<ul>
-<li>Install it</li>
-</ul>
-<pre><code class="language-sh">desktop-file-install --dir=$HOME/.local/share/applications /path/to/app.desktop
-</code></pre>
-<ul>
-<li>Update database of desktop entries</li>
-</ul>
-<pre><code class="language-sh">update-desktop-database ~/.local/share/applications
-</code></pre>
-<h4 id="make_appimages_fully_portable">Make appimages fully portable.<a class="headerlink" href="#make_appimages_fully_portable" title="Permanent link">⚓︎</a></h4>
-<ul>
-<li>Create a dir named AppImageFile.home </li>
-</ul>
-<hr />
+<p>If nothing is displayed after running th command, then your processor does not support hardware virtualization, and you will not be able to use KVM.</p>
 <blockquote>
-<p>Reference:<br />
-<a href="https://wiki.archlinux.org/title/desktop_entries">desktop entries - arch wiki</a><br />
-<a href="https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html">desktop entry specifications - freedesktop</a><br />
-<a href="https://specifications.freedesktop.org/menu-spec/menu-spec-latest.html">menu specifications - freedesktop</a><br />
-<a href="https://wiki.archlinux.org/title/Xdg-menu">Xdg-menu - arch wiki</a><br />
-<a href="https://docs.appimage.org/user-guide/portable-mode.html">portable appimage</a>  </p>
+<p>Note: You may need to enable virtualization support in your BIOS. All x86_64 processors manufactured by AMD and Intel in the last 10 years support virtualization. If it looks like your processor does not support virtualization, it is almost certainly turned off in the BIOS.</p>
 </blockquote>
+<h5 id="kernel_support_النواة">Kernel support النواة<a class="headerlink" href="#kernel_support_النواة" title="Permanent link">⚓︎</a></h5>
+<p>ensure that the kernel modules are automatically loaded, with the command:</p>
+<pre><code class="language-sh">lsmod | grep kvm
+</code></pre>
+<h4 id="install_التنصيب">Install التنصيب<a class="headerlink" href="#install_التنصيب" title="Permanent link">⚓︎</a></h4>
+<h5 id="fedora_36_">Fedora 36 +<a class="headerlink" href="#fedora_36_" title="Permanent link">⚓︎</a></h5>
+<ul>
+<li>حزم أساسية</li>
+</ul>
+<pre><code class="language-sh">sudo dnf install virt-manager qemu-kvm libvirt virt-viewer virt-install python3-libguestfs virt-top bridge-utils guestfs-tools libguestfs-tools libvirt-devel 
+</code></pre>
+<ul>
+<li>حزم إضافية</li>
+</ul>
+<pre><code class="language-sh">sudo dnf install genisoimage dnsmasq libosinfo libosinfo-devel
+</code></pre>
+<p>For More <a href="https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-virtualization/">Fedora Docs</a></p>
+<h5 id="ubuntu_2204_">Ubuntu 22.04 +<a class="headerlink" href="#ubuntu_2204_" title="Permanent link">⚓︎</a></h5>
+<pre><code class="language-sh">sudo apt install virt-manager
+</code></pre>
+<p>For More <a href="https://help.ubuntu.com/community/KVM/VirtManager">Ubuntu Docs</a></p>
+<h5 id="arch">Arch<a class="headerlink" href="#arch" title="Permanent link">⚓︎</a></h5>
+<p>Find the steps at <a href="https://wiki.archlinux.org/title/Virt-Manager">Arch WiKi</a></p>
+<h4 id="add_user_to_kvm_and_libvirt_groups">Add user to <code>kvm</code> and <code>libvirt</code> groups<a class="headerlink" href="#add_user_to_kvm_and_libvirt_groups" title="Permanent link">⚓︎</a></h4>
+<pre><code class="language-sh">sudo usermod -aG kvm,libvirt $USER
+</code></pre>
+<h4 id="restart_the_system">Restart the system<a class="headerlink" href="#restart_the_system" title="Permanent link">⚓︎</a></h4>
+<h4 id="dynamically_allocated_disk_in_kvm_-_إنشاء_وحدة_تخزين_ذات_مساحة_متغيرة">Dynamically Allocated Disk in KVM - إنشاء وحدة تخزين ذات مساحة متغيرة<a class="headerlink" href="#dynamically_allocated_disk_in_kvm_-_إنشاء_وحدة_تخزين_ذات_مساحة_متغيرة" title="Permanent link">⚓︎</a></h4>
+<ul>
+<li>Create a 120 GB Disk:</li>
+</ul>
+<pre><code class="language-sh">qemu-img create -f qcow2 -o preallocation=off 120-disk.qcow2 120G
+</code></pre>
+<ul>
+<li>Script:</li>
+</ul>
+<pre><code class="language-sh">#!/bin/sh
+
+read -p &quot;Enter the disk size in GBs like &quot;80G&quot;: &quot; a
+while [[ -z &quot;$a&quot; ]]; do
+    read -p &quot;Enter the disk size, please! &quot; a
+done
+
+qemu-img create -f qcow2 -o preallocation=off $a-disk.qcow2 $a
+</code></pre>
 
 
 
