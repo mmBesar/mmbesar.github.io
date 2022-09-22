@@ -9,8 +9,10 @@
         <meta name="description" content="Debian 11 | خطوات يجب تنفيذها بعد التنصيب">
       
       
+        <meta name="author" content="Mohammed Besar">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      
+      <link rel="icon" href="/assets/logo.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
     
     
@@ -30,6 +32,12 @@
     
     
     
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -64,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#debian-11-post-install" class="md-skip">
+        <a href="#debian_11_post_install" class="md-skip">
           Skip to content
         </a>
       
@@ -80,8 +88,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Mohammed Besar Blog" class="md-header__button md-logo" aria-label="Mohammed Besar Blog" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
+  <img src="/assets/logo-white.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -108,19 +115,19 @@
         
           
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
             </label>
           
         
           
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
             </label>
           
         
@@ -200,8 +207,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Mohammed Besar Blog" class="md-nav__button md-logo" aria-label="Mohammed Besar Blog" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
+  <img src="/assets/logo-white.png" alt="logo">
 
     </a>
     Mohammed Besar Blog
@@ -338,8 +344,6 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Debian 11 Post Install
@@ -358,8 +362,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -368,86 +370,99 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-sudo-if-not-installed" class="md-nav__link">
+  <a href="#debian_11_post_install" class="md-nav__link">
+    Debian 11 Post Install
+  </a>
+  
+    <nav class="md-nav" aria-label="Debian 11 Post Install">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install_sudo_if_not_installed" class="md-nav__link">
     Install sudo if not installed
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#add-user-to-sudo-group" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#add_user_to_sudo_group" class="md-nav__link">
     Add User to sudo Group
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#enable-none-free" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#enable_none_free" class="md-nav__link">
     Enable None Free
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#install-codecs-microsoft-fonts-and-rar-support-ubuntu-restricted-extras" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#install_codecs_microsoft_fonts_and_rar_support_ubuntu_restricted-extras" class="md-nav__link">
     Install Codecs, Microsoft Fonts and rar support (Ubuntu restricted-extras)
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#microsoft-fonts-alternatives-for-cambria-calibri" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#microsoft_fonts_alternatives_for_cambria_calibri" class="md-nav__link">
     Microsoft Fonts alternatives for "Cambria, Calibri"
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#install-and-enable-firewall" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#install_and_enable_firewall" class="md-nav__link">
     Install and Enable Firewall
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#apps" class="md-nav__link">
     Apps
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#flatpak-support" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#flatpak_support" class="md-nav__link">
     Flatpak Support
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#nvidia-drivers" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#nvidia_drivers" class="md-nav__link">
     Nvidia Drivers
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#cpu-microcode" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#cpu_microcode" class="md-nav__link">
     CPU Microcode
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#better-software-center-for-xfce-only" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#better_software_center_for_xfce_only" class="md-nav__link">
     Better Software center (for Xfce Only)
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#better-battery-life-optional-and-for-laptops-only" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#better_battery_life_-_optional_and_for_laptops_only" class="md-nav__link">
     Better Battery Life - Optional and for laptops only
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -668,8 +683,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -678,86 +691,99 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-sudo-if-not-installed" class="md-nav__link">
+  <a href="#debian_11_post_install" class="md-nav__link">
+    Debian 11 Post Install
+  </a>
+  
+    <nav class="md-nav" aria-label="Debian 11 Post Install">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install_sudo_if_not_installed" class="md-nav__link">
     Install sudo if not installed
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#add-user-to-sudo-group" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#add_user_to_sudo_group" class="md-nav__link">
     Add User to sudo Group
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#enable-none-free" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#enable_none_free" class="md-nav__link">
     Enable None Free
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#install-codecs-microsoft-fonts-and-rar-support-ubuntu-restricted-extras" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#install_codecs_microsoft_fonts_and_rar_support_ubuntu_restricted-extras" class="md-nav__link">
     Install Codecs, Microsoft Fonts and rar support (Ubuntu restricted-extras)
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#microsoft-fonts-alternatives-for-cambria-calibri" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#microsoft_fonts_alternatives_for_cambria_calibri" class="md-nav__link">
     Microsoft Fonts alternatives for "Cambria, Calibri"
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#install-and-enable-firewall" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#install_and_enable_firewall" class="md-nav__link">
     Install and Enable Firewall
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#apps" class="md-nav__link">
     Apps
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#flatpak-support" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#flatpak_support" class="md-nav__link">
     Flatpak Support
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#nvidia-drivers" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#nvidia_drivers" class="md-nav__link">
     Nvidia Drivers
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#cpu-microcode" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#cpu_microcode" class="md-nav__link">
     CPU Microcode
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#better-software-center-for-xfce-only" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#better_software_center_for_xfce_only" class="md-nav__link">
     Better Software center (for Xfce Only)
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#better-battery-life-optional-and-for-laptops-only" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#better_battery_life_-_optional_and_for_laptops_only" class="md-nav__link">
     Better Battery Life - Optional and for laptops only
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -780,7 +806,7 @@
   <aside class="mdx-author">
   
     <p>
-      <img alt=Mohammed Besar src=https://en.gravatar.com/userimage/44783847/aabbda4823e03b0b23beb020e5e003a8.jpeg>
+      <img alt=Mohammed Besar src=/assets/author.jpg>
     </p>
   
   <p>
@@ -863,51 +889,51 @@
       <!--Min reading time is 1 minute-->
       
       
-      2 min read
+      1 min read
     </span>
   </p>
 </aside>
   <hr>
-  <h1 id="debian-11-post-install">Debian 11 Post Install<a class="headerlink" href="#debian-11-post-install" title="Permanent link">&para;</a></h1>
+  <h3 id="debian_11_post_install">Debian 11 Post Install<a class="headerlink" href="#debian_11_post_install" title="Permanent link">⚓︎</a></h3>
 <p><div class="video-container"><iframe src="https://www.youtube.com/embed/bSDoSdpsyYY" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
 <p>نتعرف بشكل عملي على أهم الخطوات الواجب تنفيذها بعد تنصيب توزيعة ديبيان 11، ومع واجهة Xfce بشكل خاص.</p>
 <p hidden>#more</p>
 
-<h2 id="install-sudo-if-not-installed">Install <code>sudo</code> if not installed<a class="headerlink" href="#install-sudo-if-not-installed" title="Permanent link">&para;</a></h2>
+<h4 id="install_sudo_if_not_installed">Install <code>sudo</code> if not installed<a class="headerlink" href="#install_sudo_if_not_installed" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>su
 apt install sudo
 </code></pre></div>
-<h2 id="add-user-to-sudo-group">Add User to <code>sudo</code> Group<a class="headerlink" href="#add-user-to-sudo-group" title="Permanent link">&para;</a></h2>
+<h4 id="add_user_to_sudo_group">Add User to <code>sudo</code> Group<a class="headerlink" href="#add_user_to_sudo_group" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>su
 gpasswd -a <span class="nv">$USER</span> sudo
 </code></pre></div>
-<h2 id="enable-none-free">Enable None Free<a class="headerlink" href="#enable-none-free" title="Permanent link">&para;</a></h2>
+<h4 id="enable_none_free">Enable None Free<a class="headerlink" href="#enable_none_free" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>cat /etc/apt/sources.list <span class="p">|</span> grep <span class="s2">&quot;contrib non-free&quot;</span> <span class="o">||</span> sudo sed -i <span class="s2">&quot;s/main/main contrib non-free/g&quot;</span> /etc/apt/sources.list
 </code></pre></div>
-<h2 id="install-codecs-microsoft-fonts-and-rar-support-ubuntu-restricted-extras">Install Codecs, Microsoft Fonts and rar support (Ubuntu restricted-extras)<a class="headerlink" href="#install-codecs-microsoft-fonts-and-rar-support-ubuntu-restricted-extras" title="Permanent link">&para;</a></h2>
+<h4 id="install_codecs_microsoft_fonts_and_rar_support_ubuntu_restricted-extras">Install Codecs, Microsoft Fonts and rar support (Ubuntu restricted-extras)<a class="headerlink" href="#install_codecs_microsoft_fonts_and_rar_support_ubuntu_restricted-extras" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>sudo apt install libavcodec-extra ttf-mscorefonts-installer rar unrar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
 </code></pre></div>
-<h2 id="microsoft-fonts-alternatives-for-cambria-calibri">Microsoft Fonts alternatives for "Cambria, Calibri"<a class="headerlink" href="#microsoft-fonts-alternatives-for-cambria-calibri" title="Permanent link">&para;</a></h2>
+<h4 id="microsoft_fonts_alternatives_for_cambria_calibri">Microsoft Fonts alternatives for "Cambria, Calibri"<a class="headerlink" href="#microsoft_fonts_alternatives_for_cambria_calibri" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>sudo apt install fonts-crosextra-caladea fonts-crosextra-carlito
 </code></pre></div>
-<h2 id="install-and-enable-firewall">Install and Enable Firewall<a class="headerlink" href="#install-and-enable-firewall" title="Permanent link">&para;</a></h2>
+<h4 id="install_and_enable_firewall">Install and Enable Firewall<a class="headerlink" href="#install_and_enable_firewall" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>sudo apt install ufw
 sudo ufw <span class="nb">enable</span>
 sudo ufw allow ssh
 </code></pre></div>
-<h2 id="apps">Apps<a class="headerlink" href="#apps" title="Permanent link">&para;</a></h2>
+<h4 id="apps">Apps<a class="headerlink" href="#apps" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>sudo apt install plocate htop
 sudo updatedb
 </code></pre></div>
-<h2 id="flatpak-support">Flatpak Support<a class="headerlink" href="#flatpak-support" title="Permanent link">&para;</a></h2>
+<h4 id="flatpak_support">Flatpak Support<a class="headerlink" href="#flatpak_support" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>sudo apt install flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 </code></pre></div>
-<h2 id="nvidia-drivers">Nvidia Drivers<a class="headerlink" href="#nvidia-drivers" title="Permanent link">&para;</a></h2>
+<h4 id="nvidia_drivers">Nvidia Drivers<a class="headerlink" href="#nvidia_drivers" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>sudo apt install nvidia-detect
 sudo nvidia-detect
 </code></pre></div>
-<h2 id="cpu-microcode">CPU Microcode<a class="headerlink" href="#cpu-microcode" title="Permanent link">&para;</a></h2>
+<h4 id="cpu_microcode">CPU Microcode<a class="headerlink" href="#cpu_microcode" title="Permanent link">⚓︎</a></h4>
 <ul>
 <li>For Intel CPUs</li>
 </ul>
@@ -918,11 +944,11 @@ sudo nvidia-detect
 </ul>
 <div class="highlight"><pre><span></span><code>sudo apt install amd64-microcode
 </code></pre></div>
-<h2 id="better-software-center-for-xfce-only">Better Software center (for Xfce Only)<a class="headerlink" href="#better-software-center-for-xfce-only" title="Permanent link">&para;</a></h2>
+<h4 id="better_software_center_for_xfce_only">Better Software center (for Xfce Only)<a class="headerlink" href="#better_software_center_for_xfce_only" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>sudo apt install gnome-software
 sudo apt install gnome-software-plugin-flatpak
 </code></pre></div>
-<h2 id="better-battery-life-optional-and-for-laptops-only">Better Battery Life - Optional and for laptops only<a class="headerlink" href="#better-battery-life-optional-and-for-laptops-only" title="Permanent link">&para;</a></h2>
+<h4 id="better_battery_life_-_optional_and_for_laptops_only">Better Battery Life - Optional and for laptops only<a class="headerlink" href="#better_battery_life_-_optional_and_for_laptops_only" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>sudo apt install tlp
 </code></pre></div>
 
