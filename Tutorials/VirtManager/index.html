@@ -6,22 +6,20 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Personal Site">
+        <meta name="description" content="Virt Manager - KVM | تنصيب وشرح أفضل تطبيق للأجهزة الوهمية">
       
       
-        <meta name="author" content="Mohammed Besar">
       
-      
-      <link rel="icon" href="../../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.2">
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
     
     
       
-        <title>Virt Manager KVM - Mohammed Besar</title>
+        <title>Virt Manager Install - Mohammed Besar Blog</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.9f9400aa.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7a952b86.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -32,12 +30,6 @@
     
     
     
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -72,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#virt_manager_kvm" class="md-skip">
+        <a href="#virt-manager-kvm-qemu" class="md-skip">
           Skip to content
         </a>
       
@@ -84,13 +76,12 @@
     
       
 
-  
-
-<header class="md-header md-header--lifted" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Mohammed Besar" class="md-header__button md-logo" aria-label="Mohammed Besar" data-md-component="logo">
+    <a href="../.." title="Mohammed Besar Blog" class="md-header__button md-logo" aria-label="Mohammed Besar Blog" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -100,13 +91,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Mohammed Besar
+            Mohammed Besar Blog
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Virt Manager KVM
+              Virt Manager Install
             
           </span>
         </div>
@@ -117,19 +108,19 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
             </label>
           
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
             </label>
           
         
@@ -185,50 +176,13 @@
     
   </nav>
   
-    
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
-      Tutorials
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../about/" class="md-tabs__link">
-        About
-      </a>
-    </li>
-  
-
-      
-    </ul>
-  </div>
-</nav>
-    
-  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -241,17 +195,16 @@
                   <div class="md-sidebar__inner">
                     
 
-  
 
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Mohammed Besar" class="md-nav__button md-logo" aria-label="Mohammed Besar" data-md-component="logo">
+    <a href="../.." title="Mohammed Besar Blog" class="md-nav__button md-logo" aria-label="Mohammed Besar Blog" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
 
     </a>
-    Mohammed Besar
+    Mohammed Besar Blog
   </label>
   
     <div class="md-nav__source">
@@ -277,7 +230,7 @@
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Tutorials
+        Home
       </a>
     </li>
   
@@ -289,25 +242,59 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2">
-          About
+          Tutorials
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="About" data-md-level="1">
+      <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          About
+          Tutorials
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -317,8 +304,322 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/" class="md-nav__link">
-        About Me
+      <a href="../appimages/" class="md-nav__link">
+        Appimages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Best-Arabic-Font-in-Linux/" class="md-nav__link">
+        Best Arabic Fonts on Linux
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Debian-Post-Install/" class="md-nav__link">
+        Debian 11 Post Install
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elementaryOS6-PostInstall/" class="md-nav__link">
+        elementary OS 6 Post Install
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fedora-Post/" class="md-nav__link">
+        Fedora 36 Post Install
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gnome-keybindings/" class="md-nav__link">
+        GNOME  Keybindings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macOS-theme-for-Ubuntu/" class="md-nav__link">
+        macOS Theme for Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PopShell-Install/" class="md-nav__link">
+        Install Pop Shell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tesseract/" class="md-nav__link">
+        Tesseract OCR
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ubuntu-Post-Install/" class="md-nav__link">
+        Fedora 36 Post Install
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Virt Manager Install
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Virt Manager Install
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#support" class="md-nav__link">
+    support الدعم
+  </a>
+  
+    <nav class="md-nav" aria-label="support الدعم">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hardware-support" class="md-nav__link">
+    Hardware support المعالج
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kernel-support" class="md-nav__link">
+    Kernel support النواة
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    Install التنصيب
+  </a>
+  
+    <nav class="md-nav" aria-label="Install التنصيب">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fedora-36" class="md-nav__link">
+    Fedora 36 +
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ubuntu-2204" class="md-nav__link">
+    Ubuntu 22.04 +
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arch" class="md-nav__link">
+    Arch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-user-to-kvm-and-libvirt-groups" class="md-nav__link">
+    Add user to kvm and libvirt groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restart-the-system" class="md-nav__link">
+    Restart the system
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamically-allocated-disk-in-kvm-" class="md-nav__link">
+    Dynamically Allocated Disk in KVM - إنشاء وحدة تخزين ذات مساحة متغيرة
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VirtManager-Share/" class="md-nav__link">
+        Virt Manager - Share with Linux Guest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Waydroid/" class="md-nav__link">
+        Waydroid
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Xfce-Customized-Debian-11/" class="md-nav__link">
+        Xfce Customized
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZSH/" class="md-nav__link">
+        ZSH
       </a>
     </li>
   
@@ -327,6 +628,21 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about-me/" class="md-nav__link">
+        About
+      </a>
     </li>
   
 
@@ -344,27 +660,23 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      On this page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#virt_manager_kvm" class="md-nav__link">
-    Virt Manager KVM
-  </a>
-  
-    <nav class="md-nav" aria-label="Virt Manager KVM">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#support_الدعم" class="md-nav__link">
+  <a href="#support" class="md-nav__link">
     support الدعم
   </a>
   
@@ -372,14 +684,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hardware_support_المعالج" class="md-nav__link">
+  <a href="#hardware-support" class="md-nav__link">
     Hardware support المعالج
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#kernel_support_النواة" class="md-nav__link">
+  <a href="#kernel-support" class="md-nav__link">
     Kernel support النواة
   </a>
   
@@ -389,9 +701,9 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#install_التنصيب" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
     Install التنصيب
   </a>
   
@@ -399,14 +711,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#fedora_36_" class="md-nav__link">
+  <a href="#fedora-36" class="md-nav__link">
     Fedora 36 +
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ubuntu_2204_" class="md-nav__link">
+  <a href="#ubuntu-2204" class="md-nav__link">
     Ubuntu 22.04 +
   </a>
   
@@ -423,30 +735,25 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#add_user_to_kvm_and_libvirt_groups" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#add-user-to-kvm-and-libvirt-groups" class="md-nav__link">
     Add user to kvm and libvirt groups
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#restart_the_system" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#restart-the-system" class="md-nav__link">
     Restart the system
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#dynamically_allocated_disk_in_kvm_-_إنشاء_وحدة_تخزين_ذات_مساحة_متغيرة" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#dynamically-allocated-disk-in-kvm-" class="md-nav__link">
     Dynamically Allocated Disk in KVM - إنشاء وحدة تخزين ذات مساحة متغيرة
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -462,77 +769,162 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-                  
-
-  <a href="https://github.com/mmBesar/Tutorials/edit/master/docs/Tutorials/VirtManager.md" title="Edit this page" class="md-content__button md-icon">
+  <h1>Virt Manager Install</h1>
+  <p>
+    <b>Virt Manager - KVM | تنصيب وشرح أفضل تطبيق للأجهزة الوهمية</b>
+  </p>
+  <aside class="mdx-author">
+  
+    <p>
+      <img alt=Mohammed Besar src=https://en.gravatar.com/userimage/44783847/aabbda4823e03b0b23beb020e5e003a8.jpeg>
+    </p>
+  
+  <p>
+    <span>
+      
+        <strong>Mohammed Besar</strong>
+         ·
+      
+      
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+    
+      
+      
+      
+      <a href="https://mastodon.online/@mbesar" target="_blank" rel="noopener" title="Twitter" class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+      </a>
+      
+    
+      
+      
+      
+         · 
+      
+      <a href="https://twitter.com/mmbesar" target="_blank" rel="noopener" title="Twitter" class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+      
+    
+      
+      
+      
+         · 
+      
+      <a href="https://instagram.com/mmbesar" target="_blank" rel="noopener" title="Instagram" class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+      </a>
+      
+    
+      
+      
+      
+         · 
+      
+      <a href="https://www.facebook.com/Mohammed.Besar.Page" target="_blank" rel="noopener" title="Facebook Page" class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+      </a>
+      
+    
+      
+      
+      
+         · 
+      
+      <a href="https://youtube.com/mmbesar" target="_blank" rel="noopener" title="YouTube Channel" class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+      </a>
+      
+    
+      
+      
+      
+         · 
+      
+      <a href="mailto:mbesar@proton.me" target="_blank" rel="noopener" title="Send Me an email" class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6l-126.3-52.5-40.1 74.5c-5.2 9.7-16.3 14.6-27 11.9S192 499 192 488v-96c0-5.3 1.8-10.5 5.1-14.7l165.3-212.6c2.5-7.1-6.5-14.3-13-8.4l-179 161.9-32 28.9c-9.2 8.3-22.3 10.6-33.8 5.8l-85-35.4C8.4 312.8.8 302.2.1 290s5.5-23.7 16.1-29.8l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+      </a>
+      
+    
 
+    </span>
+    <span>
+      <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M6.75 0a.75.75 0 0 1 .75.75V3h9V.75a.75.75 0 0 1 1.5 0V3h2.75c.966 0 1.75.784 1.75 1.75v16a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-16C1.5 3.784 2.284 3 3.25 3H6V.75A.75.75 0 0 1 6.75 0zm-3.5 4.5a.25.25 0 0 0-.25.25V8h18V4.75a.25.25 0 0 0-.25-.25H3.25zM21 9.5H3v11.25c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25V9.5z"/></svg>
+      </span>
+      September 16, 2022 ·
+      <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25z"/><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/></svg>
+      </span>
+      <!--Min reading time is 1 minute-->
+      
+      
+      2 min read
+    </span>
+  </p>
+</aside>
+  <hr>
+  <h1 id="virt-manager-kvm-qemu">Virt Manager KVM / QEMU<a class="headerlink" href="#virt-manager-kvm-qemu" title="Permanent link">&para;</a></h1>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/B4ExUl3mnco" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
+<p>أفضل طريقة لصناعة وتشغيل الأجهزة الوهمية على لينكس، باستخدام KVM QEMU بواجهة Virt Manager.
+إنشاء جهاز وهمى بمساحة تخزين متغيرة Dynamically Allocated Disk.</p>
+<p hidden>#more</p>
 
-  <h1>Virt Manager KVM</h1>
-
-<h3 id="virt_manager_kvm">Virt Manager KVM<a class="headerlink" href="#virt_manager_kvm" title="Permanent link">⚓︎</a></h3>
-<h4 id="support_الدعم">support الدعم<a class="headerlink" href="#support_الدعم" title="Permanent link">⚓︎</a></h4>
-<h5 id="hardware_support_المعالج">Hardware support المعالج<a class="headerlink" href="#hardware_support_المعالج" title="Permanent link">⚓︎</a></h5>
+<h2 id="support">support الدعم<a class="headerlink" href="#support" title="Permanent link">&para;</a></h2>
+<h3 id="hardware-support">Hardware support المعالج<a class="headerlink" href="#hardware-support" title="Permanent link">&para;</a></h3>
 <p>KVM requires that the virtual machine host's processor has virtualization support (named <strong>VT-x</strong> for Intel processors and <strong>AMD-V</strong> for AMD processors). You can check whether your processor supports hardware virtualization with the following command:</p>
-<pre><code class="language-sh">lscpu | grep Virtualization
-</code></pre>
+<div class="highlight"><pre><span></span><code>lscpu <span class="p">|</span> grep Virtualization
+</code></pre></div>
 <p>If nothing is displayed after running th command, then your processor does not support hardware virtualization, and you will not be able to use KVM.</p>
 <blockquote>
 <p>Note: You may need to enable virtualization support in your BIOS. All x86_64 processors manufactured by AMD and Intel in the last 10 years support virtualization. If it looks like your processor does not support virtualization, it is almost certainly turned off in the BIOS.</p>
 </blockquote>
-<h5 id="kernel_support_النواة">Kernel support النواة<a class="headerlink" href="#kernel_support_النواة" title="Permanent link">⚓︎</a></h5>
+<h3 id="kernel-support">Kernel support النواة<a class="headerlink" href="#kernel-support" title="Permanent link">&para;</a></h3>
 <p>ensure that the kernel modules are automatically loaded, with the command:</p>
-<pre><code class="language-sh">lsmod | grep kvm
-</code></pre>
-<h4 id="install_التنصيب">Install التنصيب<a class="headerlink" href="#install_التنصيب" title="Permanent link">⚓︎</a></h4>
-<h5 id="fedora_36_">Fedora 36 +<a class="headerlink" href="#fedora_36_" title="Permanent link">⚓︎</a></h5>
+<div class="highlight"><pre><span></span><code>lsmod <span class="p">|</span> grep kvm
+</code></pre></div>
+<h2 id="install">Install التنصيب<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
+<h3 id="fedora-36">Fedora 36 +<a class="headerlink" href="#fedora-36" title="Permanent link">&para;</a></h3>
 <ul>
 <li>حزم أساسية</li>
 </ul>
-<pre><code class="language-sh">sudo dnf install virt-manager qemu-kvm libvirt virt-viewer virt-install python3-libguestfs virt-top bridge-utils guestfs-tools libguestfs-tools libvirt-devel 
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo dnf install virt-manager qemu-kvm libvirt virt-viewer virt-install python3-libguestfs virt-top bridge-utils guestfs-tools libguestfs-tools libvirt-devel 
+</code></pre></div>
 <ul>
 <li>حزم إضافية</li>
 </ul>
-<pre><code class="language-sh">sudo dnf install genisoimage dnsmasq libosinfo libosinfo-devel
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo dnf install genisoimage dnsmasq libosinfo libosinfo-devel
+</code></pre></div>
 <p>For More <a href="https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-virtualization/">Fedora Docs</a></p>
-<h5 id="ubuntu_2204_">Ubuntu 22.04 +<a class="headerlink" href="#ubuntu_2204_" title="Permanent link">⚓︎</a></h5>
-<pre><code class="language-sh">sudo apt install virt-manager
-</code></pre>
+<h3 id="ubuntu-2204">Ubuntu 22.04 +<a class="headerlink" href="#ubuntu-2204" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>sudo apt install virt-manager
+</code></pre></div>
 <p>For More <a href="https://help.ubuntu.com/community/KVM/VirtManager">Ubuntu Docs</a></p>
-<h5 id="arch">Arch<a class="headerlink" href="#arch" title="Permanent link">⚓︎</a></h5>
+<h3 id="arch">Arch<a class="headerlink" href="#arch" title="Permanent link">&para;</a></h3>
 <p>Find the steps at <a href="https://wiki.archlinux.org/title/Virt-Manager">Arch WiKi</a></p>
-<h4 id="add_user_to_kvm_and_libvirt_groups">Add user to <code>kvm</code> and <code>libvirt</code> groups<a class="headerlink" href="#add_user_to_kvm_and_libvirt_groups" title="Permanent link">⚓︎</a></h4>
-<pre><code class="language-sh">sudo usermod -aG kvm,libvirt $USER
-</code></pre>
-<h4 id="restart_the_system">Restart the system<a class="headerlink" href="#restart_the_system" title="Permanent link">⚓︎</a></h4>
-<h4 id="dynamically_allocated_disk_in_kvm_-_إنشاء_وحدة_تخزين_ذات_مساحة_متغيرة">Dynamically Allocated Disk in KVM - إنشاء وحدة تخزين ذات مساحة متغيرة<a class="headerlink" href="#dynamically_allocated_disk_in_kvm_-_إنشاء_وحدة_تخزين_ذات_مساحة_متغيرة" title="Permanent link">⚓︎</a></h4>
+<h2 id="add-user-to-kvm-and-libvirt-groups">Add user to <code>kvm</code> and <code>libvirt</code> groups<a class="headerlink" href="#add-user-to-kvm-and-libvirt-groups" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>sudo usermod -aG kvm,libvirt <span class="nv">$USER</span>
+</code></pre></div>
+<h2 id="restart-the-system">Restart the system<a class="headerlink" href="#restart-the-system" title="Permanent link">&para;</a></h2>
+<h2 id="dynamically-allocated-disk-in-kvm-">Dynamically Allocated Disk in KVM - إنشاء وحدة تخزين ذات مساحة متغيرة<a class="headerlink" href="#dynamically-allocated-disk-in-kvm-" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Create a 120 GB Disk:</li>
 </ul>
-<pre><code class="language-sh">qemu-img create -f qcow2 -o preallocation=off 120-disk.qcow2 120G
-</code></pre>
+<div class="highlight"><pre><span></span><code>qemu-img create -f qcow2 -o <span class="nv">preallocation</span><span class="o">=</span>off <span class="m">120</span>-disk.qcow2 120G
+</code></pre></div>
 <ul>
 <li>Script:</li>
 </ul>
-<pre><code class="language-sh">#!/bin/sh
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/sh</span>
 
-read -p &quot;Enter the disk size in GBs like &quot;80G&quot;: &quot; a
-while [[ -z &quot;$a&quot; ]]; do
-    read -p &quot;Enter the disk size, please! &quot; a
-done
+<span class="nb">read</span> -p <span class="s2">&quot;Enter the disk size in GBs like &quot;</span>80G<span class="s2">&quot;: &quot;</span> a
+<span class="k">while</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$a</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">do</span>
+    <span class="nb">read</span> -p <span class="s2">&quot;Enter the disk size, please! &quot;</span> a
+<span class="k">done</span>
 
-qemu-img create -f qcow2 -o preallocation=off $a-disk.qcow2 $a
-</code></pre>
+qemu-img create -f qcow2 -o <span class="nv">preallocation</span><span class="o">=</span>off <span class="nv">$a</span>-disk.qcow2 <span class="nv">$a</span>
+</code></pre></div>
 
-
-
-
-
-                
               </article>
             </div>
           
@@ -543,12 +935,48 @@ qemu-img create -f qcow2 -o preallocation=off $a-disk.qcow2 $a
       
         <footer class="md-footer">
   
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../Ubuntu-Post-Install/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fedora 36 Post Install" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Fedora 36 Post Install
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../VirtManager-Share/" class="md-footer__link md-footer__link--next" aria-label="Next: Virt Manager - Share with Linux Guest" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Virt Manager - Share with Linux Guest
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2020 - 2022 Mohammed Besar
+      Copyright &copy; 2022 Mohammed Besar
     </div>
   
   
@@ -608,10 +1036,10 @@ qemu-img create -f qcow2 -o preallocation=off $a-disk.qcow2 $a
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.39f04ddb.min.js"></script>
+      <script src="../../assets/javascripts/bundle.37e9125f.min.js"></script>
       
     
   </body>
