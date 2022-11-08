@@ -29,6 +29,7 @@ nav:
       - Tutorials/Ubuntu-Update.md
       - Tutorials/VirtManager-Win11.md
       - Tutorials/VirtManager-Win-Share.md
+      - Tutorials/2nd-drive.md
   - About: about.md
 
 theme:
