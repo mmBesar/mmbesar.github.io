@@ -20,7 +20,7 @@ nav:
       - Tutorials/macOS-theme-for-Ubuntu.md
       - Tutorials/PopShell-Install.md
       - Tutorials/tesseract.md
-      - Tutorials/Ubuntu-Post-Install.md
+      - Tutorials/Ubuntu-22.04-Post.md
       - Tutorials/VirtManager.md
       - Tutorials/VirtManager-Share.md
       - Tutorials/Waydroid.md
@@ -30,6 +30,7 @@ nav:
       - Tutorials/VirtManager-Win11.md
       - Tutorials/VirtManager-Win-Share.md
       - Tutorials/2nd-drive.md
+      - Tutorials/Ubuntu-22.10-Post.md
   - About: about.md
 
 theme:
