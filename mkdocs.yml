@@ -31,6 +31,7 @@ nav:
       - Tutorials/VirtManager-Win-Share.md
       - Tutorials/2nd-drive.md
       - Tutorials/Ubuntu-22.10-Post.md
+      - Tutorials/Fedora-37-Post.md
   - About: about.md
 
 theme:
