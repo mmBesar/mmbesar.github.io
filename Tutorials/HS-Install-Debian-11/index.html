@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Ubuntu 22.04 | أهم الخطوات بعد تنصيب أبونتو">
+        <meta name="description" content="Home Server | تنصيب وضبط أفضل توزيعة للخوادم">
       
       
         <meta name="author" content="Mohammed Besar">
@@ -17,7 +17,7 @@
     
     
       
-        <title>Ubuntu 22.04 Post Install - Mohammed Besar Blog</title>
+        <title>Home Server - Install Debian 11 - Mohammed Besar Blog</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ubuntu_2204_post_installation" class="md-skip">
+        <a href="#home_server__تنصيب_وضبط_أفضل_توزيعة_للخوادم" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ubuntu 22.04 Post Install
+              Home Server - Install Debian 11
             
           </span>
         </div>
@@ -450,50 +450,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Ubuntu 22.04 Post Install
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Ubuntu-22.04-Post/" class="md-nav__link">
         Ubuntu 22.04 Post Install
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ubuntu_2204_post_installation" class="md-nav__link">
-    Ubuntu 22.04 Post Installation
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -657,11 +618,118 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../HS-Install-Debian-11/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home Server - Install Debian 11
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Home Server - Install Debian 11
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#home_server__تنصيب_وضبط_أفضل_توزيعة_للخوادم" class="md-nav__link">
+    Home Server | تنصيب وضبط أفضل توزيعة للخوادم
+  </a>
+  
+    <nav class="md-nav" aria-label="Home Server | تنصيب وضبط أفضل توزيعة للخوادم">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#تحديث_النظام" class="md-nav__link">
+    تحديث النظام
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sudo_تنصيب" class="md-nav__link">
+    sudo تنصيب
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sudo_إضافة_حسابك_إلى_مجموعة" class="md-nav__link">
+    sudo إضافة حسابك إلى مجموعة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#locale_ضبط_إعدادات" class="md-nav__link">
+    locale ضبط إعدادات
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swap" class="md-nav__link">
+    Swap
+  </a>
+  
+    <nav class="md-nav" aria-label="Swap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zram" class="md-nav__link">
+    zram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swap_file" class="md-nav__link">
+    swap file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list_swap" class="md-nav__link">
+    List swap
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -715,9 +783,77 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ubuntu_2204_post_installation" class="md-nav__link">
-    Ubuntu 22.04 Post Installation
+  <a href="#home_server__تنصيب_وضبط_أفضل_توزيعة_للخوادم" class="md-nav__link">
+    Home Server | تنصيب وضبط أفضل توزيعة للخوادم
   </a>
+  
+    <nav class="md-nav" aria-label="Home Server | تنصيب وضبط أفضل توزيعة للخوادم">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#تحديث_النظام" class="md-nav__link">
+    تحديث النظام
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sudo_تنصيب" class="md-nav__link">
+    sudo تنصيب
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sudo_إضافة_حسابك_إلى_مجموعة" class="md-nav__link">
+    sudo إضافة حسابك إلى مجموعة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#locale_ضبط_إعدادات" class="md-nav__link">
+    locale ضبط إعدادات
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swap" class="md-nav__link">
+    Swap
+  </a>
+  
+    <nav class="md-nav" aria-label="Swap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zram" class="md-nav__link">
+    zram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swap_file" class="md-nav__link">
+    swap file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list_swap" class="md-nav__link">
+    List swap
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -733,9 +869,9 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>Ubuntu 22.04 Post Install</h1>
+  <h1>Home Server - Install Debian 11</h1>
   <p>
-    <b>Ubuntu 22.04 | أهم الخطوات بعد تنصيب أبونتو</b>
+    <b>Home Server | تنصيب وضبط أفضل توزيعة للخوادم</b>
   </p>
   <aside class="mdx-author">
   
@@ -806,7 +942,7 @@
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M6.75 0a.75.75 0 0 1 .75.75V3h9V.75a.75.75 0 0 1 1.5 0V3h2.75c.966 0 1.75.784 1.75 1.75v16a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-16C1.5 3.784 2.284 3 3.25 3H6V.75A.75.75 0 0 1 6.75 0zm-3.5 4.5a.25.25 0 0 0-.25.25V8h18V4.75a.25.25 0 0 0-.25-.25H3.25zM21 9.5H3v11.25c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25V9.5z"/></svg>
       </span>
-      July 07, 2022 ·
+      November 30, 2022 ·
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25z"/><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/></svg>
       </span>
@@ -818,136 +954,87 @@
   </p>
 </aside>
   <hr>
-  <h4 id="ubuntu_2204_post_installation">Ubuntu 22.04 Post Installation<a class="headerlink" href="#ubuntu_2204_post_installation" title="Permanent link">⚓︎</a></h4>
-<p><div class="video-container"><iframe src="https://www.youtube.com/embed/7eljgBxLWug" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
+  <h3 id="home_server__تنصيب_وضبط_أفضل_توزيعة_للخوادم">Home Server | تنصيب وضبط أفضل توزيعة للخوادم<a class="headerlink" href="#home_server__تنصيب_وضبط_أفضل_توزيعة_للخوادم" title="Permanent link">⚓︎</a></h3>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/jF9ChSLYsZE" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
 <div dir="rtl">
-توزيعة أبونتو 22.04 توزيعة طويلة الدعم، حيث يستمر 5 سنوات. أضع بين يديك أهم الخطوات التي يجب تنفيذها بعد تنصيب التوزيعة، للحصول على أفضل تجربة استخدام.
+بعد استخدام لسنوات أصبح السيرفر المنزلي من أهم أدواتي، لمشاركة الملفات ومتابعة المحتوى المرئي أو المسموع عن طريق خدمة خاصة مثل NETFLIX، ولكن تحت تصرفي الكامل، توفير خِدْمَات أساسية بديلة لخدمات الشركات الكبرى على الإنترنت، مما يمنحني الخصوصية.
+</div>
+<div dir="rtl">
+اليوم أشارك معكم أول خطوة في إنشاء الخادم المنزلي "Home Server"، وهي تحميل وتنصيب توزيعة Debian 11، أفضل توزيعة لتنفيذ المهمة، وباستخدام كمبيوتر قديم عمره 15 عام.
 </div>
 
 <p hidden>#more</p>
 
+<h4 id="تحديث_النظام">تحديث النظام<a class="headerlink" href="#تحديث_النظام" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>apt update <span class="o">&amp;&amp;</span> apt upgrade
+</code></pre></div>
+<h4 id="sudo_تنصيب"><code>sudo</code> تنصيب<a class="headerlink" href="#sudo_تنصيب" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>apt install sudo
+</code></pre></div>
+<h4 id="sudo_إضافة_حسابك_إلى_مجموعة"><code>sudo</code> إضافة حسابك إلى مجموعة<a class="headerlink" href="#sudo_إضافة_حسابك_إلى_مجموعة" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>gpasswd -a <span class="nv">$USER</span> sudo
+</code></pre></div>
+<h4 id="locale_ضبط_إعدادات">locale ضبط إعدادات<a class="headerlink" href="#locale_ضبط_إعدادات" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/usr/sbin
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">LANGUAGE</span><span class="o">=</span>en_US.UTF-8
+<span class="nb">export</span> <span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+<span class="nb">export</span> <span class="nv">LC_ALL</span><span class="o">=</span>en_US.UTF-8
+locale-gen en_US.UTF-8
+</code></pre></div>
+<h4 id="swap">Swap<a class="headerlink" href="#swap" title="Permanent link">⚓︎</a></h4>
+<h5 id="zram">zram<a class="headerlink" href="#zram" title="Permanent link">⚓︎</a></h5>
 <ul>
-<li>Update</li>
+<li>تنصيب:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>sudo apt update <span class="o">&amp;&amp;</span> sudo apt upgrade -y
-</code></pre></div>
-<ul>
-<li>
-<p>Remove Firefox Snap and Install Firefox Deb</p>
-</li>
-<li>
-<p>Remove Firefox Snap</p>
-</li>
-</ul>
-<p><div class="highlight"><pre><span></span><code>sudo apt remove --purge firefox
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo snap remove --purge firefox
-</code></pre></div></p>
-<ol>
-<li>add Mozilla team PPA</li>
-</ol>
-<div class="highlight"><pre><span></span><code>sudo add-apt-repository ppa:mozillateam/ppa
-</code></pre></div>
-<ol>
-<li>set Mozilla team PPA as high Priority</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s1">&#39;</span>
-<span class="s1">Package: *</span>
-<span class="s1">Pin: release o=LP-PPA-mozillateam</span>
-<span class="s1">Pin-Priority: 1001</span>
-<span class="s1">&#39;</span> <span class="p">|</span> sudo tee /etc/apt/preferences.d/firefox
-</code></pre></div>
-<p>OR</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s1">&#39;</span>
-<span class="s1">Package: firefox*</span>
-<span class="s1">Pin: release o=LP-PPA-mozillateam</span>
-<span class="s1">Pin-Priority: 501</span>
-<span class="s1">&#39;</span> <span class="p">|</span> sudo tee /etc/apt/preferences.d/firefox
+<div class="highlight"><pre><span></span><code>sudo apt install zram-tools
 </code></pre></div>
 <ul>
-<li>block the Ubuntu repo</li>
+<li>ضبط الإعدادات على 70% من مساحة الرام:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s1">&#39;</span>
-<span class="s1">Package: firefox*</span>
-<span class="s1">Pin: release o=Ubuntu*</span>
-<span class="s1">Pin-Priority: -1</span>
-<span class="s1">&#39;</span> <span class="p">|</span> sudo tee /etc/apt/preferences.d/firefox
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span> -e <span class="s2">&quot;ALGO=zstd\nPERCENT=70&quot;</span> <span class="p">|</span> sudo tee -a /etc/default/zramswap
 </code></pre></div>
 <blockquote>
-<p><strong>About Pin and PPA Priority:</strong><br />
-<em>From apt man page</em><br />
-- P &gt;= 1000:<br />
-causes a version to be installed even if this constitutes a downgrade of the package
-- 990 &lt;= P &lt; 1000:<br />
-causes a version to be installed even if it does not come from the target release, unlessthe installed version is more recent
-- 500 &lt;= P &lt; 990:<br />
-causes a version to be installed unless there is a version available belonging to the targetrelease or the installed version is more recent
-- 100 &lt;= P &lt; 500:<br />
-causes a version to be installed unless there is a version available belonging to some otherdistribution or the installed version is more recent
-- 0 &lt; P &lt; 100:<br />
-causes a version to be installed only if there is no installed version of the package
-- P &lt; 0:<br />
-prevents the version from being installed
-- P = 0:<br />
-has undefined behaviour, do not use it.</p>
+<p>I set it to 80%</p>
 </blockquote>
-<ol>
-<li>
-<p>set Firefox for automatic updates
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s1">&#39;Unattended-Upgrade::Allowed-Origins:: &quot;LP-PPA-mozillateam:${distro_codename}&quot;;&#39;</span> <span class="p">|</span> sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
-</code></pre></div></p>
-</li>
-<li>
-<p>Update</p>
-</li>
-</ol>
-<div class="highlight"><pre><span></span><code>sudo apt update
+<ul>
+<li>إعادة تشغيل الخدمة</li>
+</ul>
+<div class="highlight"><pre><span></span><code>sudo service zramswap reload
 </code></pre></div>
-<ol>
-<li>install Firefox DEB</li>
-</ol>
-<div class="highlight"><pre><span></span><code>sudo apt install firefox
+<h5 id="swap_file">swap file<a class="headerlink" href="#swap_file" title="Permanent link">⚓︎</a></h5>
+<ul>
+<li>إنشاء ملف بمساحة 4 جيجا</li>
+</ul>
+<div class="highlight"><pre><span></span><code>sudo dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>/swapfile <span class="nv">bs</span><span class="o">=</span><span class="m">1024</span> <span class="nv">count</span><span class="o">=</span><span class="m">4194304</span>
 </code></pre></div>
 <ul>
-<li>Install Ubuntu Restricted Extras</li>
+<li>ضبط الصلاحيات على الملف</li>
 </ul>
-<div class="highlight"><pre><span></span><code>sudo apt install ubuntu-restricted-extras
+<div class="highlight"><pre><span></span><code>sudo chmod <span class="m">600</span> /swapfile
 </code></pre></div>
 <ul>
-<li>Minimize on Click</li>
+<li>format as swap - تخصيص الملف للعمل</li>
 </ul>
-<div class="highlight"><pre><span></span><code>gsettings <span class="nb">set</span> org.gnome.shell.extensions.dash-to-dock click-action minimize
+<div class="highlight"><pre><span></span><code>sudo mkswap /swapfile
 </code></pre></div>
 <ul>
-<li>Flatpak</li>
+<li>تفعيله</li>
 </ul>
-<p><div class="highlight"><pre><span></span><code>sudo apt install gnome-software gnome-software-plugin-flatpak flatpak
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-</code></pre></div></p>
-<ul>
-<li>Extensions and Tweaks</li>
-</ul>
-<div class="highlight"><pre><span></span><code>sudo apt install chrome-gnome-shell gnome-shell-extension-prefs
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo apt install gnome-tweaks gnome-shell-extension-manager
+<div class="highlight"><pre><span></span><code>sudo swapon /swapfile
 </code></pre></div>
 <ul>
-<li>
-<p>Arabic Keyboard</p>
-</li>
-<li>
-<p>Backup</p>
-</li>
-<li>
-<p>Timeshift</p>
-</li>
+<li><code>fstab</code> إضافة الملف إلى</li>
 </ul>
-<div class="highlight"><pre><span></span><code>sudo apt install timeshift
+<p>أخذ نسخة إحتياطية من الملف الأصلي</p>
+<div class="highlight"><pre><span></span><code>sudo cp /etc/fstab /etc/fstab.bak
 </code></pre></div>
-<ol>
-<li>Backup your files with <a href="https://flathub.org/apps/details/org.gnome.DejaDup">Deja Dup</a></li>
-</ol>
+<p><code>fstab</code> تعديل</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s1">&#39;/swapfile none swap sw 0 0&#39;</span> <span class="p">|</span> sudo tee -a /etc/fstab
+</code></pre></div>
+<h5 id="list_swap">List swap<a class="headerlink" href="#list_swap" title="Permanent link">⚓︎</a></h5>
+<div class="highlight"><pre><span></span><code>sudo swapon --show
+</code></pre></div>
 
               </article>
             </div>
@@ -963,7 +1050,7 @@ has undefined behaviour, do not use it.</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../tesseract/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tesseract OCR" rel="prev">
+        <a href="../Fedora-37-Post/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fedora 37 Post Installation" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -972,20 +1059,20 @@ has undefined behaviour, do not use it.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Tesseract OCR
+              Fedora 37 Post Installation
             </div>
           </div>
         </a>
       
       
         
-        <a href="../VirtManager/" class="md-footer__link md-footer__link--next" aria-label="Next: Virt Manager Install" rel="next">
+        <a href="../../about/" class="md-footer__link md-footer__link--next" aria-label="Next: About" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Virt Manager Install
+              About
             </div>
           </div>
           <div class="md-footer__button md-icon">
