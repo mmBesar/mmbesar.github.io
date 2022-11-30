@@ -32,6 +32,7 @@ nav:
       - Tutorials/2nd-drive.md
       - Tutorials/Ubuntu-22.10-Post.md
       - Tutorials/Fedora-37-Post.md
+      - Tutorials/HS-Install-Debian-11.md
   - About: about.md
 
 theme:
