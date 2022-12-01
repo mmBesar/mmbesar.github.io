@@ -118,3 +118,17 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 ```sh
 sudo swapon --show
 ```
+
+## CPU Microcode
+
+- For Intel CPUs
+
+```sh
+sudo apt install intel-microcode
+```
+
+- For AMD CPUs
+
+```sh
+sudo apt install amd64-microcode
+```
