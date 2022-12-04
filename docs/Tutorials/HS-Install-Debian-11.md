@@ -134,7 +134,7 @@ cat /etc/apt/sources.list | grep "bullseye main contrib non-free" || sudo sed -i
 sudo apt update
 ```
 
-## <div dir="rtl">المعالج Microcode
+## <div dir="rtl">المعالج Microcode</div>
 
 === "Intel معالجات"
 
