@@ -18,34 +18,31 @@ date: 2022-11-30
 
 <p hidden>#more</p>
 
-## تحديث النظام
+## <div dir="rtl">تحديث النظام</div>
 
 ```sh
 apt update && apt upgrade
 ```
 
-## `sudo` تنصيب
+## <div dir="rtl">تنصيب `sudo`</div>
 
 ```sh
 apt install sudo
 ```
 
-## `sudo` إضافة حسابك إلى مجموعة
+## <div dir="rtl">إضافة حسابك إلى مجموعة `sudo`</div>
 
 ```sh
 gpasswd -a $USER sudo
 ```
 
-## locale ضبط إعدادات
+## <div dir="rtl">ضبط إعدادات locale</div>
 
 ```sh
-export PATH=$PATH:/usr/sbin
-```
-
-```sh
-export LANGUAGE=en_US.UTF-8
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
+export PATH=$PATH:/usr/sbin &&
+export LANGUAGE=en_US.UTF-8 &&
+export LANG=en_US.UTF-8 &&
+export LC_ALL=en_US.UTF-8 &&
 locale-gen en_US.UTF-8
 ```
 
@@ -53,13 +50,13 @@ locale-gen en_US.UTF-8
 
 ### zram
 
-- تنصيب:
+- <div dir="rtl">تنصيب أدوات `Z-RAM`</div>
 
 ```sh
 sudo apt install zram-tools
 ```
 
-- ضبط الإعدادات على 70% من مساحة الرام:
+- <div dir="rtl">ضبط الإعدادات على 70% من مساحة الرام:</div>
 
 ```sh
 echo -e "ALGO=zstd\nPERCENT=70" | sudo tee -a /etc/default/zramswap
@@ -101,34 +98,53 @@ sudo swapon /swapfile
 
 - `fstab` إضافة الملف إلى
 
-أخذ نسخة إحتياطية من الملف الأصلي
+<div dir="rtl">أخذ نسخة إحتياطية من الملف الأصلي</div>
 
 ```sh
 sudo cp /etc/fstab /etc/fstab.bak
 ```
 
-`fstab` تعديل
+<div dir="rtl">تعديل ملف الـ fstab</div>
 
 ```sh
 echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 ```
 
-### List swap
+### <div dir="rtl">مراجعة الاعدادات</div>
 
 ```sh
 sudo swapon --show
 ```
 
-## CPU Microcode
+## <div dir="rtl">إضافة مستودعات none-free</div>
 
-- For Intel CPUs
+!!! danger "ملاحظة هامة"
+
+    <div dir="rtl">
+    التنصيب تم باستخدام  
+    `debian-firmware-11.5.0-amd64-netinst.iso`
+    </div>
+
 
 ```sh
-sudo apt install intel-microcode
+cat /etc/apt/sources.list | grep "bullseye main contrib non-free" || sudo sed -i "s/bullseye main/bullseye main contrib non-free/g" /etc/apt/sources.list
 ```
-
-- For AMD CPUs
 
 ```sh
-sudo apt install amd64-microcode
+sudo apt update
 ```
+
+## <div dir="rtl">المعالج Microcode
+
+=== "Intel معالجات"
+
+    ``` sh
+    sudo apt install intel-microcode
+    ```
+
+=== "AMD معالجات"
+
+    ``` sh
+    sudo apt install amd64-microcode
+    ```
+    
