@@ -33,6 +33,7 @@ nav:
       - Tutorials/Ubuntu-22.10-Post.md
       - Tutorials/Fedora-37-Post.md
       - Tutorials/HS-Install-Debian-11.md
+      - Tutorials/HS-Samba.md
   - About: about.md
 
 theme:
