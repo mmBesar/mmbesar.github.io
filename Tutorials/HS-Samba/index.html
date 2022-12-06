@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Ubuntu 22.04 | أهم الخطوات بعد تنصيب أبونتو">
+        <meta name="description" content="Home Server | خدمة مشاركة الملفات">
       
       
         <meta name="author" content="Mohammed Besar">
@@ -17,7 +17,7 @@
     
     
       
-        <title>Ubuntu 22.04 Post Install - Mohammed Besar Blog</title>
+        <title>Home Server - Install and Configure Samba - Mohammed Besar Blog</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ubuntu_2204_post_installation" class="md-skip">
+        <a href="#home_server__مشاركة_الملفات_بين_ويندوز_وأندرويد_ولينكس_من_خلال_السيرفر_المنزلي" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ubuntu 22.04 Post Install
+              Home Server - Install and Configure Samba
             
           </span>
         </div>
@@ -452,50 +452,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Ubuntu 22.04 Post Install
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Ubuntu-22.04-Post/" class="md-nav__link">
         Ubuntu 22.04 Post Install
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ubuntu_2204_post_installation" class="md-nav__link">
-    Ubuntu 22.04 Post Installation
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -673,11 +634,186 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../HS-Samba/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home Server - Install and Configure Samba
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Home Server - Install and Configure Samba
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#home_server__مشاركة_الملفات_بين_ويندوز_وأندرويد_ولينكس_من_خلال_السيرفر_المنزلي" class="md-nav__link">
+    Home Server | مشاركة الملفات بين ويندوز وأندرويد ولينكس من خلال السيرفر المنزلي
+  </a>
+  
+    <nav class="md-nav" aria-label="Home Server | مشاركة الملفات بين ويندوز وأندرويد ولينكس من خلال السيرفر المنزلي">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#تحديث_النظام" class="md-nav__link">
+    تحديث النظام
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#تنصيب_samba" class="md-nav__link">
+    تنصيب Samba
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إضافة_حسابك_على_samba" class="md-nav__link">
+    إضافة حسابك على Samba
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_حساب_للمشاركة_وإضافته_إلى_samba" class="md-nav__link">
+    إنشاء حساب للمشاركة وإضافته إلى Samba
+  </a>
+  
+    <nav class="md-nav" aria-label="إنشاء حساب للمشاركة وإضافته إلى Samba">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_الحساب" class="md-nav__link">
+    إنشاء الحساب
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إضافته_إلى_samba" class="md-nav__link">
+    إضافته إلى Samba
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_مجلد_للمشاركة" class="md-nav__link">
+    إنشاء مجلد للمشاركة
+  </a>
+  
+    <nav class="md-nav" aria-label="إنشاء مجلد للمشاركة">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_المجلد" class="md-nav__link">
+    إنشاء المجلد
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ضبط_صلاحيات_المجلد" class="md-nav__link">
+    ضبط صلاحيات المجلد
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ضبط_إعدادات_samba" class="md-nav__link">
+    ضبط إعدادات Samba
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#السماح_لحساب_share_بالوصول_الكامل_لملفات_المجلد_share" class="md-nav__link">
+    السماح لحساب share بالوصول الكامل لملفات المجلد share
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#الوصول_السريع_لمجلدات_السيرفر_من_خلال_أنظمة_لينكس_المكتبية" class="md-nav__link">
+    الوصول السريع لمجلدات السيرفر من خلال أنظمة لينكس المكتبية
+  </a>
+  
+    <nav class="md-nav" aria-label="الوصول السريع لمجلدات السيرفر من خلال أنظمة لينكس المكتبية">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#تنصيب_حزمة_cifs-utils" class="md-nav__link">
+    تنصيب حزمة cifs-utils
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_مجلد_جديد_لتخصيصه_نقطة_وصول" class="md-nav__link">
+    إنشاء مجلد جديد لتخصيصه نقطة وصول
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_ملف_بيانات_الوصول" class="md-nav__link">
+    إنشاء ملف بيانات الوصول
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إضافة_بيانات_السيرفر_إلى_الـ_fstab" class="md-nav__link">
+    إضافة بيانات السيرفر إلى الـ FSTAB
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -731,9 +867,145 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ubuntu_2204_post_installation" class="md-nav__link">
-    Ubuntu 22.04 Post Installation
+  <a href="#home_server__مشاركة_الملفات_بين_ويندوز_وأندرويد_ولينكس_من_خلال_السيرفر_المنزلي" class="md-nav__link">
+    Home Server | مشاركة الملفات بين ويندوز وأندرويد ولينكس من خلال السيرفر المنزلي
   </a>
+  
+    <nav class="md-nav" aria-label="Home Server | مشاركة الملفات بين ويندوز وأندرويد ولينكس من خلال السيرفر المنزلي">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#تحديث_النظام" class="md-nav__link">
+    تحديث النظام
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#تنصيب_samba" class="md-nav__link">
+    تنصيب Samba
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إضافة_حسابك_على_samba" class="md-nav__link">
+    إضافة حسابك على Samba
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_حساب_للمشاركة_وإضافته_إلى_samba" class="md-nav__link">
+    إنشاء حساب للمشاركة وإضافته إلى Samba
+  </a>
+  
+    <nav class="md-nav" aria-label="إنشاء حساب للمشاركة وإضافته إلى Samba">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_الحساب" class="md-nav__link">
+    إنشاء الحساب
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إضافته_إلى_samba" class="md-nav__link">
+    إضافته إلى Samba
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_مجلد_للمشاركة" class="md-nav__link">
+    إنشاء مجلد للمشاركة
+  </a>
+  
+    <nav class="md-nav" aria-label="إنشاء مجلد للمشاركة">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_المجلد" class="md-nav__link">
+    إنشاء المجلد
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ضبط_صلاحيات_المجلد" class="md-nav__link">
+    ضبط صلاحيات المجلد
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ضبط_إعدادات_samba" class="md-nav__link">
+    ضبط إعدادات Samba
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#السماح_لحساب_share_بالوصول_الكامل_لملفات_المجلد_share" class="md-nav__link">
+    السماح لحساب share بالوصول الكامل لملفات المجلد share
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#الوصول_السريع_لمجلدات_السيرفر_من_خلال_أنظمة_لينكس_المكتبية" class="md-nav__link">
+    الوصول السريع لمجلدات السيرفر من خلال أنظمة لينكس المكتبية
+  </a>
+  
+    <nav class="md-nav" aria-label="الوصول السريع لمجلدات السيرفر من خلال أنظمة لينكس المكتبية">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#تنصيب_حزمة_cifs-utils" class="md-nav__link">
+    تنصيب حزمة cifs-utils
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_مجلد_جديد_لتخصيصه_نقطة_وصول" class="md-nav__link">
+    إنشاء مجلد جديد لتخصيصه نقطة وصول
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_ملف_بيانات_الوصول" class="md-nav__link">
+    إنشاء ملف بيانات الوصول
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إضافة_بيانات_السيرفر_إلى_الـ_fstab" class="md-nav__link">
+    إضافة بيانات السيرفر إلى الـ FSTAB
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -749,9 +1021,9 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>Ubuntu 22.04 Post Install</h1>
+  <h1>Home Server - Install and Configure Samba</h1>
   <p>
-    <b>Ubuntu 22.04 | أهم الخطوات بعد تنصيب أبونتو</b>
+    <b>Home Server | خدمة مشاركة الملفات</b>
   </p>
   <aside class="mdx-author">
   
@@ -822,148 +1094,159 @@
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M6.75 0a.75.75 0 0 1 .75.75V3h9V.75a.75.75 0 0 1 1.5 0V3h2.75c.966 0 1.75.784 1.75 1.75v16a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-16C1.5 3.784 2.284 3 3.25 3H6V.75A.75.75 0 0 1 6.75 0zm-3.5 4.5a.25.25 0 0 0-.25.25V8h18V4.75a.25.25 0 0 0-.25-.25H3.25zM21 9.5H3v11.25c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25V9.5z"/></svg>
       </span>
-      July 07, 2022 ·
+      December 06, 2022 ·
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25z"/><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/></svg>
       </span>
       <!--Min reading time is 1 minute-->
       
       
-      2 min read
+      6 min read
     </span>
   </p>
 </aside>
   <hr>
-  <h4 id="ubuntu_2204_post_installation">Ubuntu 22.04 Post Installation<a class="headerlink" href="#ubuntu_2204_post_installation" title="Permanent link">⚓︎</a></h4>
-<p><div class="video-container"><iframe src="https://www.youtube.com/embed/7eljgBxLWug" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
+  <h3 id="home_server__مشاركة_الملفات_بين_ويندوز_وأندرويد_ولينكس_من_خلال_السيرفر_المنزلي">Home Server | مشاركة الملفات بين ويندوز وأندرويد ولينكس من خلال السيرفر المنزلي<a class="headerlink" href="#home_server__مشاركة_الملفات_بين_ويندوز_وأندرويد_ولينكس_من_خلال_السيرفر_المنزلي" title="Permanent link">⚓︎</a></h3>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/ZeeaScxN3ZQ" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
 <div dir="rtl">
-توزيعة أبونتو 22.04 توزيعة طويلة الدعم، حيث يستمر 5 سنوات. أضع بين يديك أهم الخطوات التي يجب تنفيذها بعد تنصيب التوزيعة، للحصول على أفضل تجربة استخدام.
+أول خدمة على السيرفر المنزلي، إنشاء نظام متكامل لمشاركة الملفات بين أنظمة التشغيل المختفلة، والوصول إلى ملفاتك من خلال ويندوز أو أندرويد وبالتأكيد لينكس.
+</div>
+<div dir="rtl">
+شرح مفصل لكيفية إنشاء Samba Share على لينكس، وضبط إعدادات وصلاحيات المستخدم، وصلاحيات الوصول إلى الملفات.
 </div>
 
 <p hidden>#more</p>
 
-<ul>
-<li>Update</li>
-</ul>
+<h4 id="تحديث_النظام"><div dir="rtl">تحديث النظام</div><a class="headerlink" href="#تحديث_النظام" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>sudo apt update <span class="o">&amp;&amp;</span> sudo apt upgrade -y
 </code></pre></div>
-<ul>
-<li>
-<p>Remove Firefox Snap and Install Firefox Deb</p>
-</li>
-<li>
-<p>Remove Firefox Snap</p>
-</li>
-</ul>
-<p><div class="highlight"><pre><span></span><code>sudo apt remove --purge firefox
+<h4 id="تنصيب_samba"><div dir="rtl">تنصيب Samba</div><a class="headerlink" href="#تنصيب_samba" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>sudo apt install samba
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo snap remove --purge firefox
-</code></pre></div></p>
-<ol>
-<li>add Mozilla team PPA</li>
-</ol>
-<div class="highlight"><pre><span></span><code>sudo add-apt-repository ppa:mozillateam/ppa
+<h4 id="إضافة_حسابك_على_samba"><div dir="rtl">إضافة حسابك على Samba</div><a class="headerlink" href="#إضافة_حسابك_على_samba" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>sudo smbpasswd -a <span class="nv">$USER</span>
 </code></pre></div>
-<ol>
-<li>set Mozilla team PPA as high Priority</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s1">&#39;</span>
-<span class="s1">Package: *</span>
-<span class="s1">Pin: release o=LP-PPA-mozillateam</span>
-<span class="s1">Pin-Priority: 1001</span>
-<span class="s1">&#39;</span> <span class="p">|</span> sudo tee /etc/apt/preferences.d/firefox
+<h4 id="إنشاء_حساب_للمشاركة_وإضافته_إلى_samba"><div dir="rtl">إنشاء حساب للمشاركة وإضافته إلى Samba</div><a class="headerlink" href="#إنشاء_حساب_للمشاركة_وإضافته_إلى_samba" title="Permanent link">⚓︎</a></h4>
+<h5 id="إنشاء_الحساب"><div dir="rtl">إنشاء الحساب</div><a class="headerlink" href="#إنشاء_الحساب" title="Permanent link">⚓︎</a></h5>
+<div class="highlight"><pre><span></span><code>sudo adduser --no-create-home --disabled-password --disabled-login share
 </code></pre></div>
-<p>OR</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s1">&#39;</span>
-<span class="s1">Package: firefox*</span>
-<span class="s1">Pin: release o=LP-PPA-mozillateam</span>
-<span class="s1">Pin-Priority: 501</span>
-<span class="s1">&#39;</span> <span class="p">|</span> sudo tee /etc/apt/preferences.d/firefox
+<h5 id="إضافته_إلى_samba"><div dir="rtl">إضافته إلى Samba</div><a class="headerlink" href="#إضافته_إلى_samba" title="Permanent link">⚓︎</a></h5>
+<div class="highlight"><pre><span></span><code>sudo smbpasswd -a share
 </code></pre></div>
-<ul>
-<li>block the Ubuntu repo</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s1">&#39;</span>
-<span class="s1">Package: firefox*</span>
-<span class="s1">Pin: release o=Ubuntu*</span>
-<span class="s1">Pin-Priority: -1</span>
-<span class="s1">&#39;</span> <span class="p">|</span> sudo tee /etc/apt/preferences.d/firefox
+<h4 id="إنشاء_مجلد_للمشاركة"><div dir="rtl">إنشاء مجلد للمشاركة</div><a class="headerlink" href="#إنشاء_مجلد_للمشاركة" title="Permanent link">⚓︎</a></h4>
+<h5 id="إنشاء_المجلد"><div dir="rtl">إنشاء المجلد</div><a class="headerlink" href="#إنشاء_المجلد" title="Permanent link">⚓︎</a></h5>
+<div class="highlight"><pre><span></span><code>sudo mkdir /mnt/srv/share
 </code></pre></div>
-<blockquote>
-<p><strong>About Pin and PPA Priority:</strong><br />
-<em>From apt man page</em><br />
-- P &gt;= 1000:<br />
-causes a version to be installed even if this constitutes a downgrade of the package
-- 990 &lt;= P &lt; 1000:<br />
-causes a version to be installed even if it does not come from the target release, unlessthe installed version is more recent
-- 500 &lt;= P &lt; 990:<br />
-causes a version to be installed unless there is a version available belonging to the targetrelease or the installed version is more recent
-- 100 &lt;= P &lt; 500:<br />
-causes a version to be installed unless there is a version available belonging to some otherdistribution or the installed version is more recent
-- 0 &lt; P &lt; 100:<br />
-causes a version to be installed only if there is no installed version of the package
-- P &lt; 0:<br />
-prevents the version from being installed
-- P = 0:<br />
-has undefined behaviour, do not use it.</p>
-</blockquote>
-<ol>
-<li>
-<p>set Firefox for automatic updates
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s1">&#39;Unattended-Upgrade::Allowed-Origins:: &quot;LP-PPA-mozillateam:${distro_codename}&quot;;&#39;</span> <span class="p">|</span> sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
-</code></pre></div></p>
-</li>
-<li>
-<p>Update</p>
-</li>
-</ol>
-<div class="highlight"><pre><span></span><code>sudo apt update
+<h5 id="ضبط_صلاحيات_المجلد"><div dir="rtl">ضبط صلاحيات المجلد</div><a class="headerlink" href="#ضبط_صلاحيات_المجلد" title="Permanent link">⚓︎</a></h5>
+<div class="highlight"><pre><span></span><code>sudo chown -R <span class="nv">$USER</span>:<span class="nv">$USER</span> /mnt/srv/share
 </code></pre></div>
-<ol>
-<li>install Firefox DEB</li>
-</ol>
-<div class="highlight"><pre><span></span><code>sudo apt install firefox
+<h4 id="ضبط_إعدادات_samba"><div dir="rtl">ضبط إعدادات Samba</div><a class="headerlink" href="#ضبط_إعدادات_samba" title="Permanent link">⚓︎</a></h4>
+<div dir="rtl">أخذ نسخة إحتياطية من الملف الأصلي</div>
+
+<div class="highlight"><pre><span></span><code>sudo mv /etc/samba/smb.conf /etc/samba/smb.conf.bk
 </code></pre></div>
-<ul>
-<li>Install Ubuntu Restricted Extras</li>
-</ul>
-<div class="highlight"><pre><span></span><code>sudo apt install ubuntu-restricted-extras
+<div dir="rtl">إنشاء ملف جديد</div>
+
+<div class="highlight"><pre><span></span><code>sudo nano /etc/samba/smb.conf
 </code></pre></div>
-<ul>
-<li>Minimize on Click</li>
-</ul>
-<div class="highlight"><pre><span></span><code>gsettings <span class="nb">set</span> org.gnome.shell.extensions.dash-to-dock click-action minimize
+<div dir="rtl">وإضافة ما يلي:</div>
+
+<div class="admonition danger">
+<p><div dir="rtl">تأكد من تعديل البيانات لتناسبك</div></p>
+</div>
+<div class="highlight"><span class="filename">smb.conf</span><pre><span></span><code><span class="k">[global]</span><span class="w"></span>
+<span class="na">server string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Virtual Server</span><span class="w"></span>
+<span class="na">netbios name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">VSERVER</span><span class="w"></span>
+<span class="na">workgroup</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">WORKGROUP</span><span class="w"></span>
+<span class="na">security</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">user</span><span class="w"></span>
+<span class="na">map to guest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Bad User</span><span class="w"></span>
+<span class="na">name resolve order</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">bcast host</span><span class="w"></span>
+<span class="na">include</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">registry</span><span class="w"></span>
+<span class="na">passdb backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">tdbsam</span><span class="w"></span>
+
+<span class="k">[home]</span><span class="w"></span>
+<span class="na">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/home/mbesar</span><span class="w"></span>
+<span class="na">browsable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
+<span class="na">valid users</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbesar</span><span class="w"></span>
+<span class="na">write list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbesar</span><span class="w"></span>
+<span class="na">read list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbesar</span><span class="w"></span>
+
+<span class="k">[srv]</span><span class="w"></span>
+<span class="na">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/mnt/srv</span><span class="w"></span>
+<span class="na">browsable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
+<span class="na">valid users</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbesar</span><span class="w"></span>
+<span class="na">write list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbesar</span><span class="w"></span>
+<span class="na">read list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbesar</span><span class="w"></span>
+
+<span class="k">[share]</span><span class="w"></span>
+<span class="na">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/mnt/srv/share</span><span class="w"></span>
+<span class="na">browsable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
+<span class="na">writable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
+<span class="na">valid users</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbesar share</span><span class="w"></span>
+<span class="na">create mask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0755</span><span class="w"></span>
+<span class="na">force create mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0755</span><span class="w"></span>
+<span class="na">directory mask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0755</span><span class="w"></span>
+<span class="na">force directory mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0755</span><span class="w"></span>
+
+<span class="k">[printers]</span><span class="w"></span>
+<span class="na">comment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">All Printers</span><span class="w"></span>
+<span class="na">browseable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
+<span class="na">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/var/spool/samba</span><span class="w"></span>
+<span class="na">printable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
+<span class="na">guest ok</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
+<span class="na">read only</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">no</span><span class="w"></span>
+<span class="na">create mask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0700</span><span class="w"></span>
 </code></pre></div>
-<ul>
-<li>Flatpak</li>
-</ul>
-<p><div class="highlight"><pre><span></span><code>sudo apt install gnome-software gnome-software-plugin-flatpak flatpak
+<div dir="rtl">تفعيل الخدمة</div>
+
+<div class="highlight"><pre><span></span><code>sudo systemctl <span class="nb">enable</span> --now <span class="o">{</span>s,n<span class="o">}</span>mbd
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-</code></pre></div></p>
-<ul>
-<li>Extensions and Tweaks</li>
-</ul>
-<div class="highlight"><pre><span></span><code>sudo apt install chrome-gnome-shell gnome-shell-extension-prefs
+<div dir="rtl">إعادة تشغيل الخدمة</div>
+
+<div class="highlight"><pre><span></span><code>sudo systemctl restart <span class="o">{</span>s,n<span class="o">}</span>mbd
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo apt install gnome-tweaks gnome-shell-extension-manager
+<h4 id="السماح_لحساب_share_بالوصول_الكامل_لملفات_المجلد_share"><div dir="rtl">السماح لحساب share بالوصول الكامل لملفات المجلد share</div><a class="headerlink" href="#السماح_لحساب_share_بالوصول_الكامل_لملفات_المجلد_share" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>chmod <span class="m">0777</span> /mnt/srv/share
 </code></pre></div>
-<ul>
-<li>
-<p>Arabic Keyboard</p>
-</li>
-<li>
-<p>Backup</p>
-</li>
-<li>
-<p>Timeshift</p>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code>sudo apt install timeshift
+<h4 id="الوصول_السريع_لمجلدات_السيرفر_من_خلال_أنظمة_لينكس_المكتبية"><div dir="rtl">الوصول السريع لمجلدات السيرفر من خلال أنظمة لينكس المكتبية</div><a class="headerlink" href="#الوصول_السريع_لمجلدات_السيرفر_من_خلال_أنظمة_لينكس_المكتبية" title="Permanent link">⚓︎</a></h4>
+<h5 id="تنصيب_حزمة_cifs-utils"><div dir="rtl">تنصيب حزمة cifs-utils</div><a class="headerlink" href="#تنصيب_حزمة_cifs-utils" title="Permanent link">⚓︎</a></h5>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Fedora</label><label for="__tabbed_1_2">Ubuntu</label><label for="__tabbed_1_3">Arch</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>sudo dnf install cifs-utils
 </code></pre></div>
-<ol>
-<li>Backup your files with <a href="https://flathub.org/apps/details/org.gnome.DejaDup">Deja Dup</a></li>
-</ol>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>sudo apt install cifs-utils
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>sudo pacman -Sy cifs-utils
+</code></pre></div>
+</div>
+</div>
+</div>
+<h5 id="إنشاء_مجلد_جديد_لتخصيصه_نقطة_وصول"><div dir="rtl">إنشاء مجلد جديد لتخصيصه نقطة وصول</div><a class="headerlink" href="#إنشاء_مجلد_جديد_لتخصيصه_نقطة_وصول" title="Permanent link">⚓︎</a></h5>
+<div class="highlight"><pre><span></span><code>mkdir ~/share
+</code></pre></div>
+<h5 id="إنشاء_ملف_بيانات_الوصول"><div dir="rtl">إنشاء ملف بيانات الوصول</div><a class="headerlink" href="#إنشاء_ملف_بيانات_الوصول" title="Permanent link">⚓︎</a></h5>
+<div class="highlight"><pre><span></span><code>nano ~/smb.cred
+</code></pre></div>
+<div dir="rtl">وأضف البيانات كالتالي:</div>
+
+<div class="highlight"><span class="filename">smb.cred</span><pre><span></span><code><span class="na">username</span><span class="o">=</span><span class="s">USER-NAME</span><span class="w"></span>
+<span class="na">password</span><span class="o">=</span><span class="s">PASSWORD</span><span class="w"></span>
+</code></pre></div>
+<h5 id="إضافة_بيانات_السيرفر_إلى_الـ_fstab"><div dir="rtl">إضافة بيانات السيرفر إلى الـ FSTAB</div><a class="headerlink" href="#إضافة_بيانات_السيرفر_إلى_الـ_fstab" title="Permanent link">⚓︎</a></h5>
+<div class="highlight"><pre><span></span><code>sudo nano /etc/fstab
+</code></pre></div>
+<div dir="rtl">وإضافة السطر التالي:</div>
+
+<div class="admonition danger">
+<p><div dir="rtl">تأكد من تعديل البيانات لتناسبك</div></p>
+</div>
+<div class="highlight"><span class="filename">fstab</span><pre><span></span><code>//server_IP/share_name  /home/YOUR_USER_NAME/share  cifs  credentials=/home/YOUR_USER_NAME/smb.cred,noperm  0  0
+</code></pre></div>
 
               </article>
             </div>
@@ -979,7 +1262,7 @@ has undefined behaviour, do not use it.</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../tesseract/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tesseract OCR" rel="prev">
+        <a href="../HS-Install-Debian-11/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home Server - Install Debian 11" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -988,20 +1271,20 @@ has undefined behaviour, do not use it.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Tesseract OCR
+              Home Server - Install Debian 11
             </div>
           </div>
         </a>
       
       
         
-        <a href="../VirtManager/" class="md-footer__link md-footer__link--next" aria-label="Next: Virt Manager Install" rel="next">
+        <a href="../../about/" class="md-footer__link md-footer__link--next" aria-label="Next: About" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Virt Manager Install
+              About
             </div>
           </div>
           <div class="md-footer__button md-icon">
