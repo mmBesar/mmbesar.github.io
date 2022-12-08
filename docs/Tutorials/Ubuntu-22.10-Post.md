@@ -5,6 +5,8 @@ description: خطوات يجب تنفيذها بعد تنصيب أوبونتو 2
 date: 2022-11-23
 ---
 
+# Ubuntu 22.10 Post Installation
+
 ![type:video](https://www.youtube.com/embed/m4ACmfnjXjs)
 
 <div dir="rtl">
@@ -12,8 +14,6 @@ date: 2022-11-23
 </div>
 
 <p hidden>#more</p>
-
-# Ubuntu 22.10 Post Installation
 
 ## Update
 
@@ -23,7 +23,7 @@ sudo apt update && sudo apt upgrade -y
 
 ## Remove Firefox Snap and Install Firefox Deb
 
-1. ### Remove Firefox Snap
+- Remove Firefox Snap
 
 ```sh
 sudo apt remove --autoremove firefox
@@ -33,13 +33,13 @@ sudo apt remove --autoremove firefox
 sudo snap remove --purge firefox
 ```
 
-2. ### Add Mozilla Team PPA
+- Add Mozilla Team PPA
 
 ```sh
 sudo add-apt-repository ppa:mozillateam/ppa
 ```
 
-3. ### Set Mozilla team PPA as high Priority
+- Set Mozilla team PPA as high Priority
 
 ```sh
 echo '
@@ -49,7 +49,7 @@ Pin-Priority: 1001
 ' | sudo tee /etc/apt/preferences.d/firefox-ppa-priority
 ```
 
-4. ### Block the Ubuntu repo
+- Block the Ubuntu repo
 
 ```sh
 echo '
@@ -59,18 +59,18 @@ Pin-Priority: -1
 ' | sudo tee /etc/apt/preferences.d/firefox-ubuntu-block
 ```
 
-5. ### Set Firefox for automatic updates
+- Set Firefox for automatic updates
 ```sh
 echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
 ```
 
-6. ### Update
+- Update
 
 ```sh
 sudo apt update
 ```
 
-7. ### Install Firefox DEB
+- Install Firefox DEB
 
 ```sh
 sudo apt install firefox
@@ -84,13 +84,13 @@ sudo apt install ubuntu-restricted-extras
 
 ## Minimize on Click
 
-### Minimize on Click the old style
+- Minimize on Click the old style
 
 ```sh
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ```
 
-### Minimize on Click 22.10 style
+- Minimize on Click 22.10 style
 
 ```sh
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'focus-minimize-or-appspread'
