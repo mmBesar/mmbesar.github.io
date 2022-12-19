@@ -34,6 +34,7 @@ nav:
       - Tutorials/Fedora-37-Post.md
       - Tutorials/HS-Install-Debian-11.md
       - Tutorials/HS-Samba.md
+      - Tutorials/HS-Docker.md
   - About: about.md
 
 theme:
