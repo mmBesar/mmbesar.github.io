@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Virt Manager | تنصيب ويندوز 11 داخل لينكس">
+        <meta name="description" content="Home Server | Docker | نظام الحاويات واستخدامه على السيرفر المنزلي">
       
       
         <meta name="author" content="Mohammed Besar">
@@ -17,7 +17,7 @@
     
     
       
-        <title>Windows 11 in Linux - Mohammed Besar Blog</title>
+        <title>Home Server - Install and Use Docker - Mohammed Besar Blog</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#install_windows_11_in_virt_manager" class="md-skip">
+        <a href="#السيرفر_المنزلي__تنصيب_واستخدام_docker_و_docker_compose" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Windows 11 in Linux
+              Home Server - Install and Use Docker
             
           </span>
         </div>
@@ -552,84 +552,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Windows 11 in Linux
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../VirtManager-Win11/" class="md-nav__link">
         Windows 11 in Linux
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install_windows_11_in_virt_manager" class="md-nav__link">
-    Install Windows 11 in Virt Manager
-  </a>
-  
-    <nav class="md-nav" aria-label="Install Windows 11 in Virt Manager">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
-    Requirements
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#creat_new_vm_with" class="md-nav__link">
-    Creat new VM with
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#boot_the_vm" class="md-nav__link">
-    Boot the VM
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#post_install" class="md-nav__link">
-    Post Install
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -723,11 +650,112 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../HS-Docker/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home Server - Install and Use Docker
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Home Server - Install and Use Docker
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#السيرفر_المنزلي__تنصيب_واستخدام_docker_و_docker_compose" class="md-nav__link">
+    السيرفر المنزلي | تنصيب واستخدام Docker و Docker Compose
+  </a>
+  
+    <nav class="md-nav" aria-label="السيرفر المنزلي | تنصيب واستخدام Docker و Docker Compose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#إعداد_الحزم_والمستودعات" class="md-nav__link">
+    إعداد الحزم والمستودعات
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#تنصيب_docker" class="md-nav__link">
+    تنصيب Docker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إضافة_اسم_المستخدم_الحالي_إلى_مجموعة_docker" class="md-nav__link">
+    إضافة اسم المستخدم الحالي إلى مجموعة Docker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إعداد_مجلدات_docker" class="md-nav__link">
+    إعداد مجلدات Docker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إعداد_مجلدات_الخدمات_للخطوة_التالية" class="md-nav__link">
+    إعداد مجلدات الخدمات للخطوة التالية
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_docker-compose_file" class="md-nav__link">
+    إنشاء docker-compose file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#كيفية_استخدام_أمر_docker_compose" class="md-nav__link">
+    كيفية استخدام أمر Docker Compose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#مراجع" class="md-nav__link">
+    مراجع
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -781,37 +809,65 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install_windows_11_in_virt_manager" class="md-nav__link">
-    Install Windows 11 in Virt Manager
+  <a href="#السيرفر_المنزلي__تنصيب_واستخدام_docker_و_docker_compose" class="md-nav__link">
+    السيرفر المنزلي | تنصيب واستخدام Docker و Docker Compose
   </a>
   
-    <nav class="md-nav" aria-label="Install Windows 11 in Virt Manager">
+    <nav class="md-nav" aria-label="السيرفر المنزلي | تنصيب واستخدام Docker و Docker Compose">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
-    Requirements
+  <a href="#إعداد_الحزم_والمستودعات" class="md-nav__link">
+    إعداد الحزم والمستودعات
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#creat_new_vm_with" class="md-nav__link">
-    Creat new VM with
+  <a href="#تنصيب_docker" class="md-nav__link">
+    تنصيب Docker
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#boot_the_vm" class="md-nav__link">
-    Boot the VM
+  <a href="#إضافة_اسم_المستخدم_الحالي_إلى_مجموعة_docker" class="md-nav__link">
+    إضافة اسم المستخدم الحالي إلى مجموعة Docker
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#post_install" class="md-nav__link">
-    Post Install
+  <a href="#إعداد_مجلدات_docker" class="md-nav__link">
+    إعداد مجلدات Docker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إعداد_مجلدات_الخدمات_للخطوة_التالية" class="md-nav__link">
+    إعداد مجلدات الخدمات للخطوة التالية
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_docker-compose_file" class="md-nav__link">
+    إنشاء docker-compose file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#كيفية_استخدام_أمر_docker_compose" class="md-nav__link">
+    كيفية استخدام أمر Docker Compose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#مراجع" class="md-nav__link">
+    مراجع
   </a>
   
 </li>
@@ -833,9 +889,9 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>Windows 11 in Linux</h1>
+  <h1>Home Server - Install and Use Docker</h1>
   <p>
-    <b>Virt Manager | تنصيب ويندوز 11 داخل لينكس</b>
+    <b>Home Server | Docker | نظام الحاويات واستخدامه على السيرفر المنزلي</b>
   </p>
   <aside class="mdx-author">
   
@@ -906,74 +962,147 @@
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M6.75 0a.75.75 0 0 1 .75.75V3h9V.75a.75.75 0 0 1 1.5 0V3h2.75c.966 0 1.75.784 1.75 1.75v16a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-16C1.5 3.784 2.284 3 3.25 3H6V.75A.75.75 0 0 1 6.75 0zm-3.5 4.5a.25.25 0 0 0-.25.25V8h18V4.75a.25.25 0 0 0-.25-.25H3.25zM21 9.5H3v11.25c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25V9.5z"/></svg>
       </span>
-      October 10, 2022 ·
+      December 19, 2022 ·
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25z"/><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/></svg>
       </span>
       <!--Min reading time is 1 minute-->
       
       
-      1 min read
+      6 min read
     </span>
   </p>
 </aside>
   <hr>
-  <h3 id="install_windows_11_in_virt_manager">Install Windows 11 in Virt Manager<a class="headerlink" href="#install_windows_11_in_virt_manager" title="Permanent link">⚓︎</a></h3>
-<p><div class="video-container"><iframe src="https://www.youtube.com/embed/YDlAlkYQS7U" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
+  <h3 id="السيرفر_المنزلي__تنصيب_واستخدام_docker_و_docker_compose"><div dir="rtl">السيرفر المنزلي | تنصيب واستخدام Docker و Docker Compose</div><a class="headerlink" href="#السيرفر_المنزلي__تنصيب_واستخدام_docker_و_docker_compose" title="Permanent link">⚓︎</a></h3>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/i1uOZXsU96M" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
 <div dir="rtl">
-شرح كيفية تنصيب ويندوز 11 داخل لينكس كجهاز افتراضي، بواسطة تطبيق Virt Manager.
+أسهل طريقة لتوفير عديد من الخِدْمَات على السيرفر المنزلي، هى نظام الحاويات أو الـ Containers، باستخدام Docker أشهر تطبيق لصناعة وإدارة الحاويات.
+</div>
+<div dir="rtl">
+نشرح في الفيديو التقنية وكيفية تنصيها على السيرفر، وأقوى وأسهل أدواتها Docker Compose، وكيفية كتابة المِلَفّ واستخدامه.
 </div>
 
 <p hidden>#more</p>
 
-<h4 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">⚓︎</a></h4>
-<ul>
-<li>Download <a href="https://www.microsoft.com/software-download/windows11">Windows 11 ISO</a></li>
-<li>Download <a href="https://github.com/virtio-win/virtio-win-pkg-scripts">VirtIO WIN ISO</a></li>
-<li>Install <code>swtpm</code> and <code>edk2-ovmf</code> as shown below:</li>
-</ul>
-<p>Fedora</p>
-<div class="highlight"><pre><span></span><code>sudo dnf install swtpm edk2-ovmf
+<h4 id="إعداد_الحزم_والمستودعات"><div dir="rtl">إعداد الحزم والمستودعات</div><a class="headerlink" href="#إعداد_الحزم_والمستودعات" title="Permanent link">⚓︎</a></h4>
+<div dir="rtl">تحديث النظام</div>
+
+<div class="highlight"><pre><span></span><code>sudo apt update
 </code></pre></div>
-<p>Ubuntu</p>
-<div class="highlight"><pre><span></span><code>sudo apt install swtpm ovmf
+<div dir="rtl">تنصيب الحزم اللازمة</div>
+
+<div class="highlight"><pre><span></span><code>sudo apt-get install <span class="se">\</span>
+    ca-certificates <span class="se">\</span>
+    curl <span class="se">\</span>
+    gnupg <span class="se">\</span>
+    lsb-release
 </code></pre></div>
-<p>Arch</p>
-<div class="highlight"><pre><span></span><code>sudo pacman -S swtpm edk2-ovmf
+<div dir="rtl">إضافة مفاتيح المستودعات</div>
+
+<div class="highlight"><pre><span></span><code>sudo mkdir -p /etc/apt/keyrings
 </code></pre></div>
-<h4 id="creat_new_vm_with">Creat new VM with<a class="headerlink" href="#creat_new_vm_with" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>curl -fsSL https://download.docker.com/linux/debian/gpg <span class="p">|</span> sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+</code></pre></div>
+<div dir="rtl">تنصيب المستودعات</div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="se">\</span>
+  <span class="s2">&quot;deb [arch=</span><span class="k">$(</span>dpkg --print-architecture<span class="k">)</span><span class="s2"> signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \</span>
+<span class="s2">  </span><span class="k">$(</span>lsb_release -cs<span class="k">)</span><span class="s2"> stable&quot;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+</code></pre></div>
+<h4 id="تنصيب_docker"><div dir="rtl">تنصيب Docker</div><a class="headerlink" href="#تنصيب_docker" title="Permanent link">⚓︎</a></h4>
+<div dir="rtl">تحديث النظام</div>
+
+<div class="highlight"><pre><span></span><code>sudo apt update
+</code></pre></div>
+<div dir="rtl">تنصيب التطبيقات</div>
+
+<div class="highlight"><pre><span></span><code>sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+</code></pre></div>
+<h4 id="إضافة_اسم_المستخدم_الحالي_إلى_مجموعة_docker"><div dir="rtl">إضافة اسم المستخدم الحالي إلى مجموعة Docker</div><a class="headerlink" href="#إضافة_اسم_المستخدم_الحالي_إلى_مجموعة_docker" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>sudo usermod -aG docker <span class="nv">$USER</span>
+</code></pre></div>
+<h4 id="إعداد_مجلدات_docker"><div dir="rtl">إعداد مجلدات Docker</div><a class="headerlink" href="#إعداد_مجلدات_docker" title="Permanent link">⚓︎</a></h4>
+<div dir="rtl">إنشاء المجلدات</div>
+
+<div class="highlight"><pre><span></span><code>sudo mkdir -p /mnt/srv/<span class="o">{</span>docker/<span class="o">{</span>comp,cont<span class="o">}</span>,data<span class="o">}</span>
+</code></pre></div>
+<div dir="rtl">ضبط الصلاحيات</div>
+
+<div class="highlight"><pre><span></span><code>sudo chown -R <span class="nv">$USER</span>:<span class="nv">$USER</span> /mnt/srv/<span class="o">{</span>docker,data<span class="o">}</span>
+</code></pre></div>
+<h4 id="إعداد_مجلدات_الخدمات_للخطوة_التالية"><div dir="rtl">إعداد مجلدات الخدمات للخطوة التالية</div><a class="headerlink" href="#إعداد_مجلدات_الخدمات_للخطوة_التالية" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>mkdir -p /mnt/srv/docker/cont/<span class="o">{</span>nginx,portainer<span class="o">}</span>
+</code></pre></div>
+<h4 id="إنشاء_docker-compose_file"><div dir="rtl">إنشاء docker-compose file</div><a class="headerlink" href="#إنشاء_docker-compose_file" title="Permanent link">⚓︎</a></h4>
+<div dir="rtl">بالأمر:</div>
+
+<div class="highlight"><pre><span></span><code>nano /mnt/srv/docker/comp/docker-compose.yml
+</code></pre></div>
+<div dir="rtl">وإضافة ما يلي:</div>
+
+<div class="highlight"><span class="filename">docker-compose.yml</span><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.9&quot;</span><span class="w"></span>
+
+<span class="nt">networks</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">hs</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">driver</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bridge</span><span class="w"></span>
+<span class="w">    </span><span class="nt">ipam</span><span class="p">:</span><span class="w"></span>
+<span class="w">     </span><span class="nt">config</span><span class="p">:</span><span class="w"></span>
+<span class="w">       </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">subnet</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">172.14.4.0/24</span><span class="w"></span>
+
+<span class="nt">services</span><span class="p">:</span><span class="w"></span>
+
+<span class="w"> </span><span class="c1"># =====================================</span><span class="w"></span>
+<span class="w">  </span><span class="nt">portainer</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">portainer/portainer-ce</span><span class="w"></span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">portainer</span><span class="w"></span>
+<span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">hs</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--no-analytics</span><span class="w"></span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/run/docker.sock:/var/run/docker.sock</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/mnt/srv/docker/cont/portainer:/data</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/timezone:/etc/timezone:ro</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/localtime:/etc/localtime:ro</span><span class="w"></span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9000:9000</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8000:8000</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9443:9443</span><span class="w"></span>
+<span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">always</span><span class="w"></span>
+<span class="w">  </span><span class="c1"># =====================================</span><span class="w"></span>
+<span class="w">  </span><span class="nt">nginx</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lscr.io/linuxserver/nginx</span><span class="w"></span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nginx</span><span class="w"></span>
+<span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">hs</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PUID=1000</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PGID=1000</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TZ=Africa/Cairo</span><span class="w"></span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/mnt/srv/docker/cont/nginx:/config</span><span class="w"></span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8082:80</span><span class="w"></span>
+<span class="w">      </span><span class="c1">#- 443:443</span><span class="w"></span>
+<span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span><span class="w"></span>
+<span class="w"> </span><span class="c1"># =====================================</span><span class="w"></span>
+</code></pre></div>
+<h4 id="كيفية_استخدام_أمر_docker_compose"><div dir="rtl">كيفية استخدام أمر Docker Compose</div><a class="headerlink" href="#كيفية_استخدام_أمر_docker_compose" title="Permanent link">⚓︎</a></h4>
+<div dir="rtl">تحميل صور الحاويات:</div>
+<div class="highlight"><pre><span></span><code>docker compose -f /mnt/srv/docker/comp/docker-compose.yml pull
+</code></pre></div>
+<div dir="rtl">إنشاء وتشغيل الخدمات:</div>
+<div class="highlight"><pre><span></span><code>docker compose -f /mnt/srv/docker/comp/docker-compose.yml up -d
+</code></pre></div>
+<div dir="rtl">إيقاف الخدمات:</div>
+<div class="highlight"><pre><span></span><code>docker compose -f /mnt/srv/docker/comp/docker-compose.yml stop
+</code></pre></div>
+<h4 id="مراجع"><div dir="rtl">مراجع</div><a class="headerlink" href="#مراجع" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>Create <code>qcow2</code> file (find out <a href="https://www.youtube.com/watch?v=B4ExUl3mnco">how</a>)</li>
-<li>Add Hardware TPM (Emulated - CRB - 2.0)</li>
-<li>Firmware to UEFI x86_64 with secure boot (OVMF_CODE.secboot.fd)</li>
-<li>Set Disk to <code>VirtIO</code></li>
-<li>Add 2<sup>nd</sup> cdrom with <code>virtio-win.iso</code> mounted</li>
-<li>Set network card to <code>VirtIO</code></li>
-<li>Set Display to <code>Spice</code></li>
-<li>Set Video to <code>QXL</code></li>
-</ul>
-<h4 id="boot_the_vm">Boot the VM<a class="headerlink" href="#boot_the_vm" title="Permanent link">⚓︎</a></h4>
-<ul>
-<li>Where do you want to install windows ?<ul>
-<li>Click <code>Load driver</code></li>
-<li>Browse</li>
-<li>VirtIO CDrom</li>
-<li>amd64</li>
-<li>w11</li>
-<li>OK</li>
-<li>Next</li>
-<li>New</li>
-<li>Apply</li>
-<li>OK</li>
-<li>Next</li>
-</ul>
-</li>
-</ul>
-<h4 id="post_install">Post Install<a class="headerlink" href="#post_install" title="Permanent link">⚓︎</a></h4>
-<ul>
-<li>Shutdown the system and add new <code>Channel</code> to the VM with <code>org.qemu.guest_agent.0</code> as a Name and Device Type <code>UNIX socket (unix)</code></li>
-<li>Start the system and Install <code>virtio-win-guest-tools</code> from VirtIO ISO.</li>
-<li>Restart</li>
+<li><a href="https://docs.docker.com/engine/install/debian/">Dokcer on Debian 11</a></li>
+<li><a href="https://github.com/linuxserver/docker-nginx">Nginx Image</a></li>
+<li><a href="https://docs.portainer.io/start/install/server/docker/linux">Portainer Image</a></li>
+<li><a href="https://docs.docker.com/get-started/08_using_compose/">Docker Compose</a></li>
 </ul>
 
               </article>
@@ -990,7 +1119,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../Ubuntu-Update/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Ubuntu Update" rel="prev">
+        <a href="../HS-Samba/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home Server - Install and Configure Samba" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -999,20 +1128,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Ubuntu Update
+              Home Server - Install and Configure Samba
             </div>
           </div>
         </a>
       
       
         
-        <a href="../VirtManager-Win-Share/" class="md-footer__link md-footer__link--next" aria-label="Next: Virt Manager | Share files with Windows" rel="next">
+        <a href="../../about/" class="md-footer__link md-footer__link--next" aria-label="Next: About" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Virt Manager | Share files with Windows
+              About
             </div>
           </div>
           <div class="md-footer__button md-icon">
