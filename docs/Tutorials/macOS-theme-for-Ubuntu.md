@@ -42,7 +42,7 @@ mkdir mac-theme && cd mac-theme
 	```
 	- Install Main Theme
 	```bash
-	./WhiteSur-gtk-theme/install.sh -c dark -c light -i ubuntu -N mojave
+	./WhiteSur-gtk-theme/install.sh -c Dark -c Light -i ubuntu -N mojave
 	```
 	- Install the Theme for Firefox and Dash to Dock
 	```bash
