@@ -7,7 +7,7 @@ date: 2022-12-30
 
 # <div dir="rtl">تنصيب وإعداد Nextcloud على السيرفر المنزلي</div>
 
-![type:video](https://www.youtube.com/embed/00000000000000000)
+![type:video](https://www.youtube.com/embed/x3olp5CDKzw)
 
 <div dir="rtl">
 تنصيب وتشغيل خدمة Nextcloud على السيرفر المنزلي.
