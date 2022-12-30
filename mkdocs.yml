@@ -35,6 +35,7 @@ nav:
       - Tutorials/HS-Install-Debian-11.md
       - Tutorials/HS-Samba.md
       - Tutorials/HS-Docker.md
+      - Tutorials/HS-Nextcloud.md
   - About: about.md
 
 theme:
