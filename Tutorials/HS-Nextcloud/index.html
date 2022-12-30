@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Ubuntu | تحديث أبونتو وكل التطبيقات بكلمة واحدة">
+        <meta name="description" content="Home Server | Nextcloud تنصيب وإعداد">
       
       
         <meta name="author" content="Mohammed Besar">
@@ -17,7 +17,7 @@
     
     
       
-        <title>Ubuntu Update - Mohammed Besar Blog</title>
+        <title>Home Server - Install Nextcloud - Mohammed Besar Blog</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#update_ubuntu" class="md-skip">
+        <a href="#تنصيب_وإعداد_nextcloud_على_السيرفر_المنزلي" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ubuntu Update
+              Home Server - Install Nextcloud
             
           </span>
         </div>
@@ -540,70 +540,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Ubuntu Update
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Ubuntu-Update/" class="md-nav__link">
         Ubuntu Update
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#update_ubuntu" class="md-nav__link">
-    Update Ubuntu
-  </a>
-  
-    <nav class="md-nav" aria-label="Update Ubuntu">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#from_terminal" class="md-nav__link">
-    from Terminal
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add_it_as_an_alias" class="md-nav__link">
-    add it as an alias
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -725,11 +666,84 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../HS-Nextcloud/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home Server - Install Nextcloud
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Home Server - Install Nextcloud
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#تنصيب_وإعداد_nextcloud_على_السيرفر_المنزلي" class="md-nav__link">
+    تنصيب وإعداد Nextcloud على السيرفر المنزلي
+  </a>
+  
+    <nav class="md-nav" aria-label="تنصيب وإعداد Nextcloud على السيرفر المنزلي">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#إعداد_مجلدات_الخدمة" class="md-nav__link">
+    إعداد مجلدات الخدمة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إضافة_الخدمة_إلى_docker-compose_file" class="md-nav__link">
+    إضافة الخدمة إلى docker-compose file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_وتشغيل_الخدمة" class="md-nav__link">
+    إنشاء وتشغيل الخدمة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#مراجع" class="md-nav__link">
+    مراجع
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -783,23 +797,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#update_ubuntu" class="md-nav__link">
-    Update Ubuntu
+  <a href="#تنصيب_وإعداد_nextcloud_على_السيرفر_المنزلي" class="md-nav__link">
+    تنصيب وإعداد Nextcloud على السيرفر المنزلي
   </a>
   
-    <nav class="md-nav" aria-label="Update Ubuntu">
+    <nav class="md-nav" aria-label="تنصيب وإعداد Nextcloud على السيرفر المنزلي">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#from_terminal" class="md-nav__link">
-    from Terminal
+  <a href="#إعداد_مجلدات_الخدمة" class="md-nav__link">
+    إعداد مجلدات الخدمة
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#add_it_as_an_alias" class="md-nav__link">
-    add it as an alias
+  <a href="#إضافة_الخدمة_إلى_docker-compose_file" class="md-nav__link">
+    إضافة الخدمة إلى docker-compose file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_وتشغيل_الخدمة" class="md-nav__link">
+    إنشاء وتشغيل الخدمة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#مراجع" class="md-nav__link">
+    مراجع
   </a>
   
 </li>
@@ -821,9 +849,9 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>Ubuntu Update</h1>
+  <h1>Home Server - Install Nextcloud</h1>
   <p>
-    <b>Ubuntu | تحديث أبونتو وكل التطبيقات بكلمة واحدة</b>
+    <b>Home Server | Nextcloud تنصيب وإعداد</b>
   </p>
   <aside class="mdx-author">
   
@@ -894,35 +922,100 @@
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M6.75 0a.75.75 0 0 1 .75.75V3h9V.75a.75.75 0 0 1 1.5 0V3h2.75c.966 0 1.75.784 1.75 1.75v16a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-16C1.5 3.784 2.284 3 3.25 3H6V.75A.75.75 0 0 1 6.75 0zm-3.5 4.5a.25.25 0 0 0-.25.25V8h18V4.75a.25.25 0 0 0-.25-.25H3.25zM21 9.5H3v11.25c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25V9.5z"/></svg>
       </span>
-      October 07, 2022 ·
+      December 30, 2022 ·
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25z"/><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/></svg>
       </span>
       <!--Min reading time is 1 minute-->
       
       
-        
-      
-      1 min read
+      5 min read
     </span>
   </p>
 </aside>
   <hr>
-  <h3 id="update_ubuntu">Update Ubuntu<a class="headerlink" href="#update_ubuntu" title="Permanent link">⚓︎</a></h3>
-<p><div class="video-container"><iframe src="https://www.youtube.com/embed/iqeKB1fCijs" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
+  <h3 id="تنصيب_وإعداد_nextcloud_على_السيرفر_المنزلي"><div dir="rtl">تنصيب وإعداد Nextcloud على السيرفر المنزلي</div><a class="headerlink" href="#تنصيب_وإعداد_nextcloud_على_السيرفر_المنزلي" title="Permanent link">⚓︎</a></h3>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/00000000000000000" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
 <div dir="rtl">
-تحديث توزيعة أبونتو أو ديبيان، وكل التوزيعات المبنية عليهم بكلمة واحدة فقط من الطرفية. التحديث يشمل كل المستودعات المختلفة.
+تنصيب وتشغيل خدمة Nextcloud على السيرفر المنزلي.
+</div>
+<div dir="rtl">
+تطبيق Nextcloud يقدم لك الكثير من الخِدْمَات السحابية، على السيرفر المنزلي، وبشكل يحفظ لك خصوصيتك.
+</div>
+<div dir="rtl">
+خِدْمَات عدّة، مثل مزامنة ومشاركة الملفات والصور والاحتفاظ بنسخ احتياطية بشكل دائم منها، مزامنة جهات الاتصال والمهام والمواعيد، ومشاركتها مع أفراد الأسرة.
 </div>
 
 <p hidden>#more</p>
 
-<h4 id="from_terminal">from Terminal<a class="headerlink" href="#from_terminal" title="Permanent link">⚓︎</a></h4>
-<div class="highlight"><pre><span></span><code>sudo apt update <span class="o">&amp;&amp;</span> sudo apt upgrade -y <span class="o">&amp;&amp;</span> flatpak update -y <span class="o">&amp;&amp;</span> sudo snap refresh
+<h4 id="إعداد_مجلدات_الخدمة"><div dir="rtl">إعداد مجلدات الخدمة</div><a class="headerlink" href="#إعداد_مجلدات_الخدمة" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>mkdir -p /mnt/srv/docker/cont/nextcloud/<span class="o">{</span>db,html,db-backup<span class="o">}</span> /mnt/srv/data/nc-data
 </code></pre></div>
-<h4 id="add_it_as_an_alias">add it as an alias<a class="headerlink" href="#add_it_as_an_alias" title="Permanent link">⚓︎</a></h4>
-<p>add the below line to <code>.bashrs</code> or <code>.zshrc</code></p>
-<div class="highlight"><pre><span></span><code><span class="nb">alias</span> <span class="nv">update</span><span class="o">=</span><span class="s1">&#39;sudo apt update &amp;&amp; sudo apt upgrade -y &amp;&amp; flatpak update -y &amp;&amp; sudo snap refresh&#39;</span>
+<h4 id="إضافة_الخدمة_إلى_docker-compose_file"><div dir="rtl">إضافة الخدمة إلى docker-compose file</div><a class="headerlink" href="#إضافة_الخدمة_إلى_docker-compose_file" title="Permanent link">⚓︎</a></h4>
+<div dir="rtl">بالأمر:</div>
+
+<div class="highlight"><pre><span></span><code>nano /mnt/srv/docker/comp/docker-compose.yml
 </code></pre></div>
+<div dir="rtl">وإضافة ما يلي:</div>
+
+<div class="highlight"><span class="filename">docker-compose.yml</span><pre><span></span><code><span class="w">  </span><span class="nt">nextcloud</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nextcloud:25</span><span class="w"></span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nextcloud</span><span class="w"></span>
+<span class="w">    </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000:1000</span><span class="w"></span>
+<span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hs</span><span class="w"></span>
+<span class="w">    </span><span class="nt">links</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nextcloud-db</span><span class="w"></span>
+<span class="w">    </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nc.vs-yt.mm</span><span class="w"></span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TZ=Africa/Cairo</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">POSTGRES_DB=nextcloud</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">POSTGRES_USER=nextcloud</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">POSTGRES_PASSWORD=nextcloud</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">POSTGRES_HOST=nextcloud-db</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NEXTCLOUD_TRUSTED_DOMAINS=localhost nextcloud 192.168.100.76:8080 nc.vs-yt.mm *.vs-yt.mm</span><span class="w"></span>
+<span class="w">      </span><span class="c1"># - NEXTCLOUD_ADMIN_USER=mbesar</span><span class="w"></span>
+<span class="w">      </span><span class="c1"># - NEXTCLOUD_ADMIN_PASSWORD=password</span><span class="w"></span>
+<span class="w">      </span><span class="c1"># - NEXTCLOUD_DATA_DIR=/var/www/html/data # if you need to change data folder</span><span class="w"></span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/mnt/srv/docker/cont/nextcloud/html:/var/www/html</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/mnt/srv/data/nc-data:/var/www/html/data</span><span class="w"></span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8080:80</span><span class="w"></span>
+<span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span><span class="w"></span>
+<span class="w"> </span><span class="c1">#--------------------------------------</span><span class="w"></span>
+<span class="w">  </span><span class="nt">nextcloud-db</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres:15</span><span class="w"></span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nextcloud-db</span><span class="w"></span>
+<span class="w">    </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000:1000</span><span class="w"></span>
+<span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hs</span><span class="w"></span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">POSTGRES_USER=nextcloud</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">POSTGRES_PASSWORD=nextcloud</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">POSTGRES_DB=nextcloud</span><span class="w"></span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/mnt/srv/docker/cont/nextcloud/db:/var/lib/postgresql/data</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/mnt/srv/docker/cont/nextcloud/db-backup:/var/lib/postgresql/backup</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/timezone:/etc/timezone:ro</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/localtime:/etc/localtime:ro</span><span class="w"></span>
+<span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span><span class="w"></span>
+</code></pre></div>
+<h4 id="إنشاء_وتشغيل_الخدمة"><div dir="rtl">إنشاء وتشغيل الخدمة</div><a class="headerlink" href="#إنشاء_وتشغيل_الخدمة" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>docker compose -f /mnt/srv/docker/comp/docker-compose.yml up -d
+</code></pre></div>
+<h4 id="مراجع"><div dir="rtl">مراجع</div><a class="headerlink" href="#مراجع" title="Permanent link">⚓︎</a></h4>
+<ul>
+<li><a href="https://nextcloud.com/">Nextcloud الموقع الرسمي</a></li>
+<li><a href="https://hub.docker.com/_/nextcloud">Nextcloud Docker Image</a></li>
+<li><a href="https://hub.docker.com/_/postgres">PostgreSQL Docker Image</a></li>
+<li><a href="https://nextcloud.com/install/">Nextcloud تطبيقات</a></li>
+<li><a href="https://f-droid.org/en/packages/com.nextcloud.client/">Nextcloud التطبيق الأساسي لمزامنة الملفات</a></li>
+<li><a href="https://f-droid.org/en/packages/it.niedermann.owncloud.notes/">Nextcloud تطبيق الملاحظات</a></li>
+<li><a href="https://f-droid.org/en/packages/it.niedermann.nextcloud.deck/">Nextcloud تطبيق كروت المهام</a></li>
+<li><a href="https://f-droid.org/en/packages/at.bitfire.davdroid/">DAVx⁵ لمزامنة جهات الاتصال والمواعيد</a></li>
+<li><a href="https://search.f-droid.org/?q=nextcloud&amp;lang=en">المزيد من التطبيقات</a></li>
+</ul>
 
               </article>
             </div>
@@ -938,7 +1031,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../ZSH/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ZSH" rel="prev">
+        <a href="../HS-Docker/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home Server - Install and Use Docker" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -947,20 +1040,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              ZSH
+              Home Server - Install and Use Docker
             </div>
           </div>
         </a>
       
       
         
-        <a href="../VirtManager-Win11/" class="md-footer__link md-footer__link--next" aria-label="Next: Windows 11 in Linux" rel="next">
+        <a href="../../about/" class="md-footer__link md-footer__link--next" aria-label="Next: About" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Windows 11 in Linux
+              About
             </div>
           </div>
           <div class="md-footer__button md-icon">
