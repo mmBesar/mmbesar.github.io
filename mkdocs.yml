@@ -36,6 +36,7 @@ nav:
       - Tutorials/HS-Samba.md
       - Tutorials/HS-Docker.md
       - Tutorials/HS-Nextcloud.md
+      - Tutorials/HS-Jellyfin.md
   - About: about.md
 
 theme:
