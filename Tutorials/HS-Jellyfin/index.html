@@ -6,29 +6,31 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="عن المدونة والقناة">
+        <meta name="description" content="Home Server | Jellyfin تنصيب وإعداد">
       
       
         <meta name="author" content="Mohammed Besar">
       
       
       
-        <link rel="prev" href="../Tutorials/HS-Jellyfin/">
+        <link rel="prev" href="../HS-Nextcloud/">
       
+      
+        <link rel="next" href="../../about/">
       
       <link rel="icon" href="/assets/logo.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
     
     
       
-        <title>About - Mohammed Besar Blog</title>
+        <title>Home Server - Install Jellyfin - Mohammed Besar Blog</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.558e4712.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
       
       
 
@@ -44,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,6 +76,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#تنصيب_وإعداد_jellyfin_على_السيرفر_المنزلي" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -84,7 +91,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Mohammed Besar Blog" class="md-header__button md-logo" aria-label="Mohammed Besar Blog" data-md-component="logo">
+    <a href="../.." title="Mohammed Besar Blog" class="md-header__button md-logo" aria-label="Mohammed Besar Blog" data-md-component="logo">
       
   <img src="/assets/logo-white.png" alt="logo">
 
@@ -102,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About
+              Home Server - Install Jellyfin
             
           </span>
         </div>
@@ -201,7 +208,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Mohammed Besar Blog" class="md-nav__button md-logo" aria-label="Mohammed Besar Blog" data-md-component="logo">
+    <a href="../.." title="Mohammed Besar Blog" class="md-nav__button md-logo" aria-label="Mohammed Besar Blog" data-md-component="logo">
       
   <img src="/assets/logo-white.png" alt="logo">
 
@@ -231,7 +238,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -244,14 +251,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
         
@@ -309,7 +318,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="true">
           Tutorials
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -327,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/appimages/" class="md-nav__link">
+      <a href="../appimages/" class="md-nav__link">
         Appimages
       </a>
     </li>
@@ -341,7 +350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/Best-Arabic-Font-in-Linux/" class="md-nav__link">
+      <a href="../Best-Arabic-Font-in-Linux/" class="md-nav__link">
         Best Arabic Fonts on Linux
       </a>
     </li>
@@ -355,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/Debian-Post-Install/" class="md-nav__link">
+      <a href="../Debian-Post-Install/" class="md-nav__link">
         Debian 11 Post Install
       </a>
     </li>
@@ -369,7 +378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/elementaryOS6-PostInstall/" class="md-nav__link">
+      <a href="../elementaryOS6-PostInstall/" class="md-nav__link">
         elementary OS 6 Post Install
       </a>
     </li>
@@ -383,7 +392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/Fedora-36-Post/" class="md-nav__link">
+      <a href="../Fedora-36-Post/" class="md-nav__link">
         Fedora 36 Post Install
       </a>
     </li>
@@ -397,7 +406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/gnome-keybindings/" class="md-nav__link">
+      <a href="../gnome-keybindings/" class="md-nav__link">
         GNOME  Keybindings
       </a>
     </li>
@@ -411,7 +420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/macOS-theme-for-Ubuntu/" class="md-nav__link">
+      <a href="../macOS-theme-for-Ubuntu/" class="md-nav__link">
         macOS Theme for Ubuntu
       </a>
     </li>
@@ -425,7 +434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/PopShell-Install/" class="md-nav__link">
+      <a href="../PopShell-Install/" class="md-nav__link">
         Install Pop Shell
       </a>
     </li>
@@ -439,7 +448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/tesseract/" class="md-nav__link">
+      <a href="../tesseract/" class="md-nav__link">
         Tesseract OCR
       </a>
     </li>
@@ -453,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/Ubuntu-22.04-Post/" class="md-nav__link">
+      <a href="../Ubuntu-22.04-Post/" class="md-nav__link">
         Ubuntu 22.04 Post Install
       </a>
     </li>
@@ -467,7 +476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/VirtManager/" class="md-nav__link">
+      <a href="../VirtManager/" class="md-nav__link">
         Virt Manager Install
       </a>
     </li>
@@ -481,7 +490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/VirtManager-Share/" class="md-nav__link">
+      <a href="../VirtManager-Share/" class="md-nav__link">
         Virt Manager - Share with Linux Guest
       </a>
     </li>
@@ -495,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/Waydroid/" class="md-nav__link">
+      <a href="../Waydroid/" class="md-nav__link">
         Waydroid
       </a>
     </li>
@@ -509,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/Xfce-Customized-Debian-11/" class="md-nav__link">
+      <a href="../Xfce-Customized-Debian-11/" class="md-nav__link">
         Xfce Customized
       </a>
     </li>
@@ -523,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/ZSH/" class="md-nav__link">
+      <a href="../ZSH/" class="md-nav__link">
         ZSH
       </a>
     </li>
@@ -537,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/Ubuntu-Update/" class="md-nav__link">
+      <a href="../Ubuntu-Update/" class="md-nav__link">
         Ubuntu Update
       </a>
     </li>
@@ -551,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/VirtManager-Win11/" class="md-nav__link">
+      <a href="../VirtManager-Win11/" class="md-nav__link">
         Windows 11 in Linux
       </a>
     </li>
@@ -565,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/VirtManager-Win-Share/" class="md-nav__link">
+      <a href="../VirtManager-Win-Share/" class="md-nav__link">
         Virt Manager | Share files with Windows
       </a>
     </li>
@@ -579,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/2nd-drive/" class="md-nav__link">
+      <a href="../2nd-drive/" class="md-nav__link">
         2nd Drive on Linux
       </a>
     </li>
@@ -593,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/Ubuntu-22.10-Post/" class="md-nav__link">
+      <a href="../Ubuntu-22.10-Post/" class="md-nav__link">
         Ubuntu 22.10 Post Installation
       </a>
     </li>
@@ -607,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/Fedora-37-Post/" class="md-nav__link">
+      <a href="../Fedora-37-Post/" class="md-nav__link">
         Fedora 37 Post Installation
       </a>
     </li>
@@ -621,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/HS-Install-Debian-11/" class="md-nav__link">
+      <a href="../HS-Install-Debian-11/" class="md-nav__link">
         Home Server - Install Debian 11
       </a>
     </li>
@@ -635,7 +644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/HS-Samba/" class="md-nav__link">
+      <a href="../HS-Samba/" class="md-nav__link">
         Home Server - Install and Configure Samba
       </a>
     </li>
@@ -649,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/HS-Docker/" class="md-nav__link">
+      <a href="../HS-Docker/" class="md-nav__link">
         Home Server - Install and Use Docker
       </a>
     </li>
@@ -663,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tutorials/HS-Nextcloud/" class="md-nav__link">
+      <a href="../HS-Nextcloud/" class="md-nav__link">
         Home Server - Install Nextcloud
       </a>
     </li>
@@ -675,11 +684,84 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Tutorials/HS-Jellyfin/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home Server - Install Jellyfin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Home Server - Install Jellyfin
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#تنصيب_وإعداد_jellyfin_على_السيرفر_المنزلي" class="md-nav__link">
+    تنصيب وإعداد Jellyfin على السيرفر المنزلي
+  </a>
+  
+    <nav class="md-nav" aria-label="تنصيب وإعداد Jellyfin على السيرفر المنزلي">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#إعداد_مجلدات_الخدمة" class="md-nav__link">
+    إعداد مجلدات الخدمة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إضافة_الخدمة_إلى_docker-compose_file" class="md-nav__link">
+    إضافة الخدمة إلى docker-compose file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_وتشغيل_الخدمة" class="md-nav__link">
+    إنشاء وتشغيل الخدمة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#مراجع" class="md-nav__link">
+    مراجع
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -697,19 +779,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
         About
       </a>
-      
     </li>
   
 
@@ -734,6 +808,55 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#تنصيب_وإعداد_jellyfin_على_السيرفر_المنزلي" class="md-nav__link">
+    تنصيب وإعداد Jellyfin على السيرفر المنزلي
+  </a>
+  
+    <nav class="md-nav" aria-label="تنصيب وإعداد Jellyfin على السيرفر المنزلي">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#إعداد_مجلدات_الخدمة" class="md-nav__link">
+    إعداد مجلدات الخدمة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إضافة_الخدمة_إلى_docker-compose_file" class="md-nav__link">
+    إضافة الخدمة إلى docker-compose file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_وتشغيل_الخدمة" class="md-nav__link">
+    إنشاء وتشغيل الخدمة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#مراجع" class="md-nav__link">
+    مراجع
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -744,9 +867,9 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>About</h1>
+  <h1>Home Server - Install Jellyfin</h1>
   <p>
-    <b>عن المدونة والقناة</b>
+    <b>Home Server | Jellyfin تنصيب وإعداد</b>
   </p>
   <aside class="mdx-author">
   
@@ -817,29 +940,75 @@
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.75 0a.75.75 0 0 1 .75.75V3h9V.75a.75.75 0 0 1 1.5 0V3h2.75c.966 0 1.75.784 1.75 1.75v16a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-16C1.5 3.784 2.284 3 3.25 3H6V.75A.75.75 0 0 1 6.75 0ZM21 9.5H3v11.25c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25Zm-17.75-5a.25.25 0 0 0-.25.25V8h18V4.75a.25.25 0 0 0-.25-.25Z"/></svg>
       </span>
-      May 27, 2020 ·
+      January 27, 2022 ·
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/></svg>
       </span>
       <!--Min reading time is 1 minute-->
       
       
-        
-      
-      1 min read
+      2 min read
     </span>
   </p>
 </aside>
   <hr>
-  <div dir="rtl">
-الشغف بعالم لينكس والبرمجيات الحرة مفتوحة المصدر هو المحرك الأساسي للقناة والمدونة.
+  <h3 id="تنصيب_وإعداد_jellyfin_على_السيرفر_المنزلي"><div dir="rtl">تنصيب وإعداد Jellyfin على السيرفر المنزلي</div><a class="headerlink" href="#تنصيب_وإعداد_jellyfin_على_السيرفر_المنزلي" title="Permanent link">⚓︎</a></h3>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/3qgMslcTUlM" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
+<div dir="rtl">
+تنصيب وتشغيل خدمة Jellyfin على السيرفر المنزلي.
+</div>
+<div dir="rtl">
+صناعة منصة وسائط متعددة الاستخدام مثل Netflix، ولكن دون إنترنت، وعلى السيرفر المنزلي.
+</div>
+<div dir="rtl">
+تنصيب وإعداد خدمة Jellyfin على السيرفر المنزلي، وشرح كيفية إضافة ملفات الوسائط المتعددة "الميديا" إلى السيرفر.
+</div>
+<div dir="rtl">
+الخدمة تسمح بمساحة واسعة لتخصيص مكتبات الفيديو والصوت حتى الصور، وتحديد صلاحيات الوصول لكل مستخدم.
 </div>
 
 <p hidden>#more</p>
 
-<div dir="rtl">
-مرحبًا بالجميع، المزيد قريبًا..
-</div>
+<h4 id="إعداد_مجلدات_الخدمة"><div dir="rtl">إعداد مجلدات الخدمة</div><a class="headerlink" href="#إعداد_مجلدات_الخدمة" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>/mnt/srv/docker/cont/jellyfin/config<span class="w"> </span>/mnt/srv/data/media
+</code></pre></div>
+<h4 id="إضافة_الخدمة_إلى_docker-compose_file"><div dir="rtl">إضافة الخدمة إلى docker-compose file</div><a class="headerlink" href="#إضافة_الخدمة_إلى_docker-compose_file" title="Permanent link">⚓︎</a></h4>
+<div dir="rtl">بالأمر:</div>
+
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>/mnt/srv/docker/comp/docker-compose.yml
+</code></pre></div>
+<div dir="rtl">وإضافة ما يلي:</div>
+
+<div class="highlight"><span class="filename">docker-compose.yml</span><pre><span></span><code><span class="w">  </span><span class="nt">jellyfin</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lscr.io/linuxserver/jellyfin</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">jellyfin</span>
+<span class="w">    </span><span class="nt">networks</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hs</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PUID=1000</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PGID=1000</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TZ=Africa/Cairo</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">JELLYFIN_PublishedServerUrl=http://jellyfin.vs-yt.mm</span><span class="w"> </span><span class="c1">#optional</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/mnt/srv/docker/cont/jellyfin/config:/config</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/mnt/srv/data/media:/data/media</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8096:8096</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8920:8920</span><span class="w"> </span><span class="c1">#optional</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7359:7359/udp</span><span class="w"> </span><span class="c1">#optional</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1900:1900/udp</span><span class="w"> </span><span class="c1">#optional</span>
+<span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
+</code></pre></div>
+<h4 id="إنشاء_وتشغيل_الخدمة"><div dir="rtl">إنشاء وتشغيل الخدمة</div><a class="headerlink" href="#إنشاء_وتشغيل_الخدمة" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>/mnt/srv/docker/comp/docker-compose.yml<span class="w"> </span>up<span class="w"> </span>-d
+</code></pre></div>
+<h4 id="مراجع"><div dir="rtl">مراجع</div><a class="headerlink" href="#مراجع" title="Permanent link">⚓︎</a></h4>
+<ul>
+<li><a href="https://jellyfin.org/">Jellyfin الموقع الرسمي</a></li>
+<li><a href="https://hub.docker.com/r/linuxserver/jellyfin">Jellyfin Docker Image</a></li>
+<li><a href="https://jellyfin.org/docs/">Jellyfin دليل استخدام</a></li>
+<li><a href="https://flathub.org/apps/details/org.kde.kid3">Kid3 تطبيق</a></li>
+</ul>
 
               </article>
             </div>
@@ -910,10 +1079,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes"], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.51d95adb.min.js"></script>
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
       
     
   </body>
