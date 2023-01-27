@@ -2,7 +2,7 @@
 template: blog_post.html
 title: Home Server - Install Jellyfin
 description: Home Server | Jellyfin تنصيب وإعداد
-date: 2022-01-27
+date: 2023-01-27
 ---
 
 # <div dir="rtl">تنصيب وإعداد Jellyfin على السيرفر المنزلي</div>
