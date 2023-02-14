@@ -37,6 +37,7 @@ nav:
       - Tutorials/HS-Docker.md
       - Tutorials/HS-Nextcloud.md
       - Tutorials/HS-Jellyfin.md
+      - Tutorials/HS-pyload.md
   - About: about.md
 
 theme:
