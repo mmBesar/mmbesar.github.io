@@ -1,0 +1,1154 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Home Server | pyload | إدارة تحميل الملفات">
+      
+      
+        <meta name="author" content="Mohammed Besar">
+      
+      
+      
+        <link rel="prev" href="../HS-Jellyfin/">
+      
+      
+        <link rel="next" href="../../about/">
+      
+      <link rel="icon" href="/assets/logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
+    
+    
+      
+        <title>Home Server - pyload - Mohammed Besar Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0d440cfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#تطبيق_pyload_لتحميل_ملفات_الانترنت_على_السيرفر_المنزلي" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Mohammed Besar Blog" class="md-header__button md-logo" aria-label="Mohammed Besar Blog" data-md-component="logo">
+      
+  <img src="/assets/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mohammed Besar Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home Server - pyload
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mmBesar/Tutorials" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Mohammed Besar Blog" class="md-nav__button md-logo" aria-label="Mohammed Besar Blog" data-md-component="logo">
+      
+  <img src="/assets/logo-white.png" alt="logo">
+
+    </a>
+    Mohammed Besar Blog
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mmBesar/Tutorials" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appimages/" class="md-nav__link">
+        Appimages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Best-Arabic-Font-in-Linux/" class="md-nav__link">
+        Best Arabic Fonts on Linux
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Debian-Post-Install/" class="md-nav__link">
+        Debian 11 Post Install
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elementaryOS6-PostInstall/" class="md-nav__link">
+        elementary OS 6 Post Install
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fedora-36-Post/" class="md-nav__link">
+        Fedora 36 Post Install
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gnome-keybindings/" class="md-nav__link">
+        GNOME  Keybindings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macOS-theme-for-Ubuntu/" class="md-nav__link">
+        macOS Theme for Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PopShell-Install/" class="md-nav__link">
+        Install Pop Shell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tesseract/" class="md-nav__link">
+        Tesseract OCR
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ubuntu-22.04-Post/" class="md-nav__link">
+        Ubuntu 22.04 Post Install
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VirtManager/" class="md-nav__link">
+        Virt Manager Install
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VirtManager-Share/" class="md-nav__link">
+        Virt Manager - Share with Linux Guest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Waydroid/" class="md-nav__link">
+        Waydroid
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Xfce-Customized-Debian-11/" class="md-nav__link">
+        Xfce Customized
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZSH/" class="md-nav__link">
+        ZSH
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ubuntu-Update/" class="md-nav__link">
+        Ubuntu Update
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VirtManager-Win11/" class="md-nav__link">
+        Windows 11 in Linux
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VirtManager-Win-Share/" class="md-nav__link">
+        Virt Manager | Share files with Windows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2nd-drive/" class="md-nav__link">
+        2nd Drive on Linux
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ubuntu-22.10-Post/" class="md-nav__link">
+        Ubuntu 22.10 Post Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fedora-37-Post/" class="md-nav__link">
+        Fedora 37 Post Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HS-Install-Debian-11/" class="md-nav__link">
+        Home Server - Install Debian 11
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HS-Samba/" class="md-nav__link">
+        Home Server - Install and Configure Samba
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HS-Docker/" class="md-nav__link">
+        Home Server - Install and Use Docker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HS-Nextcloud/" class="md-nav__link">
+        Home Server - Install Nextcloud
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HS-Jellyfin/" class="md-nav__link">
+        Home Server - Install Jellyfin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home Server - pyload
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Home Server - pyload
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#تطبيق_pyload_لتحميل_ملفات_الانترنت_على_السيرفر_المنزلي" class="md-nav__link">
+    تطبيق pyload لتحميل ملفات الانترنت على السيرفر المنزلي
+  </a>
+  
+    <nav class="md-nav" aria-label="تطبيق pyload لتحميل ملفات الانترنت على السيرفر المنزلي">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#إعداد_مجلد_التحميل_الأساسي" class="md-nav__link">
+    إعداد مجلد التحميل الأساسي
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إعداد_مجلدات_الخدمة" class="md-nav__link">
+    إعداد مجلدات الخدمة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إضافة_الخدمة_إلى_docker-compose_file" class="md-nav__link">
+    إضافة الخدمة إلى docker-compose file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_وتشغيل_الخدمة" class="md-nav__link">
+    إنشاء وتشغيل الخدمة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ارسال_روابط_الملفات_من_المتصفح_باستخدام_pyload-bookmarklet" class="md-nav__link">
+    ارسال روابط الملفات من المتصفح باستخدام pyload-bookmarklet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#مراجع" class="md-nav__link">
+    مراجع
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#تطبيق_pyload_لتحميل_ملفات_الانترنت_على_السيرفر_المنزلي" class="md-nav__link">
+    تطبيق pyload لتحميل ملفات الانترنت على السيرفر المنزلي
+  </a>
+  
+    <nav class="md-nav" aria-label="تطبيق pyload لتحميل ملفات الانترنت على السيرفر المنزلي">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#إعداد_مجلد_التحميل_الأساسي" class="md-nav__link">
+    إعداد مجلد التحميل الأساسي
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إعداد_مجلدات_الخدمة" class="md-nav__link">
+    إعداد مجلدات الخدمة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إضافة_الخدمة_إلى_docker-compose_file" class="md-nav__link">
+    إضافة الخدمة إلى docker-compose file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_وتشغيل_الخدمة" class="md-nav__link">
+    إنشاء وتشغيل الخدمة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ارسال_روابط_الملفات_من_المتصفح_باستخدام_pyload-bookmarklet" class="md-nav__link">
+    ارسال روابط الملفات من المتصفح باستخدام pyload-bookmarklet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#مراجع" class="md-nav__link">
+    مراجع
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+  <h1>Home Server - pyload</h1>
+  <p>
+    <b>Home Server | pyload | إدارة تحميل الملفات</b>
+  </p>
+  <aside class="mdx-author">
+  
+    <p>
+      <img alt=Mohammed Besar src=/assets/author.jpg>
+    </p>
+  
+  <p>
+    <span>
+      
+        <strong>Mohammed Besar</strong>
+         ·
+      
+      
+    
+    
+      
+      
+      
+      <a href="https://mastodon.online/@mbesar" target="_blank" rel="noopener" title="Mastodon" class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+      </a>
+      
+    
+      
+      
+      
+         · 
+      
+      <a href="https://twitter.com/mmbesar" target="_blank" rel="noopener" title="Twitter" class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+      
+    
+      
+      
+      
+         · 
+      
+      <a href="https://instagram.com/mmbesar" target="_blank" rel="noopener" title="Instagram" class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+      </a>
+      
+    
+      
+      
+      
+         · 
+      
+      <a href="https://www.facebook.com/Mohammed.Besar.Page" target="_blank" rel="noopener" title="Facebook Page" class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+      </a>
+      
+    
+      
+      
+      
+         · 
+      
+      <a href="https://youtube.com/mmbesar" target="_blank" rel="noopener" title="YouTube Channel" class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+      </a>
+      
+    
+
+    </span>
+    <span>
+      <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.75 0a.75.75 0 0 1 .75.75V3h9V.75a.75.75 0 0 1 1.5 0V3h2.75c.966 0 1.75.784 1.75 1.75v16a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-16C1.5 3.784 2.284 3 3.25 3H6V.75A.75.75 0 0 1 6.75 0ZM21 9.5H3v11.25c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25Zm-17.75-5a.25.25 0 0 0-.25.25V8h18V4.75a.25.25 0 0 0-.25-.25Z"/></svg>
+      </span>
+      February 14, 2023 ·
+      <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/></svg>
+      </span>
+      <!--Min reading time is 1 minute-->
+      
+      
+      40 min read
+    </span>
+  </p>
+</aside>
+  <hr>
+  <h3 id="تطبيق_pyload_لتحميل_ملفات_الانترنت_على_السيرفر_المنزلي"><div dir="rtl">تطبيق pyload لتحميل ملفات الانترنت على السيرفر المنزلي</div><a class="headerlink" href="#تطبيق_pyload_لتحميل_ملفات_الانترنت_على_السيرفر_المنزلي" title="Permanent link">⚓︎</a></h3>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/04tRhBVwatQ" style="position: relative; width: 100%; height: 22.172vw" frameborder="0"allowfullscreen></iframe></div></p>
+<div dir="rtl">
+خدمة تحميل الملفات على السيرفر المنزلي عبر تطبيق pyload، الذي يتميز بأداء ثابت واقتصادي في استهلاك موارد السيرفر.
+</div>
+<div dir="rtl">
+تقوم الخدمة بمتابعة وإدارة تحميل الملفات بشكل منفصل تمامًا عن الكمبيوتر الشخصي، أستخدم الخدمة بشكل أساسي لتحميل الملفات الكبيرة.
+</div>
+<div dir="rtl">
+نشرح في الفيديو الخدمة بداية من التنصيب مرورًا بالضبط وحتى طريقة الاستخدام.
+</div>
+
+<p hidden>#more</p>
+
+<h4 id="إعداد_مجلد_التحميل_الأساسي"><div dir="rtl">إعداد مجلد التحميل الأساسي</div><a class="headerlink" href="#إعداد_مجلد_التحميل_الأساسي" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>mkdir<span class="w"> </span>/mnt/srv/downloads
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>chown<span class="w"> </span><span class="nv">$USER</span>:<span class="nv">$USER</span><span class="w"> </span>/mnt/srv/downloads
+</code></pre></div>
+<h4 id="إعداد_مجلدات_الخدمة"><div dir="rtl">إعداد مجلدات الخدمة</div><a class="headerlink" href="#إعداد_مجلدات_الخدمة" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>/mnt/srv/downloads/pyload<span class="w"> </span>/mnt/srv/docker/cont/pyload
+</code></pre></div>
+<h4 id="إضافة_الخدمة_إلى_docker-compose_file"><div dir="rtl">إضافة الخدمة إلى docker-compose file</div><a class="headerlink" href="#إضافة_الخدمة_إلى_docker-compose_file" title="Permanent link">⚓︎</a></h4>
+<div dir="rtl">بالأمر:</div>
+
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>/mnt/srv/docker/comp/docker-compose.yml
+</code></pre></div>
+<div dir="rtl">وإضافة ما يلي:</div>
+
+<div class="highlight"><span class="filename">docker-compose.yml</span><pre><span></span><code><span class="w"> </span><span class="c1"># =====================================</span>
+<span class="w">  </span><span class="nt">pyload</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lscr.io/linuxserver/pyload-ng:latest</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pyload</span>
+<span class="w">    </span><span class="nt">networks</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hs</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PUID=1000</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PGID=1000</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TZ=Africa/Cairo</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/mnt/srv/docker/cont/pyload:/config</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/mnt/srv/downloads/pyload:/downloads</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8001:8000</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9666:9666</span><span class="w"> </span><span class="c1">#optional</span>
+<span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
+</code></pre></div>
+<h4 id="إنشاء_وتشغيل_الخدمة"><div dir="rtl">إنشاء وتشغيل الخدمة</div><a class="headerlink" href="#إنشاء_وتشغيل_الخدمة" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>/mnt/srv/docker/comp/docker-compose.yml<span class="w"> </span>up<span class="w"> </span>-d
+</code></pre></div>
+<h4 id="ارسال_روابط_الملفات_من_المتصفح_باستخدام_pyload-bookmarklet"><div dir="rtl">ارسال روابط الملفات من المتصفح باستخدام pyload-bookmarklet</div><a class="headerlink" href="#ارسال_روابط_الملفات_من_المتصفح_باستخدام_pyload-bookmarklet" title="Permanent link">⚓︎</a></h4>
+<div dir="rtl">إضافة رابط مرجعي جديد بالمحتوى التالي:</div>
+
+<div class="admonition danger">
+<p class="admonition-title">بياناتك</p>
+<p><div dir="rtl">تأكد من تعديل رابط الخدمة واسم المستخدم وكلمة المرور في نهاية النص</div></p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="nx">javascript</span><span class="o">:</span><span class="s2">&quot;use strict&quot;</span><span class="p">;(</span><span class="kd">function</span><span class="p">(</span><span class="nx">A</span><span class="p">,</span><span class="nx">B</span><span class="p">,</span><span class="nx">C</span><span class="p">,</span><span class="nx">u</span><span class="p">){</span><span class="kd">function</span><span class="w"> </span><span class="nx">D</span><span class="p">(){</span><span class="k">for</span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">c</span><span class="o">=</span><span class="p">[],</span><span class="nx">d</span><span class="o">=</span><span class="p">{},</span><span class="nx">b</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">b</span><span class="o">&lt;</span><span class="nx">m</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">links</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">b</span><span class="o">++</span><span class="p">){</span><span class="kd">var</span><span class="w"> </span><span class="nx">a</span><span class="o">=</span><span class="nx">m</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">links</span><span class="p">[</span><span class="nx">b</span><span class="p">];</span><span class="nx">a</span><span class="p">.</span><span class="nx">href</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^(?:mailto:|javascript:|data:)/</span><span class="p">)</span><span class="o">||</span><span class="nx">d</span><span class="p">[</span><span class="nx">a</span><span class="p">.</span><span class="nx">href</span><span class="p">]</span><span class="o">||</span><span class="p">(</span><span class="nx">d</span><span class="p">[</span><span class="nx">a</span><span class="p">.</span><span class="nx">href</span><span class="p">]</span><span class="o">=!</span><span class="mf">0</span><span class="p">,</span><span class="nx">c</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="nx">href</span><span class="o">:</span><span class="nx">a</span><span class="p">.</span><span class="nx">href</span><span class="p">,</span><span class="nx">name</span><span class="o">:</span><span class="nx">a</span><span class="p">.</span><span class="nx">text</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/(&lt;([^&gt;]+)&gt;)/ig</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">).</span><span class="nx">trim</span><span class="p">()}))}</span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">}</span><span class="kd">function</span><span class="w"> </span><span class="nx">x</span><span class="p">(){</span><span class="kd">var</span><span class="w"> </span><span class="nx">c</span><span class="o">=</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;searchInput&quot;</span><span class="p">).</span><span class="nx">value</span><span class="p">;</span><span class="k">if</span><span class="p">(</span><span class="nx">c</span><span class="p">)</span><span class="kd">var</span><span class="w"> </span><span class="nx">d</span><span class="o">=</span><span class="s2">&quot;&lt;h4&gt;Filtered links: &amp;quot;&quot;</span><span class="o">+</span><span class="nx">c</span><span class="o">+</span><span class="s2">&quot;&amp;quot;&lt;/h4&gt;&quot;</span><span class="p">;</span><span class="k">else</span><span class="w"> </span><span class="nx">c</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="nx">d</span><span class="o">=</span><span class="s2">&quot;&lt;h4&gt;Links:&lt;/h4&gt;&quot;</span><span class="p">;</span><span class="nx">c</span><span class="o">=</span><span class="nx">c</span><span class="p">.</span><span class="nx">toLocaleLowerCase</span><span class="p">();</span><span class="nx">d</span><span class="o">+=</span><span class="s1">&#39;&lt;div id=&quot;container&quot; class=&quot;form-group form-check&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkall&quot; class=&quot;form-check-input&quot;&gt;&lt;label for=&quot;checkall&quot;&gt;All&lt;/label&gt;&lt;div class=&quot;form-check&quot;&gt;&#39;</span><span class="p">;</span><span class="k">for</span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">b</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">b</span><span class="o">&lt;</span><span class="nx">k</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">b</span><span class="o">++</span><span class="p">)</span><span class="k">if</span><span class="p">(</span><span class="o">-</span><span class="mf">1</span><span class="o">!==</span><span class="nx">k</span><span class="p">[</span><span class="nx">b</span><span class="p">].</span><span class="nx">href</span><span class="p">.</span><span class="nx">toLocaleLowerCase</span><span class="p">().</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">c</span><span class="p">)</span><span class="o">||-</span><span class="mf">1</span><span class="o">!==</span><span class="nx">k</span><span class="p">[</span><span class="nx">b</span><span class="p">].</span><span class="nx">name</span><span class="p">.</span><span class="nx">toLocaleLowerCase</span><span class="p">().</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">c</span><span class="p">))</span><span class="nx">d</span><span class="o">+=</span><span class="s1">&#39;&lt;div class=&quot;form-check&quot;&gt;&lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot;&#39;</span><span class="o">+</span><span class="p">(</span><span class="nx">n</span><span class="p">[</span><span class="nx">b</span><span class="p">]</span><span class="o">?</span><span class="s2">&quot; checked&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; id=&quot;link&#39;</span><span class="o">+</span><span class="nx">b</span><span class="o">+</span><span class="s1">&#39;&quot;&gt;&lt;label class=&quot;form-check-label small&quot; for=&quot;link&#39;</span><span class="o">+</span><span class="nx">b</span><span class="o">+</span><span class="s1">&#39;&quot;&gt;&#39;</span><span class="o">+</span><span class="p">(</span><span class="nx">k</span><span class="p">[</span><span class="nx">b</span><span class="p">].</span><span class="nx">name</span><span class="o">?</span><span class="s1">&#39;&lt;span class=&quot;badge badge-warning&quot;&gt;&#39;</span><span class="o">+</span><span class="nx">k</span><span class="p">[</span><span class="nx">b</span><span class="p">].</span><span class="nx">name</span><span class="o">+</span><span class="s2">&quot;&lt;/span&gt;&amp;nbsp;&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;&lt;a href=&quot;&#39;</span><span class="o">+</span><span class="nx">k</span><span class="p">[</span><span class="nx">b</span><span class="p">].</span><span class="nx">href</span><span class="o">+</span><span class="s1">&#39;&quot;&gt;&#39;</span><span class="o">+</span><span class="nx">k</span><span class="p">[</span><span class="nx">b</span><span class="p">].</span><span class="nx">href</span><span class="o">+</span><span class="s2">&quot;&lt;/a&gt;&lt;/label&gt;&lt;/div&gt;&quot;</span><span class="p">;</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;divLinks&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="o">=</span><span class="nx">d</span><span class="o">+</span><span class="s2">&quot;&lt;/div&gt;&lt;/div&gt;&quot;</span><span class="p">}</span><span class="kd">function</span><span class="w"> </span><span class="nx">v</span><span class="p">(</span><span class="nx">c</span><span class="p">,</span><span class="nx">d</span><span class="p">){</span><span class="kd">var</span><span class="w"> </span><span class="nx">b</span><span class="o">=</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;link&quot;</span><span class="o">+</span><span class="nx">c</span><span class="p">);</span><span class="nx">b</span><span class="o">&amp;&amp;</span><span class="p">(</span><span class="nx">b</span><span class="p">.</span><span class="nx">checked</span><span class="o">=</span><span class="nx">d</span><span class="p">);</span><span class="nx">p</span><span class="o">+=</span><span class="p">(</span><span class="nx">n</span><span class="p">[</span><span class="nx">c</span><span class="p">]</span><span class="o">===</span><span class="nx">d</span><span class="o">?</span><span class="mf">0</span><span class="o">:</span><span class="mf">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="nx">d</span><span class="o">?</span><span class="mf">1</span><span class="o">:-</span><span class="mf">1</span><span class="p">);</span><span class="nx">n</span><span class="p">[</span><span class="nx">c</span><span class="p">]</span><span class="o">=</span><span class="nx">d</span><span class="p">;</span><span class="nx">b</span><span class="o">=</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;checkall&quot;</span><span class="p">);</span><span class="nx">b</span><span class="p">.</span><span class="nx">checked</span><span class="o">=</span><span class="mf">0</span><span class="o">&lt;</span><span class="nx">p</span><span class="p">;</span><span class="nx">b</span><span class="p">.</span><span class="nx">indeterminate</span><span class="o">=</span><span class="mf">0</span><span class="o">&lt;</span><span class="nx">p</span><span class="o">&amp;&amp;</span><span class="nx">p</span><span class="o">&lt;</span><span class="nx">n</span><span class="p">.</span><span class="nx">length</span><span class="p">}</span><span class="kd">function</span><span class="w"> </span><span class="nx">w</span><span class="p">(){</span><span class="kd">var</span><span class="w"> </span><span class="nx">c</span><span class="o">=</span><span class="mf">0</span><span class="o">===</span><span class="nx">p</span><span class="o">&amp;&amp;!</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;checkurl&quot;</span><span class="p">).</span><span class="nx">checked</span><span class="p">;</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;toClipboard&quot;</span><span class="p">).</span><span class="nx">disabled</span><span class="o">=</span><span class="nx">c</span><span class="p">;</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;toPyload&quot;</span><span class="p">).</span><span class="nx">disabled</span><span class="o">=</span><span class="nx">c</span><span class="o">||</span><span class="mf">0</span><span class="o">===</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;packagename&quot;</span><span class="p">).</span><span class="nx">value</span><span class="p">.</span><span class="nx">length</span><span class="p">}</span><span class="kd">function</span><span class="w"> </span><span class="nx">E</span><span class="p">(){</span><span class="kd">var</span><span class="w"> </span><span class="nx">c</span><span class="o">=</span><span class="p">[],</span><span class="nx">d</span><span class="o">=</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;packagename&quot;</span><span class="p">).</span><span class="nx">value</span><span class="p">,</span><span class="nx">b</span><span class="o">=</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;serveraddr&quot;</span><span class="p">).</span><span class="nx">value</span><span class="p">;</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;checkurl&quot;</span><span class="p">).</span><span class="nx">checked</span><span class="o">&amp;&amp;</span><span class="nx">c</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">r</span><span class="p">);</span><span class="k">for</span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">a</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">a</span><span class="o">&lt;</span><span class="nx">n</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">a</span><span class="o">++</span><span class="p">)</span><span class="nx">n</span><span class="p">[</span><span class="nx">a</span><span class="p">]</span><span class="o">&amp;&amp;</span><span class="nx">c</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">k</span><span class="p">[</span><span class="nx">a</span><span class="p">].</span><span class="nx">href</span><span class="p">);</span><span class="k">if</span><span class="p">(</span><span class="mf">1</span><span class="o">===</span><span class="nx">u</span><span class="p">)</span><span class="kd">var</span><span class="w"> </span><span class="nx">f</span><span class="o">=</span><span class="nx">y</span><span class="p">(</span><span class="nx">b</span><span class="o">+</span><span class="s2">&quot;/flash/add&quot;</span><span class="p">,{</span><span class="nx">name</span><span class="o">:</span><span class="nx">d</span><span class="p">,</span><span class="nx">urls</span><span class="o">:</span><span class="nx">c</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot;\n&quot;</span><span class="p">)});</span><span class="k">else</span><span class="w"> </span><span class="mf">2</span><span class="o">===</span><span class="nx">u</span><span class="o">?</span><span class="nx">f</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">b</span><span class="o">+</span><span class="s1">&#39;/api/addPackage?name=&quot;&#39;</span><span class="o">+</span><span class="nx">d</span><span class="o">+</span><span class="s1">&#39;&quot;&amp;links=&#39;</span><span class="o">+</span><span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">c</span><span class="p">)),</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;resizable=no, location=no, width=100, height=100, menubar=no, status=no, scrollbars=no, menubar=no&quot;</span><span class="p">)</span><span class="o">:</span><span class="mf">3</span><span class="o">===</span><span class="nx">u</span><span class="o">&amp;&amp;</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">c</span><span class="p">),</span><span class="nx">f</span><span class="o">=</span><span class="nx">y</span><span class="p">(</span><span class="nx">b</span><span class="o">+</span><span class="s2">&quot;/api/addPackage&quot;</span><span class="p">,{</span><span class="nx">name</span><span class="o">:</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">d</span><span class="p">),</span><span class="nx">links</span><span class="o">:</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">c</span><span class="p">),</span><span class="nx">a</span><span class="o">:</span><span class="nx">B</span><span class="p">,</span><span class="nx">p</span><span class="o">:</span><span class="nx">C</span><span class="p">}));</span><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nx">f</span><span class="p">.</span><span class="nx">close</span><span class="p">()},</span><span class="mf">1E3</span><span class="p">);</span><span class="nx">e</span><span class="p">.</span><span class="nx">close</span><span class="p">()}</span><span class="kd">function</span><span class="w"> </span><span class="nx">y</span><span class="p">(</span><span class="nx">c</span><span class="p">,</span><span class="nx">d</span><span class="p">){</span><span class="kd">var</span><span class="w"> </span><span class="nx">b</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;form&quot;</span><span class="p">);</span><span class="nx">b</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span><span class="o">=</span><span class="s2">&quot;none&quot;</span><span class="p">;</span><span class="nx">b</span><span class="p">.</span><span class="nx">target</span><span class="o">=</span><span class="s2">&quot;_Pyload&quot;</span><span class="p">;</span><span class="nx">b</span><span class="p">.</span><span class="nx">method</span><span class="o">=</span><span class="s2">&quot;POST&quot;</span><span class="p">;</span><span class="nx">b</span><span class="p">.</span><span class="nx">action</span><span class="o">=</span><span class="nx">c</span><span class="p">;</span><span class="k">for</span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nx">d</span><span class="p">)</span><span class="k">if</span><span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="nx">a</span><span class="p">)){</span><span class="kd">var</span><span class="w"> </span><span class="nx">f</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">);</span><span class="nx">f</span><span class="p">.</span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">;</span><span class="nx">f</span><span class="p">.</span><span class="nx">name</span><span class="o">=</span><span class="nx">a</span><span class="p">;</span><span class="nx">f</span><span class="p">.</span><span class="nx">value</span><span class="o">=</span><span class="nx">d</span><span class="p">[</span><span class="nx">a</span><span class="p">];</span><span class="nx">b</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">f</span><span class="p">)}</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span><span class="nx">f</span><span class="o">=</span><span class="nx">e</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;_Pyload&quot;</span><span class="p">,</span><span class="s2">&quot;resizable=no, location=no, width=100, height=100, menubar=no, status=no, scrollbars=no, menubar=no&quot;</span><span class="p">);</span><span class="nx">b</span><span class="p">.</span><span class="nx">submit</span><span class="p">();</span><span class="k">return</span><span class="w"> </span><span class="nx">f</span><span class="p">}</span><span class="kd">var</span><span class="w"> </span><span class="nx">m</span><span class="o">=</span><span class="nb">window</span><span class="p">;</span><span class="kd">var</span><span class="w"> </span><span class="nx">e</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;_blank&quot;</span><span class="p">,</span><span class="s2">&quot;width=&quot;</span><span class="o">+</span><span class="nx">screen</span><span class="p">.</span><span class="nx">availWidth</span><span class="o">+</span><span class="s2">&quot;,height=&quot;</span><span class="o">+</span><span class="nx">screen</span><span class="p">.</span><span class="nx">availHeight</span><span class="o">+</span><span class="s2">&quot;,scrollbars,resizable,menubar&quot;</span><span class="p">);</span><span class="nx">e</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">);</span><span class="kd">var</span><span class="w"> </span><span class="nx">k</span><span class="o">=</span><span class="kd">function</span><span class="p">(){</span><span class="kd">var</span><span class="w"> </span><span class="nx">c</span><span class="o">=</span><span class="p">[],</span><span class="nx">d</span><span class="o">=</span><span class="p">{},</span><span class="nx">b</span><span class="o">=</span><span class="p">(</span><span class="nx">m</span><span class="p">.</span><span class="nx">getSelection</span><span class="o">?</span><span class="nx">m</span><span class="p">.</span><span class="nx">getSelection</span><span class="p">()</span><span class="o">:</span><span class="nx">m</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getSelection</span><span class="o">?</span><span class="nx">m</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getSelection</span><span class="p">()</span><span class="o">:</span><span class="nx">m</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">selection</span><span class="o">?</span><span class="nx">m</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">selection</span><span class="p">.</span><span class="nx">createRange</span><span class="p">().</span><span class="nx">text</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">).</span><span class="nx">toString</span><span class="p">();</span><span class="k">if</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">!==</span><span class="nx">b</span><span class="p">){</span><span class="nx">b</span><span class="o">=</span><span class="nx">b</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/(?:ht|f)tp(?:s?):\/\/[a-zA-Z0-9-./?=_&amp;%#:]+(?:[&lt;%20&quot;&#39;\r\n\t]|$)/ig</span><span class="p">)</span><span class="o">||</span><span class="p">[];</span><span class="k">for</span><span class="p">(</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">a</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">a</span><span class="o">&lt;</span><span class="nx">b</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">a</span><span class="o">++</span><span class="p">){</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">f</span><span class="o">=</span><span class="nx">b</span><span class="p">[</span><span class="nx">a</span><span class="p">].</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/[&lt;%20&quot;&#39;\r\n\t]/g</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">);</span><span class="nx">d</span><span class="p">[</span><span class="nx">f</span><span class="p">]</span><span class="o">||</span><span class="p">(</span><span class="nx">d</span><span class="p">[</span><span class="nx">f</span><span class="p">]</span><span class="o">=!</span><span class="mf">0</span><span class="p">,</span><span class="nx">c</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="nx">href</span><span class="o">:</span><span class="nx">f</span><span class="p">,</span><span class="nx">name</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">}))}}</span><span class="k">return</span><span class="o">%</span><span class="mf">20</span><span class="nx">c</span><span class="p">}();</span><span class="nx">k</span><span class="p">.</span><span class="nx">length</span><span class="o">||</span><span class="p">(</span><span class="nx">k</span><span class="o">=</span><span class="nx">D</span><span class="p">());</span><span class="kd">var</span><span class="o">%</span><span class="mi">20n</span><span class="o">=</span><span class="nb">Array</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span><span class="nb">Array</span><span class="p">(</span><span class="nx">k</span><span class="p">.</span><span class="nx">length</span><span class="p">)).</span><span class="nx">map</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">valueOf</span><span class="p">,</span><span class="o">!</span><span class="mf">1</span><span class="p">);</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">p</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">F</span><span class="o">=</span><span class="kd">function</span><span class="p">(){</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">c</span><span class="o">=</span><span class="p">[],</span><span class="nx">d</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">);</span><span class="nx">k</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">b</span><span class="p">){</span><span class="nx">d</span><span class="p">.</span><span class="nx">href</span><span class="o">=</span><span class="nx">b</span><span class="p">.</span><span class="nx">href</span><span class="p">;</span><span class="nx">b</span><span class="o">=</span><span class="nx">d</span><span class="p">.</span><span class="nx">hostname</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/[^.]+\.(?:\w{3,}|\w{2,3}\.\w{2})$/</span><span class="p">);</span><span class="kc">null</span><span class="o">!==</span><span class="nx">b</span><span class="o">&amp;&amp;</span><span class="mf">0</span><span class="o">&gt;</span><span class="nx">c</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">b</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">toLowerCase</span><span class="p">())</span><span class="o">&amp;&amp;</span><span class="nx">c</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">b</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">toLowerCase</span><span class="p">())});</span><span class="k">return</span><span class="o">%</span><span class="mf">20</span><span class="nx">c</span><span class="p">}();</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">r</span><span class="o">=</span><span class="nx">m</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">URL</span><span class="p">;(</span><span class="kd">function</span><span class="p">(){</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">c</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;link&quot;</span><span class="p">);</span><span class="nx">c</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;href&quot;</span><span class="p">,</span><span class="s2">&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot;</span><span class="p">);</span><span class="nx">c</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;rel&quot;</span><span class="p">,</span><span class="s2">&quot;stylesheet&quot;</span><span class="p">);</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">head</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">c</span><span class="p">);</span><span class="nx">c</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">);</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">d</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">);</span><span class="nx">d</span><span class="p">.</span><span class="nx">innerHTML</span><span class="o">=</span><span class="s2">&quot;&lt;h4&gt;Package%20Name:&lt;/h4&gt;&quot;</span><span class="p">;</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">b</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">);</span><span class="nx">b</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">,</span><span class="s2">&quot;input-group&quot;</span><span class="p">);</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">a</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;packagename&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;type&quot;</span><span class="p">,</span><span class="s2">&quot;text&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;size&quot;</span><span class="p">,</span><span class="s2">&quot;70&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">,</span><span class="s2">&quot;form-control%20form-control-sm&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="nx">m</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">title</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;placeholder&quot;</span><span class="p">,</span><span class="s2">&quot;Package%20Name&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">oninput</span><span class="o">=</span><span class="kd">function</span><span class="p">(){</span><span class="nx">w</span><span class="p">()};</span><span class="nx">b</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">f</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">);</span><span class="nx">f</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">,</span><span class="s2">&quot;input-group-append&quot;</span><span class="p">);</span><span class="nx">a</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;button&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;toPyload&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;disabled&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">,</span><span class="s2">&quot;btn%20btn-primary%20btn-sm&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;style&quot;</span><span class="p">,</span><span class="s2">&quot;margin-left:%205px;%20border-radius:%20.25rem;&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">innerHTML</span><span class="o">=</span><span class="s2">&quot;Send%20to%20pyLoad&quot;</span><span class="p">;</span><span class="nx">a</span><span class="p">.</span><span class="nx">onclick</span><span class="o">=</span><span class="kd">function</span><span class="p">(){</span><span class="nx">E</span><span class="p">()};</span><span class="nx">f</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span><span class="nx">a</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;button&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;toClipboard&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;disabled&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">,</span><span class="s2">&quot;btn%20btn-secondary%20btn-sm&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;style&quot;</span><span class="p">,</span><span class="s2">&quot;margin-left:%205px;%20border-radius:%20.25rem;&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">innerHTML</span><span class="o">=</span><span class="s2">&quot;&amp;#128203;&quot;</span><span class="p">;</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;title&quot;</span><span class="p">,</span><span class="s2">&quot;Copy%20links%20to%20clipboard&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">onclick</span><span class="o">=</span><span class="kd">function</span><span class="p">(){</span><span class="k">for</span><span class="p">(</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">h</span><span class="o">=</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;checkurl&quot;</span><span class="p">).</span><span class="nx">checked</span><span class="o">?</span><span class="p">[</span><span class="nx">r</span><span class="p">]</span><span class="o">:</span><span class="p">[],</span><span class="nx">g</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">g</span><span class="o">&lt;</span><span class="nx">n</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">g</span><span class="o">++</span><span class="p">)</span><span class="nx">n</span><span class="p">[</span><span class="nx">g</span><span class="p">]</span><span class="o">&amp;&amp;</span><span class="nx">h</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">k</span><span class="p">[</span><span class="nx">g</span><span class="p">].</span><span class="nx">href</span><span class="p">);</span><span class="nx">g</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;textarea&quot;</span><span class="p">);</span><span class="nx">g</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">fontSize</span><span class="o">=</span><span class="s2">&quot;12pt&quot;</span><span class="p">;</span><span class="nx">g</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">border</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="p">;</span><span class="nx">g</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">padding</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="p">;</span><span class="nx">g</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">margin</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="p">;</span><span class="nx">g</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">position</span><span class="o">=</span><span class="s2">&quot;absolute&quot;</span><span class="p">;</span><span class="nx">g</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">left</span><span class="o">=</span><span class="s2">&quot;-9999px&quot;</span><span class="p">;</span><span class="nx">g</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">top</span><span class="o">=</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">pageYOffset</span><span class="o">||</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">scrollTop</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;px&quot;</span><span class="p">;</span><span class="nx">g</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;readonly&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">);</span><span class="nx">g</span><span class="p">.</span><span class="nx">value</span><span class="o">=</span><span class="nx">h</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot;\n&quot;</span><span class="p">);</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">g</span><span class="p">);</span><span class="nx">g</span><span class="p">.</span><span class="nx">select</span><span class="p">();</span><span class="k">try</span><span class="p">{</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">q</span><span class="o">=</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">execCommand</span><span class="p">(</span><span class="s2">&quot;copy&quot;</span><span class="p">);</span><span class="nx">e</span><span class="p">.</span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Copy%20&quot;</span><span class="o">+</span><span class="p">(</span><span class="nx">q</span><span class="o">?</span><span class="s2">&quot;successful&quot;</span><span class="o">:</span><span class="s2">&quot;unsuccessful&quot;</span><span class="p">))}</span><span class="k">catch</span><span class="p">(</span><span class="nx">t</span><span class="p">){</span><span class="nx">e</span><span class="p">.</span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Oops,%20unable%20to%20copy&quot;</span><span class="o">+</span><span class="nx">t</span><span class="p">)}</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">g</span><span class="p">)};</span><span class="nx">f</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span><span class="nx">a</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;button&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;configtoggle&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">,</span><span class="s2">&quot;btn%20btn-secondary%20btn-sm&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;style&quot;</span><span class="p">,</span><span class="s2">&quot;margin-left:%205px;%20border-radius:%20.25rem;&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">innerHTML</span><span class="o">=</span><span class="s2">&quot;&amp;#9881;&quot;</span><span class="p">;</span><span class="nx">a</span><span class="p">.</span><span class="nx">onclick</span><span class="o">=</span><span class="kd">function</span><span class="p">(){</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">h</span><span class="o">=</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;config&quot;</span><span class="p">);</span><span class="nx">h</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span><span class="o">=</span><span class="s2">&quot;block&quot;</span><span class="o">===</span><span class="nx">h</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span><span class="o">?</span><span class="s2">&quot;none&quot;</span><span class="o">:</span><span class="s2">&quot;block&quot;</span><span class="p">};</span><span class="nx">f</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span><span class="nx">b</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">f</span><span class="p">);</span><span class="nx">d</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span><span class="nx">c</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">d</span><span class="p">);</span><span class="nx">a</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;fieldset&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;config&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span><span class="o">=</span><span class="s2">&quot;none&quot;</span><span class="p">;</span><span class="nx">d</span><span class="o">=</span><span class="p">(</span><span class="nx">d</span><span class="o">=</span><span class="s2">&quot;undefined&quot;</span><span class="o">!==</span><span class="ow">typeof</span><span class="o">%</span><span class="mf">20</span><span class="nx">e</span><span class="p">.</span><span class="nx">Storage</span><span class="o">?</span><span class="nx">e</span><span class="p">.</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s2">&quot;pyloadServer&quot;</span><span class="p">)</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">||</span><span class="nx">A</span><span class="p">;</span><span class="nx">a</span><span class="p">.</span><span class="nx">innerHTML</span><span class="o">=</span><span class="s2">&quot;&lt;h5&gt;Configuration&lt;/h5&gt;&lt;label%20for=&#39;serveraddr&#39;&gt;pyLoad&#39;s%20address:&lt;/label&gt;&lt;div%20class=&#39;input-group&#39;&gt;&lt;input%20type=&#39;text&#39;%20class=&#39;form-control%20form-control-sm&#39;%20id=&#39;serveraddr&#39;%20placeholder=&#39;scheme://address:port&#39;%20value=&#39;&quot;</span><span class="o">+</span><span class="nx">d</span><span class="o">+</span><span class="s2">&quot;&#39;%20/&gt;&lt;div%20class=&#39;input-group-append&#39;&gt;&lt;button%20id=&#39;save-config&#39;%20class=&#39;btn%20btn-danger%20btn-sm&#39;&gt;Save&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&quot;</span><span class="p">;</span><span class="nx">a</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#save-config&quot;</span><span class="p">).</span><span class="nx">onclick</span><span class="o">=</span><span class="kd">function</span><span class="p">(){</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">h</span><span class="o">=</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;serveraddr&quot;</span><span class="p">).</span><span class="nx">value</span><span class="p">;</span><span class="mf">0</span><span class="o">&lt;</span><span class="nx">h</span><span class="p">.</span><span class="nx">length</span><span class="o">&amp;&amp;</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s2">&quot;pyloadServer&quot;</span><span class="p">,</span><span class="nx">h</span><span class="p">),</span><span class="nx">e</span><span class="p">.</span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Saved%20for%20domain%20&quot;&#39;</span><span class="o">+</span><span class="nb">window</span><span class="p">.</span><span class="nx">top</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">hostname</span><span class="o">+</span><span class="s1">&#39;&quot;&#39;</span><span class="p">))};</span><span class="nx">c</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span><span class="nx">d</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">);</span><span class="nx">d</span><span class="p">.</span><span class="nx">innerHTML</span><span class="o">=</span><span class="s1">&#39;&lt;hr%20style=&quot;color:lightgrey;&quot;&gt;&lt;h4&gt;Page%20URL:&lt;/h4&gt;&lt;div%20class=&quot;form-group%20form-check%20text-nowrap&quot;&gt;&lt;input%20type=&quot;checkbox&quot;%20class=&quot;form-check-input&quot;%20id=&quot;checkurl&quot;&gt;&lt;label%20for=&quot;checkurl&quot;&gt;&lt;a%20href=&quot;&#39;</span><span class="o">+</span><span class="nx">r</span><span class="o">+</span><span class="s1">&#39;&quot;&gt;&#39;</span><span class="o">+</span><span class="nx">r</span><span class="o">+</span><span class="s1">&#39;&lt;/a&gt;&lt;/label&gt;&lt;/div&gt;&lt;hr%20style=&quot;color:lightgrey;&quot;&gt;&#39;</span><span class="p">;</span><span class="nx">b</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">);</span><span class="nx">b</span><span class="p">.</span><span class="nx">innerHTML</span><span class="o">=</span><span class="s1">&#39;&lt;fieldset%20class=&quot;form-inline&quot;&gt;&lt;input%20id=&quot;searchInput&quot;%20type=&quot;text&quot;%20class=&quot;form-control%20form-control-sm%20mr-2&quot;%20placeholder=&quot;Filter%20links...&quot;%20style=&quot;width:%2060%;&quot;%20/&gt;&lt;select%20id=&quot;selectDomain&quot;%20class=&quot;form-control%20form-control-sm&quot;&gt;&lt;option&gt;Or%20check%20domain...&lt;/option&gt;&lt;/select&gt;&lt;/fieldset&gt;&#39;</span><span class="p">;</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">G</span><span class="o">=</span><span class="nx">b</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#selectDomain&quot;</span><span class="p">);</span><span class="nx">F</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">h</span><span class="p">){</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">g</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;option&quot;</span><span class="p">);</span><span class="nx">g</span><span class="p">.</span><span class="nx">text</span><span class="o">=</span><span class="nx">h</span><span class="p">;</span><span class="nx">g</span><span class="p">.</span><span class="nx">onclick</span><span class="o">=</span><span class="kd">function</span><span class="p">(){</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">q</span><span class="o">=</span><span class="p">[],</span><span class="nx">t</span><span class="o">=!</span><span class="mf">1</span><span class="p">;</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">l</span><span class="o">=</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;selectDomain&quot;</span><span class="p">).</span><span class="nx">value</span><span class="p">;</span><span class="k">if</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">!==</span><span class="nx">l</span><span class="p">){</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">H</span><span class="o">=</span><span class="ow">new</span><span class="o">%</span><span class="mf">20</span><span class="nb">RegExp</span><span class="p">(</span><span class="s2">&quot;(?://|\\.)&quot;</span><span class="o">+</span><span class="nx">l</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;\\.&quot;</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;(?:[?/]|$)&quot;</span><span class="p">,</span><span class="s2">&quot;i&quot;</span><span class="p">);</span><span class="k">for</span><span class="p">(</span><span class="nx">l</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">l</span><span class="o">&lt;</span><span class="nx">k</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">l</span><span class="o">++</span><span class="p">){</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">z</span><span class="o">=</span><span class="nx">k</span><span class="p">[</span><span class="nx">l</span><span class="p">].</span><span class="nx">href</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/:\/\/[^/?]+(?:[?/]|$)/g</span><span class="p">);</span><span class="nx">z</span><span class="o">&amp;&amp;</span><span class="nx">z</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">match</span><span class="p">(</span><span class="nx">H</span><span class="p">)</span><span class="o">&amp;&amp;</span><span class="p">(</span><span class="nx">q</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">l</span><span class="p">),</span><span class="o">!</span><span class="mf">1</span><span class="o">===</span><span class="nx">n</span><span class="p">[</span><span class="nx">l</span><span class="p">]</span><span class="o">&amp;&amp;</span><span class="p">(</span><span class="nx">t</span><span class="o">=!</span><span class="mf">0</span><span class="p">))}</span><span class="k">for</span><span class="p">(</span><span class="nx">l</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">l</span><span class="o">&lt;</span><span class="nx">q</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">l</span><span class="o">++</span><span class="p">)</span><span class="nx">v</span><span class="p">(</span><span class="nx">q</span><span class="p">[</span><span class="nx">l</span><span class="p">],</span><span class="nx">t</span><span class="p">);</span><span class="nx">w</span><span class="p">()}};</span><span class="nx">G</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">g</span><span class="p">)});</span><span class="nx">a</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">);</span><span class="nx">a</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;divLinks&quot;</span><span class="p">);</span><span class="nx">f</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">);</span><span class="nx">f</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">,</span><span class="s2">&quot;container-fluid&quot;</span><span class="p">);</span><span class="nx">f</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">c</span><span class="p">);</span><span class="nx">f</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">d</span><span class="p">);</span><span class="nx">f</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span><span class="nx">f</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">f</span><span class="p">);</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">title</span><span class="o">=</span><span class="s2">&quot;Send%20to%20pyLoad&quot;</span><span class="p">;</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;searchInput&quot;</span><span class="p">).</span><span class="nx">oninput</span><span class="o">=</span><span class="kd">function</span><span class="p">(){</span><span class="nx">x</span><span class="p">()};</span><span class="nx">e</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="kd">function</span><span class="p">(</span><span class="nx">h</span><span class="p">){</span><span class="k">if</span><span class="p">(</span><span class="nx">h</span><span class="p">.</span><span class="nx">target</span><span class="o">&amp;&amp;</span><span class="s2">&quot;checkbox&quot;</span><span class="o">===</span><span class="nx">h</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">type</span><span class="p">){</span><span class="k">if</span><span class="p">(</span><span class="mf">0</span><span class="o">===</span><span class="nx">h</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">id</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">&quot;link&quot;</span><span class="p">)){</span><span class="kd">var</span><span class="o">%</span><span class="mf">20</span><span class="nx">g</span><span class="o">=</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">h</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">id</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s2">&quot;link&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">),</span><span class="mf">10</span><span class="p">);</span><span class="nx">v</span><span class="p">(</span><span class="nx">g</span><span class="p">,</span><span class="nx">h</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">checked</span><span class="p">)}</span><span class="k">else</span><span class="o">%</span><span class="mf">20</span><span class="k">if</span><span class="p">(</span><span class="s2">&quot;checkall&quot;</span><span class="o">===</span><span class="nx">h</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">id</span><span class="p">)</span><span class="k">for</span><span class="p">(</span><span class="nx">g</span><span class="o">=</span><span class="nx">p</span><span class="o">&lt;</span><span class="nx">n</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span><span class="nx">h</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">checked</span><span class="o">=</span><span class="nx">g</span><span class="p">,</span><span class="nx">h</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">indeterminate</span><span class="o">=!</span><span class="mf">1</span><span class="p">,</span><span class="nx">h</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">h</span><span class="o">&lt;</span><span class="nx">k</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">h</span><span class="o">++</span><span class="p">)</span><span class="nx">v</span><span class="p">(</span><span class="nx">h</span><span class="p">,</span><span class="nx">g</span><span class="p">);</span><span class="nx">w</span><span class="p">()}</span><span class="k">else</span><span class="s2">&quot;A&quot;</span><span class="o">===</span><span class="nx">h</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">nodeName</span><span class="o">&amp;&amp;</span><span class="nx">h</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()});</span><span class="nx">x</span><span class="p">()})()})</span><span class="o">%</span><span class="mf">20</span><span class="p">(</span><span class="s2">&quot;http://SERVER-IP:PORT&quot;</span><span class="p">,</span><span class="s2">&quot;USER&quot;</span><span class="p">,</span><span class="s2">&quot;PASSWORD&quot;</span><span class="p">,</span><span class="mf">2</span><span class="p">);</span>
+</code></pre></div>
+<h4 id="مراجع"><div dir="rtl">مراجع</div><a class="headerlink" href="#مراجع" title="Permanent link">⚓︎</a></h4>
+<ul>
+<li><a href="https://hub.docker.com/r/linuxserver/pyload-ng">pyload Docker Image</a></li>
+<li><a href="https://github.com/pyload/pyload-bookmarklet">pyload-bookmarklet</a></li>
+<li><a href="https://github.com/pyload/pyload">pyload on Github</a></li>
+<li><a href="https://pypi.org/project/pyload-ng">pyload on PyPI</a></li>
+</ul>
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 Mohammed Besar
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+    
+    
+    
+    <a href="https://mastodon.online/@mbesar" target="_blank" rel="noopener me" title="Mastodon" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://twitter.com/mmbesar" target="_blank" rel="noopener" title="Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://instagram.com/mmbesar" target="_blank" rel="noopener" title="Instagram" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.facebook.com/Mohammed.Besar.Page" target="_blank" rel="noopener" title="Facebook Page" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://youtube.com/mmbesar" target="_blank" rel="noopener" title="YouTube Channel" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4b2c34cd.min.js"></script>
+      
+    
+  </body>
+</html>
