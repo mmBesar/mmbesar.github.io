@@ -1,7 +1,7 @@
 ---
 template: blog_post.html
 title: Fedora Silverblue Post Installation
-description: Fedora Silverblue | أهم الخطوات بعد التنصيب
+description: Silverblue | خطوات بعد التنصيب واستعادة النظام لو حدثت مشكلة
 date: 2023-02-22
 ---
 
