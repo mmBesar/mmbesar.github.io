@@ -2,7 +2,7 @@
 template: blog_post.html
 title: Fedora Silverblue Post Installation
 description: Fedora Silverblue | أهم الخطوات بعد التنصيب
-date: 2023-02-21
+date: 2023-02-22
 ---
 
 # <div dir="rtl">خطوات يجب تنفيذها بعد تنصيب Fedora Silverblue</div>
