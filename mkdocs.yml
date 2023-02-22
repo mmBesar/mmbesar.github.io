@@ -38,6 +38,7 @@ nav:
       - Tutorials/HS-Nextcloud.md
       - Tutorials/HS-Jellyfin.md
       - Tutorials/HS-pyload.md
+      - Tutorials/Silverblue-Post.md
   - About: about.md
 
 theme:
