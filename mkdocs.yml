@@ -39,6 +39,7 @@ nav:
       - Tutorials/HS-Jellyfin.md
       - Tutorials/HS-pyload.md
       - Tutorials/Silverblue-Post.md
+      - Tutorials/Install-Firefox.md
   - About: about.md
 
 theme:
