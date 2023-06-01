@@ -6,24 +6,24 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="إضافة هارد أخر إلى لينكس وحل مشكلة عدم الإقلاع عند فصله">
+        <meta name="description" content="Fedora 38 | خطوات هامة ويجب تنفيذها بعد تنصيب فيدورا">
       
       
         <meta name="author" content="Mohammed Besar">
       
       
       
-        <link rel="prev" href="../VirtManager-Win-Share/">
+        <link rel="prev" href="../Install-Firefox/">
       
       
-        <link rel="next" href="../Ubuntu-22.10-Post/">
+        <link rel="next" href="../../about/">
       
       <link rel="icon" href="/assets/logo.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
-        <title>2nd Drive on Linux - Mohammed Besar Blog</title>
+        <title>Fedora 38 Post Installation - Mohammed Besar Blog</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2nd_drive_on_linux" class="md-skip">
+        <a href="#fedora_38__خطوات_هامة_ويجب_تنفيذها_بعد_تنصيب_فيدورا" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2nd Drive on Linux
+              Fedora 38 Post Installation
             
           </span>
         </div>
@@ -602,70 +602,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          2nd Drive on Linux
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2nd-drive/" class="md-nav__link">
         2nd Drive on Linux
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#2nd_drive_on_linux" class="md-nav__link">
-    2nd drive on Linux
-  </a>
-  
-    <nav class="md-nav" aria-label="2nd drive on Linux">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#add_the_hard_drive_via_fstab" class="md-nav__link">
-    Add the hard drive via fstab
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#missing_hard_drive_from_fstab" class="md-nav__link">
-    Missing hard drive from fstab
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -815,11 +756,200 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Fedora-38-Post/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Fedora 38 Post Installation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Fedora 38 Post Installation
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fedora_38__خطوات_هامة_ويجب_تنفيذها_بعد_تنصيب_فيدورا" class="md-nav__link">
+    Fedora 38 | خطوات هامة ويجب تنفيذها بعد تنصيب فيدورا
+  </a>
+  
+    <nav class="md-nav" aria-label="Fedora 38 | خطوات هامة ويجب تنفيذها بعد تنصيب فيدورا">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system_update" class="md-nav__link">
+    System Update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable_third-party_repositories_if_you_didnt" class="md-nav__link">
+    Enable Third-Party Repositories if You Didn't
+  </a>
+  
+    <nav class="md-nav" aria-label="Enable Third-Party Repositories if You Didn't">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_rpmfusion" class="md-nav__link">
+    Enable rpmfusion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multimedia" class="md-nav__link">
+    Multimedia
+  </a>
+  
+    <nav class="md-nav" aria-label="Multimedia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#switch_to_full_ffmpeg" class="md-nav__link">
+    Switch to full ffmpeg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install_additional_codec" class="md-nav__link">
+    Install additional codec
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install_nvidia_drivers" class="md-nav__link">
+    Install NVIDIA Drivers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware_acceleration" class="md-nav__link">
+    Hardware acceleration
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware acceleration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intel" class="md-nav__link">
+    INTEL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amd" class="md-nav__link">
+    AMD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvidia" class="md-nav__link">
+    NVIDIA
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsoft_fonts_on_fedora" class="md-nav__link">
+    Microsoft Fonts on Fedora
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rar_files" class="md-nav__link">
+    RAR Files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gnome" class="md-nav__link">
+    GNOME
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup_system_with_timeshift" class="md-nav__link">
+    Backup system with Timeshift
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup_your_data_with_deja_dup" class="md-nav__link">
+    Backup your data with Deja Dup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top_gnome_extension" class="md-nav__link">
+    Top Gnome Extension
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zsh" class="md-nav__link">
+    ZSH
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -873,23 +1003,153 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#2nd_drive_on_linux" class="md-nav__link">
-    2nd drive on Linux
+  <a href="#fedora_38__خطوات_هامة_ويجب_تنفيذها_بعد_تنصيب_فيدورا" class="md-nav__link">
+    Fedora 38 | خطوات هامة ويجب تنفيذها بعد تنصيب فيدورا
   </a>
   
-    <nav class="md-nav" aria-label="2nd drive on Linux">
+    <nav class="md-nav" aria-label="Fedora 38 | خطوات هامة ويجب تنفيذها بعد تنصيب فيدورا">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#add_the_hard_drive_via_fstab" class="md-nav__link">
-    Add the hard drive via fstab
+  <a href="#system_update" class="md-nav__link">
+    System Update
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#missing_hard_drive_from_fstab" class="md-nav__link">
-    Missing hard drive from fstab
+  <a href="#enable_third-party_repositories_if_you_didnt" class="md-nav__link">
+    Enable Third-Party Repositories if You Didn't
+  </a>
+  
+    <nav class="md-nav" aria-label="Enable Third-Party Repositories if You Didn't">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_rpmfusion" class="md-nav__link">
+    Enable rpmfusion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multimedia" class="md-nav__link">
+    Multimedia
+  </a>
+  
+    <nav class="md-nav" aria-label="Multimedia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#switch_to_full_ffmpeg" class="md-nav__link">
+    Switch to full ffmpeg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install_additional_codec" class="md-nav__link">
+    Install additional codec
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install_nvidia_drivers" class="md-nav__link">
+    Install NVIDIA Drivers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware_acceleration" class="md-nav__link">
+    Hardware acceleration
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware acceleration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intel" class="md-nav__link">
+    INTEL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amd" class="md-nav__link">
+    AMD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvidia" class="md-nav__link">
+    NVIDIA
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsoft_fonts_on_fedora" class="md-nav__link">
+    Microsoft Fonts on Fedora
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rar_files" class="md-nav__link">
+    RAR Files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gnome" class="md-nav__link">
+    GNOME
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup_system_with_timeshift" class="md-nav__link">
+    Backup system with Timeshift
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup_your_data_with_deja_dup" class="md-nav__link">
+    Backup your data with Deja Dup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top_gnome_extension" class="md-nav__link">
+    Top Gnome Extension
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zsh" class="md-nav__link">
+    ZSH
   </a>
   
 </li>
@@ -911,9 +1171,9 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>2nd Drive on Linux</h1>
+  <h1>Fedora 38 Post Installation</h1>
   <p>
-    <b>إضافة هارد أخر إلى لينكس وحل مشكلة عدم الإقلاع عند فصله</b>
+    <b>Fedora 38 | خطوات هامة ويجب تنفيذها بعد تنصيب فيدورا</b>
   </p>
   <aside class="mdx-author">
   
@@ -984,64 +1244,104 @@
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.75 0a.75.75 0 0 1 .75.75V3h9V.75a.75.75 0 0 1 1.5 0V3h2.75c.966 0 1.75.784 1.75 1.75v16a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-16C1.5 3.784 2.284 3 3.25 3H6V.75A.75.75 0 0 1 6.75 0ZM21 9.5H3v11.25c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25Zm-17.75-5a.25.25 0 0 0-.25.25V8h18V4.75a.25.25 0 0 0-.25-.25Z"/></svg>
       </span>
-      November 08, 2022 ·
+      June 01, 2023 ·
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/></svg>
       </span>
       <!--Min reading time is 1 minute-->
       
       
-      1 min read
+      4 min read
     </span>
   </p>
 </aside>
   <hr>
-  <div><p><div class="video-container"><iframe src="https://www.youtube.com/embed/CPvJvY79vEw" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+  <div><h3 id="fedora_38__خطوات_هامة_ويجب_تنفيذها_بعد_تنصيب_فيدورا">Fedora 38 | خطوات هامة ويجب تنفيذها بعد تنصيب فيدورا<a class="headerlink" href="#fedora_38__%D8%AE%D8%B7%D9%88%D8%A7%D8%AA_%D9%87%D8%A7%D9%85%D8%A9_%D9%88%D9%8A%D8%AC%D8%A8_%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%87%D8%A7_%D8%A8%D8%B9%D8%AF_%D8%AA%D9%86%D8%B5%D9%8A%D8%A8_%D9%81%D9%8A%D8%AF%D9%88%D8%B1%D8%A7" title="Permanent link">⚓︎</a></h3>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/2mgFnBfnhLY" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
 <div dir="rtl">
-شرح كيفية إضافة هارد أخر إلى أي توزيعة من توزيعات لينكس بعد التنصيب، بحيث يتوفر للاستخدام كمساحة تخزين داخلية دائمة. شرح كيفية حل مشكلة عدم إقلاع النظام عند غياب أو فصل هذا الهارد.
+أهم الخطوات التي يجب تنفيذها بعد تنصيب فيدورا، للحصول على أفضل تجربة استخدام على التوزيعة الأفضل.
 </div>
 
 <p hidden>#more</p>
 
-<h3 id="2nd_drive_on_linux">2<sup>nd</sup> drive on Linux<a class="headerlink" href="#2nd_drive_on_linux" title="Permanent link">⚓︎</a></h3>
-<h4 id="add_the_hard_drive_via_fstab">Add the hard drive via <code>fstab</code><a class="headerlink" href="#add_the_hard_drive_via_fstab" title="Permanent link">⚓︎</a></h4>
+<h4 id="system_update">System Update<a class="headerlink" href="#system_update" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>upgrade
+</code></pre></div>
+<h4 id="enable_third-party_repositories_if_you_didnt">Enable Third-Party Repositories if You Didn't<a class="headerlink" href="#enable_third-party_repositories_if_you_didnt" title="Permanent link">⚓︎</a></h4>
+<h5 id="enable_rpmfusion">Enable <a href="https://rpmfusion.org/Configuration">rpmfusion</a><a class="headerlink" href="#enable_rpmfusion" title="Permanent link">⚓︎</a></h5>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-<span class="k">$(</span>rpm<span class="w"> </span>-E<span class="w"> </span>%fedora<span class="k">)</span>.noarch.rpm<span class="w"> </span>https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-<span class="k">$(</span>rpm<span class="w"> </span>-E<span class="w"> </span>%fedora<span class="k">)</span>.noarch.rpm
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>--refresh<span class="w"> </span>upgrade
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>groupupdate<span class="w"> </span>core
+</code></pre></div>
+<h4 id="multimedia"><a href="https://rpmfusion.org/Howto/Multimedia">Multimedia</a><a class="headerlink" href="#multimedia" title="Permanent link">⚓︎</a></h4>
+<h5 id="switch_to_full_ffmpeg">Switch to full ffmpeg<a class="headerlink" href="#switch_to_full_ffmpeg" title="Permanent link">⚓︎</a></h5>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>swap<span class="w"> </span>ffmpeg-free<span class="w"> </span>ffmpeg<span class="w"> </span>--allowerasing
+</code></pre></div>
+<h5 id="install_additional_codec">Install additional codec<a class="headerlink" href="#install_additional_codec" title="Permanent link">⚓︎</a></h5>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>gstreamer1-plugins-<span class="o">{</span>bad-<span class="se">\*</span>,good-<span class="se">\*</span>,base<span class="o">}</span><span class="w"> </span>gstreamer1-plugin-openh264<span class="w"> </span>gstreamer1-libav<span class="w"> </span>--exclude<span class="o">=</span>gstreamer1-plugins-bad-free-devel
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>lame<span class="se">\*</span><span class="w"> </span>--exclude<span class="o">=</span>lame-devel
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>group<span class="w"> </span>upgrade<span class="w"> </span>--with-optional<span class="w"> </span>Multimedia
+</code></pre></div>
+<h4 id="install_nvidia_drivers">Install <a href="https://rpmfusion.org/Howto/NVIDIA">NVIDIA Drivers</a><a class="headerlink" href="#install_nvidia_drivers" title="Permanent link">⚓︎</a></h4>
+<h4 id="hardware_acceleration">Hardware acceleration<a class="headerlink" href="#hardware_acceleration" title="Permanent link">⚓︎</a></h4>
+<h5 id="intel">INTEL<a class="headerlink" href="#intel" title="Permanent link">⚓︎</a></h5>
 <ul>
-<li>
-<p>Connect the drive to your system and start it.</p>
-</li>
-<li>
-<p>The drive should appear under <code>/media/$USER/</code></p>
-</li>
-<li>
-<p>To make it auto mount after boot.</p>
-</li>
-<li>
-<p>Get Drive <code>UUID</code></p>
-</li>
+<li>Intel(recent)</li>
 </ul>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>blkid
+<p>Using the rpmfusion-nonfree section</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>intel-media-driver
 </code></pre></div>
 <ul>
-<li>Add it to <code>fstab</code></li>
+<li>Intel(older)</li>
 </ul>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/fstab
+<p>Using the rpmfusion-free section</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>libva-intel-driver
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>UUID="107E6F7D6A8CD554" /mnt/2nd-ntfs ntfs defaults  0  0
+<h5 id="amd">AMD<a class="headerlink" href="#amd" title="Permanent link">⚓︎</a></h5>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>swap<span class="w"> </span>mesa-va-drivers<span class="w"> </span>mesa-va-drivers-freeworld
+sudo<span class="w"> </span>dnf<span class="w"> </span>swap<span class="w"> </span>mesa-vdpau-drivers<span class="w"> </span>mesa-vdpau-drivers-freeworld
 </code></pre></div>
-<h4 id="missing_hard_drive_from_fstab">Missing hard drive from <code>fstab</code><a class="headerlink" href="#missing_hard_drive_from_fstab" title="Permanent link">⚓︎</a></h4>
+<h5 id="nvidia">NVIDIA<a class="headerlink" href="#nvidia" title="Permanent link">⚓︎</a></h5>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>nvidia-vaapi-driver
+</code></pre></div>
+<h4 id="microsoft_fonts_on_fedora">Microsoft Fonts on Fedora<a class="headerlink" href="#microsoft_fonts_on_fedora" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>curl<span class="w"> </span>cabextract<span class="w"> </span>xorg-x11-font-utils<span class="w"> </span>fontconfig
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>rpm<span class="w"> </span>-i<span class="w"> </span>https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
+</code></pre></div>
+<p>check</p>
+<div class="highlight"><pre><span></span><code>fc-match<span class="w"> </span>TimesNewRoman
+</code></pre></div>
+<h4 id="rar_files">RAR Files<a class="headerlink" href="#rar_files" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>unrar
+</code></pre></div>
+<h4 id="gnome">GNOME<a class="headerlink" href="#gnome" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>You have to remove the missing hard dive from <code>fstab</code></li>
+<li>Tweaks:</li>
 </ul>
-<p>backup the original file first:</p>
-<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>/etc/fstab<span class="w"> </span>/etc/fstab.bk
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>gnome-tweaks
 </code></pre></div>
-<p>open <code>fstab</code> file:</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/fstab
+<ul>
+<li>Extension Manager:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>install<span class="w"> </span>flathub<span class="w"> </span>com.mattjakeman.ExtensionManager
 </code></pre></div>
-<p>Add <code>#</code> at the start of the line or delete the line:</p>
-<div class="highlight"><pre><span></span><code># UUID="107E6F7D6A8CD554" /mnt/2nd-ntfs ntfs defaults  0  0
+<h4 id="backup_system_with_timeshift">Backup system with Timeshift<a class="headerlink" href="#backup_system_with_timeshift" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>timeshift
 </code></pre></div>
-<p>reboot</p></div>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/8cz28-r-xPc" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+<h4 id="backup_your_data_with_deja_dup">Backup your data with <a href="https://flathub.org/apps/details/org.gnome.DejaDup">Deja Dup</a><a class="headerlink" href="#backup_your_data_with_deja_dup" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>install<span class="w"> </span>flathub<span class="w"> </span>org.gnome.DejaDup
+</code></pre></div>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/7eljgBxLWug" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+<h4 id="top_gnome_extension">Top Gnome Extension<a class="headerlink" href="#top_gnome_extension" title="Permanent link">⚓︎</a></h4>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/6yEJ43LLIJg" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+<h4 id="zsh">ZSH<a class="headerlink" href="#zsh" title="Permanent link">⚓︎</a></h4>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/fDuGKsQ3bV4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p></div>
 
               </article>
             </div>
