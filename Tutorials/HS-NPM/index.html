@@ -6,24 +6,24 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="إضافة هارد أخر إلى لينكس وحل مشكلة عدم الإقلاع عند فصله">
+        <meta name="description" content="Home Server | Nginx Proxy Manager | وصول سريع لكل الخدمات عبر الشبكة المحلية">
       
       
         <meta name="author" content="Mohammed Besar">
       
       
       
-        <link rel="prev" href="../VirtManager-Win-Share/">
+        <link rel="prev" href="../Fedora-38-Post/">
       
       
-        <link rel="next" href="../Ubuntu-22.10-Post/">
+        <link rel="next" href="../../about/">
       
       <link rel="icon" href="/assets/logo.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
-        <title>2nd Drive on Linux - Mohammed Besar Blog</title>
+        <title>Home Server - Nginx Proxy Manager - Mohammed Besar Blog</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2nd_drive_on_linux" class="md-skip">
+        <a href="#استخدام_خدمة_nginx_proxy_manager_للوصول_للخدمات_عبر_عنوان_سهل" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2nd Drive on Linux
+              Home Server - Nginx Proxy Manager
             
           </span>
         </div>
@@ -604,70 +604,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          2nd Drive on Linux
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2nd-drive/" class="md-nav__link">
         2nd Drive on Linux
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#2nd_drive_on_linux" class="md-nav__link">
-    2nd drive on Linux
-  </a>
-  
-    <nav class="md-nav" aria-label="2nd drive on Linux">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#add_the_hard_drive_via_fstab" class="md-nav__link">
-    Add the hard drive via fstab
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#missing_hard_drive_from_fstab" class="md-nav__link">
-    Missing hard drive from fstab
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -831,11 +772,91 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../HS-NPM/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home Server - Nginx Proxy Manager
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Home Server - Nginx Proxy Manager
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#استخدام_خدمة_nginx_proxy_manager_للوصول_للخدمات_عبر_عنوان_سهل" class="md-nav__link">
+    استخدام خدمة Nginx Proxy Manager للوصول للخدمات عبر عنوان سهل
+  </a>
+  
+    <nav class="md-nav" aria-label="استخدام خدمة Nginx Proxy Manager للوصول للخدمات عبر عنوان سهل">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#إعداد_مجلدات_الخدمة" class="md-nav__link">
+    إعداد مجلدات الخدمة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إضافة_الخدمة_إلى_docker-compose_file" class="md-nav__link">
+    إضافة الخدمة إلى docker-compose file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_وتشغيل_الخدمة" class="md-nav__link">
+    إنشاء وتشغيل الخدمة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#صفحة_الخدمة_الرئيسية" class="md-nav__link">
+    صفحة الخدمة الرئيسية
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#مراجع" class="md-nav__link">
+    مراجع
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -889,23 +910,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#2nd_drive_on_linux" class="md-nav__link">
-    2nd drive on Linux
+  <a href="#استخدام_خدمة_nginx_proxy_manager_للوصول_للخدمات_عبر_عنوان_سهل" class="md-nav__link">
+    استخدام خدمة Nginx Proxy Manager للوصول للخدمات عبر عنوان سهل
   </a>
   
-    <nav class="md-nav" aria-label="2nd drive on Linux">
+    <nav class="md-nav" aria-label="استخدام خدمة Nginx Proxy Manager للوصول للخدمات عبر عنوان سهل">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#add_the_hard_drive_via_fstab" class="md-nav__link">
-    Add the hard drive via fstab
+  <a href="#إعداد_مجلدات_الخدمة" class="md-nav__link">
+    إعداد مجلدات الخدمة
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#missing_hard_drive_from_fstab" class="md-nav__link">
-    Missing hard drive from fstab
+  <a href="#إضافة_الخدمة_إلى_docker-compose_file" class="md-nav__link">
+    إضافة الخدمة إلى docker-compose file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#إنشاء_وتشغيل_الخدمة" class="md-nav__link">
+    إنشاء وتشغيل الخدمة
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#صفحة_الخدمة_الرئيسية" class="md-nav__link">
+    صفحة الخدمة الرئيسية
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#مراجع" class="md-nav__link">
+    مراجع
   </a>
   
 </li>
@@ -927,9 +969,9 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>2nd Drive on Linux</h1>
+  <h1>Home Server - Nginx Proxy Manager</h1>
   <p>
-    <b>إضافة هارد أخر إلى لينكس وحل مشكلة عدم الإقلاع عند فصله</b>
+    <b>Home Server | Nginx Proxy Manager | وصول سريع لكل الخدمات عبر الشبكة المحلية</b>
   </p>
   <aside class="mdx-author">
   
@@ -1000,64 +1042,85 @@
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.75 0a.75.75 0 0 1 .75.75V3h9V.75a.75.75 0 0 1 1.5 0V3h2.75c.966 0 1.75.784 1.75 1.75v16a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-16C1.5 3.784 2.284 3 3.25 3H6V.75A.75.75 0 0 1 6.75 0ZM21 9.5H3v11.25c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25Zm-17.75-5a.25.25 0 0 0-.25.25V8h18V4.75a.25.25 0 0 0-.25-.25Z"/></svg>
       </span>
-      November 08, 2022 ·
+      June 14, 2023 ·
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/></svg>
       </span>
       <!--Min reading time is 1 minute-->
       
       
-      1 min read
+      3 min read
     </span>
   </p>
 </aside>
   <hr>
-  <div><p><div class="video-container"><iframe src="https://www.youtube.com/embed/CPvJvY79vEw" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+  <div><h3 id="استخدام_خدمة_nginx_proxy_manager_للوصول_للخدمات_عبر_عنوان_سهل"><div dir="rtl">استخدام خدمة Nginx Proxy Manager للوصول للخدمات عبر عنوان سهل</div><a class="headerlink" href="#%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85_%D8%AE%D8%AF%D9%85%D8%A9_nginx_proxy_manager_%D9%84%D9%84%D9%88%D8%B5%D9%88%D9%84_%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D8%B9%D8%A8%D8%B1_%D8%B9%D9%86%D9%88%D8%A7%D9%86_%D8%B3%D9%87%D9%84" title="Permanent link">⚓︎</a></h3>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/emLFTyf31MQ" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
 <div dir="rtl">
-شرح كيفية إضافة هارد أخر إلى أي توزيعة من توزيعات لينكس بعد التنصيب، بحيث يتوفر للاستخدام كمساحة تخزين داخلية دائمة. شرح كيفية حل مشكلة عدم إقلاع النظام عند غياب أو فصل هذا الهارد.
+شرح كيفية إضافة واستخدام Nginx Proxy Manager لتسهيل الوصول إلى كل خدمات السيرفر، عبر أسماء وروابط سهلة ومباشرة.
 </div>
 
 <p hidden>#more</p>
 
-<h3 id="2nd_drive_on_linux">2<sup>nd</sup> drive on Linux<a class="headerlink" href="#2nd_drive_on_linux" title="Permanent link">⚓︎</a></h3>
-<h4 id="add_the_hard_drive_via_fstab">Add the hard drive via <code>fstab</code><a class="headerlink" href="#add_the_hard_drive_via_fstab" title="Permanent link">⚓︎</a></h4>
+<h4 id="إعداد_مجلدات_الخدمة"><div dir="rtl">إعداد مجلدات الخدمة</div><a class="headerlink" href="#%D8%A5%D8%B9%D8%AF%D8%A7%D8%AF_%D9%85%D8%AC%D9%84%D8%AF%D8%A7%D8%AA_%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>/mnt/srv/docker/cont/npm/<span class="o">{</span>data,letsencrypt<span class="o">}</span>
+</code></pre></div>
+<h4 id="إضافة_الخدمة_إلى_docker-compose_file"><div dir="rtl">إضافة الخدمة إلى docker-compose file</div><a class="headerlink" href="#%D8%A5%D8%B6%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9_%D8%A5%D9%84%D9%89_docker-compose_file" title="Permanent link">⚓︎</a></h4>
+<div dir="rtl">بالأمر:</div>
+
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>/mnt/srv/docker/comp/docker-compose.yml
+</code></pre></div>
+<div dir="rtl">وإضافة ما يلي:</div>
+
+<div class="highlight"><span class="filename">docker-compose.yml</span><pre><span></span><code><span class="w"> </span><span class="c1"># =====================================</span>
+<span class="w">  </span><span class="nt">npm</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">jc21/nginx-proxy-manager:latest</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">npm</span>
+<span class="w">    </span><span class="nt">networks</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hs</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DISABLE_IPV6=true</span><span class="w"> </span><span class="c1"># Uncomment this if IPv6 is not enabled on your host</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TZ=Africa/Cairo</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/mnt/srv/docker/cont/npm/data:/data</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/mnt/srv/docker/cont/npm/letsencrypt:/etc/letsencrypt</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">80:80</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">443:443</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">81:81</span>
+<span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">always</span>
+</code></pre></div>
+<h4 id="إنشاء_وتشغيل_الخدمة"><div dir="rtl">إنشاء وتشغيل الخدمة</div><a class="headerlink" href="#%D8%A5%D9%86%D8%B4%D8%A7%D8%A1_%D9%88%D8%AA%D8%B4%D8%BA%D9%8A%D9%84_%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>/mnt/srv/docker/comp/docker-compose.yml<span class="w"> </span>up<span class="w"> </span>-d
+</code></pre></div>
+<h4 id="صفحة_الخدمة_الرئيسية"><div dir="rtl">صفحة الخدمة الرئيسية</div><a class="headerlink" href="#%D8%B5%D9%81%D8%AD%D8%A9_%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9_%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9" title="Permanent link">⚓︎</a></h4>
+<div dir="rtl">
+الوصول لصفحة الخدمة الرئيسية عبر IP السيرفر متبوعًا ببورت رقم 81.
+</div>
+
+<div dir="rtl">مثال:</div>
+
+<p>192.168.101.101:81</p>
+<div dir="rtl">بيانات تسجيل الدخول الافتراضية:</div>
+
+<table>
+<thead>
+<tr>
+<th>Email</th>
+<th>Password</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>admin@example.com</td>
+<td>changeme</td>
+</tr>
+</tbody>
+</table>
+<h4 id="مراجع"><div dir="rtl">مراجع</div><a class="headerlink" href="#%D9%85%D8%B1%D8%A7%D8%AC%D8%B9" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>
-<p>Connect the drive to your system and start it.</p>
-</li>
-<li>
-<p>The drive should appear under <code>/media/$USER/</code></p>
-</li>
-<li>
-<p>To make it auto mount after boot.</p>
-</li>
-<li>
-<p>Get Drive <code>UUID</code></p>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>blkid
-</code></pre></div>
-<ul>
-<li>Add it to <code>fstab</code></li>
-</ul>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/fstab
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>UUID="107E6F7D6A8CD554" /mnt/2nd-ntfs ntfs defaults  0  0
-</code></pre></div>
-<h4 id="missing_hard_drive_from_fstab">Missing hard drive from <code>fstab</code><a class="headerlink" href="#missing_hard_drive_from_fstab" title="Permanent link">⚓︎</a></h4>
-<ul>
-<li>You have to remove the missing hard dive from <code>fstab</code></li>
-</ul>
-<p>backup the original file first:</p>
-<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>/etc/fstab<span class="w"> </span>/etc/fstab.bk
-</code></pre></div>
-<p>open <code>fstab</code> file:</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/fstab
-</code></pre></div>
-<p>Add <code>#</code> at the start of the line or delete the line:</p>
-<div class="highlight"><pre><span></span><code># UUID="107E6F7D6A8CD554" /mnt/2nd-ntfs ntfs defaults  0  0
-</code></pre></div>
-<p>reboot</p></div>
+<li><a href="https://github.com/NginxProxyManager/nginx-proxy-manager">Nginx Proxy Manager</a></li>
+</ul></div>
 
               </article>
             </div>
