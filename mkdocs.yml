@@ -41,6 +41,7 @@ nav:
       - Tutorials/Silverblue-Post.md
       - Tutorials/Install-Firefox.md
       - Tutorials/Fedora-38-Post.md
+      - Tutorials/HS-NPM.md
   - About: about.md
 
 theme:
