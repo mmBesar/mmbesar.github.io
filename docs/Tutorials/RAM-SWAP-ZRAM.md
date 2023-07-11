@@ -2,7 +2,7 @@
 template: blog_post.html
 title: Create a SWAP File - Install and modify ZRAM
 description: إنشاء SWAP File وتعديله - تنصيب وتعيين ZRAM
-date: 2023-07-12
+date: 2023-07-11
 ---
 
 # <div dir="rtl">إنشاء SWAP File وتعديله - تنصيب وتعيين ZRAM</div>
