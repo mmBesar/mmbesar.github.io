@@ -77,4 +77,4 @@ admin@example.com | changeme
 
 ## <div dir="rtl">مراجع</div>
 
-- [Nginx Proxy Manager](https://github.com/NginxProxyManager/nginx-proxy-manager)
+- [Nginx Proxy manager](https://github.com/NginxProxyManager/nginx-proxy-manager)
