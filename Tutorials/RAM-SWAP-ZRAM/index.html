@@ -6,24 +6,24 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="elementary OS 6 | خطوات يجب تنفيذها بعد التنصيب">
+        <meta name="description" content="إنشاء SWAP File وتعديله - تنصيب وتعيين ZRAM">
       
       
         <meta name="author" content="Mohammed Besar">
       
       
       
-        <link rel="prev" href="../Debian-Post-Install/">
+        <link rel="prev" href="../HS-NPM/">
       
       
-        <link rel="next" href="../Fedora-36-Post/">
+        <link rel="next" href="../../about/">
       
       <link rel="icon" href="/assets/logo.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>elementary OS 6 Post Install - Mohammed Besar Blog</title>
+        <title>Create a SWAP File - Install and modify ZRAM - Mohammed Besar Blog</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#elementary_os_6_-_post_install" class="md-skip">
+        <a href="#إنشاء_swap_file_وتعديله_-_تنصيب_وتعيين_zram" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              elementary OS 6 Post Install
+              Create a SWAP File - Install and modify ZRAM
             
           </span>
         </div>
@@ -396,84 +396,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          elementary OS 6 Post Install
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../elementaryOS6-PostInstall/" class="md-nav__link">
         elementary OS 6 Post Install
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#elementary_os_6_-_post_install" class="md-nav__link">
-    elementary OS 6 - Post Install
-  </a>
-  
-    <nav class="md-nav" aria-label="elementary OS 6 - Post Install">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#update_and_clean" class="md-nav__link">
-    Update and Clean
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#change_the_hostname" class="md-nav__link">
-    Change the Hostname
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install_pantheon_tweaks" class="md-nav__link">
-    Install Pantheon Tweaks
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#flatpak" class="md-nav__link">
-    Flatpak
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -861,11 +788,117 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../RAM-SWAP-ZRAM/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Create a SWAP File - Install and modify ZRAM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Create a SWAP File - Install and modify ZRAM
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#إنشاء_swap_file_وتعديله_-_تنصيب_وتعيين_zram" class="md-nav__link">
+    إنشاء SWAP File وتعديله - تنصيب وتعيين ZRAM
+  </a>
+  
+    <nav class="md-nav" aria-label="إنشاء SWAP File وتعديله - تنصيب وتعيين ZRAM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zram" class="md-nav__link">
+    ZRAM
+  </a>
+  
+    <nav class="md-nav" aria-label="ZRAM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install_and_modify_zram_service" class="md-nav__link">
+    Install and modify ZRAM Service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove_zram" class="md-nav__link">
+    Remove zram
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swap_file" class="md-nav__link">
+    SWAP File
+  </a>
+  
+    <nav class="md-nav" aria-label="SWAP File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create_a_swap_file" class="md-nav__link">
+    Create a SWAP File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove_the_swap_file" class="md-nav__link">
+    Remove the SWAP File:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list_all_available_swap" class="md-nav__link">
+    List all available SWAP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -919,37 +952,70 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#elementary_os_6_-_post_install" class="md-nav__link">
-    elementary OS 6 - Post Install
+  <a href="#إنشاء_swap_file_وتعديله_-_تنصيب_وتعيين_zram" class="md-nav__link">
+    إنشاء SWAP File وتعديله - تنصيب وتعيين ZRAM
   </a>
   
-    <nav class="md-nav" aria-label="elementary OS 6 - Post Install">
+    <nav class="md-nav" aria-label="إنشاء SWAP File وتعديله - تنصيب وتعيين ZRAM">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#update_and_clean" class="md-nav__link">
-    Update and Clean
+  <a href="#zram" class="md-nav__link">
+    ZRAM
+  </a>
+  
+    <nav class="md-nav" aria-label="ZRAM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install_and_modify_zram_service" class="md-nav__link">
+    Install and modify ZRAM Service
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#change_the_hostname" class="md-nav__link">
-    Change the Hostname
+  <a href="#remove_zram" class="md-nav__link">
+    Remove zram
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swap_file" class="md-nav__link">
+    SWAP File
+  </a>
+  
+    <nav class="md-nav" aria-label="SWAP File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create_a_swap_file" class="md-nav__link">
+    Create a SWAP File
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#install_pantheon_tweaks" class="md-nav__link">
-    Install Pantheon Tweaks
+  <a href="#remove_the_swap_file" class="md-nav__link">
+    Remove the SWAP File:
   </a>
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
-  <a href="#flatpak" class="md-nav__link">
-    Flatpak
+  <a href="#list_all_available_swap" class="md-nav__link">
+    List all available SWAP
   </a>
   
 </li>
@@ -971,9 +1037,9 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>elementary OS 6 Post Install</h1>
+  <h1>Create a SWAP File - Install and modify ZRAM</h1>
   <p>
-    <b>elementary OS 6 | خطوات يجب تنفيذها بعد التنصيب</b>
+    <b>إنشاء SWAP File وتعديله - تنصيب وتعيين ZRAM</b>
   </p>
   <aside class="mdx-author">
   
@@ -1044,81 +1110,122 @@
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.75 0a.75.75 0 0 1 .75.75V3h9V.75a.75.75 0 0 1 1.5 0V3h2.75c.966 0 1.75.784 1.75 1.75v16a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-16C1.5 3.784 2.284 3 3.25 3H6V.75A.75.75 0 0 1 6.75 0ZM21 9.5H3v11.25c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25Zm-17.75-5a.25.25 0 0 0-.25.25V8h18V4.75a.25.25 0 0 0-.25-.25Z"/></svg>
       </span>
-      August 17, 2021 ·
+      July 12, 2023 ·
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/></svg>
       </span>
       <!--Min reading time is 1 minute-->
       
       
-      2 min read
+      3 min read
     </span>
   </p>
 </aside>
   <hr>
-  <div><h3 id="elementary_os_6_-_post_install">elementary OS 6 - Post Install<a class="headerlink" href="#elementary_os_6_-_post_install" title="Permanent link">⚓︎</a></h3>
-<p><div class="video-container"><iframe src="https://www.youtube.com/embed/0rY9geTvRzo" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+  <div><h3 id="إنشاء_swap_file_وتعديله_-_تنصيب_وتعيين_zram"><div dir="rtl">إنشاء SWAP File وتعديله - تنصيب وتعيين ZRAM</div><a class="headerlink" href="#%D8%A5%D9%86%D8%B4%D8%A7%D8%A1_swap_file_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D9%87_-_%D8%AA%D9%86%D8%B5%D9%8A%D8%A8_%D9%88%D8%AA%D8%B9%D9%8A%D9%8A%D9%86_zram" title="Permanent link">⚓︎</a></h3>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/yWuHI7uoftY" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
 <div dir="rtl">
-من توزيعات لينكس المميزة، يتم الترويج لها كبديل جيد لنظام ماك macOS من أبل، ذلك بسبب واجهة التوزيعة المشابهة لواجهة ماك بشكل كبير.
-</div>
-
-<div dir="rtl">
-التوزيعة مبنية على أبونتو طويلة الدعم، أول إصدار كان في 2012 وإصدارتها غير مرتبطة بموعد محدد.
-في الفيديو مراجعة كاملة للتوزيعة في إصدارها السادس.
-</div>
-
-<div dir="rtl">
-نطرح في المقال أهم الخطوات التي يجب تنفيذها بعد تنصيب توزيعة elementary OS 6.
+شرح ألية عمل الذاكرة المؤقتة "العشوائية" على لينكس، وأهمية السواب SWAP على النظام، وكيفية إنشاء ملف SWAP وتعديله أو حذفه، وأخيرًا كيفية تنصيب وتعيين تقنية الـ ZRAM لأداء أفضل على الأجهزة القديمة والحديثة، إضافة إلى خطوات إيقاف وحذف الـ ZRAM.
 </div>
 
 <p hidden>#more</p>
 
-<h4 id="update_and_clean">Update and Clean<a class="headerlink" href="#update_and_clean" title="Permanent link">⚓︎</a></h4>
+<h4 id="zram">ZRAM<a class="headerlink" href="#zram" title="Permanent link">⚓︎</a></h4>
+<h5 id="install_and_modify_zram_service">Install and modify ZRAM Service<a class="headerlink" href="#install_and_modify_zram_service" title="Permanent link">⚓︎</a></h5>
 <ul>
-<li>Update</li>
+<li>Install:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
-</code></pre></div>
-<ul>
-<li>Clean</li>
-</ul>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>autoremove<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>autoclean
-</code></pre></div>
-<h4 id="change_the_hostname">Change the Hostname<a class="headerlink" href="#change_the_hostname" title="Permanent link">⚓︎</a></h4>
-<ol>
-<li>Change the hostname using <code>hostnamectl</code></li>
-</ol>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>hostnamectl<span class="w"> </span>set-hostname<span class="w"> </span>NEW-NAME
-</code></pre></div>
-<ol>
-<li>Edit the /etc/hosts file</li>
-</ol>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/hosts
-</code></pre></div>
-<h4 id="install_pantheon_tweaks">Install Pantheon Tweaks<a class="headerlink" href="#install_pantheon_tweaks" title="Permanent link">⚓︎</a></h4>
-<p>Install the required packages</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>software-properties-common
-</code></pre></div>
-<p>Add the repository</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>add-apt-repository<span class="w"> </span>-y<span class="w"> </span>ppa:philip.scott/pantheon-tweaks
-</code></pre></div>
-<p>Install Pantheon Tweaks</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>pantheon-tweaks
-</code></pre></div>
-<h4 id="flatpak">Flatpak<a class="headerlink" href="#flatpak" title="Permanent link">⚓︎</a></h4>
-<p>Add Flathub as a system remote:</p>
-<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>remote-add<span class="w"> </span>--if-not-exists<span class="w"> </span>flathub<span class="w"> </span>--system<span class="w"> </span>https://flathub.org/repo/flathub.flatpakrepo
-</code></pre></div>
-<p>Install Apps (e.g. VLC)</p>
-<ul>
-<li>system-wide:</li>
-</ul>
-<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>install<span class="w"> </span>--system<span class="w"> </span>flathub<span class="w"> </span>org.videolan.VLC
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>zram-tools
 </code></pre></div>
 <ul>
-<li>user:</li>
+<li>Configure it to allow up to 60% of the RAM to be used as a zstd compressed swap space:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>flathub<span class="w"> </span>org.videolan.VLC
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">"ALGO=zstd\nPERCENT=70"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/etc/default/zramswap
+</code></pre></div>
+<blockquote>
+<p>I set it to 80%</p>
+</blockquote>
+<ul>
+<li>Restart the service</li>
+</ul>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>service<span class="w"> </span>zramswap<span class="w"> </span>reload
+</code></pre></div>
+<h5 id="remove_zram">Remove zram<a class="headerlink" href="#remove_zram" title="Permanent link">⚓︎</a></h5>
+<p></p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>service<span class="w"> </span>zramswap<span class="w"> </span>stop
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>purge<span class="w"> </span>zram-tools
+</code></pre></div>
+<h4 id="swap_file">SWAP File<a class="headerlink" href="#swap_file" title="Permanent link">⚓︎</a></h4>
+<h5 id="create_a_swap_file">Create a SWAP File<a class="headerlink" href="#create_a_swap_file" title="Permanent link">⚓︎</a></h5>
+<ul>
+<li>Creat 4G file</li>
+</ul>
+<p></p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>/dev/zero<span class="w"> </span><span class="nv">of</span><span class="o">=</span>/swapfile<span class="w"> </span><span class="nv">bs</span><span class="o">=</span><span class="m">1024</span><span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="m">4194304</span>
+</code></pre></div>
+or
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>fallocate<span class="w"> </span>-l<span class="w"> </span>4G<span class="w"> </span>/swapfile
+</code></pre></div>
+<p>Verify the file size:</p>
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-lh<span class="w"> </span>/swapfile
+</code></pre></div>
+<ul>
+<li>Set file permissions</li>
+</ul>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>/swapfile
+</code></pre></div>
+<p>Verify the permissions:</p>
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-lh<span class="w"> </span>/swapfile
+</code></pre></div>
+<ul>
+<li>Format the file as swap</li>
+</ul>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>mkswap<span class="w"> </span>/swapfile
+</code></pre></div>
+<ul>
+<li>Set it active</li>
+</ul>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>swapon<span class="w"> </span>/swapfile
+</code></pre></div>
+<ul>
+<li>Verify it is available:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>swapon<span class="w"> </span>--show
+</code></pre></div>
+<ul>
+<li>Add it to <code>fstab</code></li>
+</ul>
+<p>backup fstab</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>cp<span class="w"> </span>/etc/fstab<span class="w"> </span>/etc/fstab.bak
+</code></pre></div>
+<p>append it to <code>fstab</code></p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">'/swapfile none swap sw 0 0'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/etc/fstab
+</code></pre></div>
+<p>or</p>
+<p>open <code>fstab</code></p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/fstab
+</code></pre></div>
+<p>add it by <code>PATH</code></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Dedicated swap file created on 221109</span>
+<span class="na">/swapfile   none    swap    sw      0       0</span>
+</code></pre></div>
+<h5 id="remove_the_swap_file">Remove the SWAP File:<a class="headerlink" href="#remove_the_swap_file" title="Permanent link">⚓︎</a></h5>
+<ul>
+<li>
+<p>Delete it's line from <code>fstab</code></p>
+</li>
+<li>
+<p>Stop it</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>swapoff<span class="w"> </span>/swapfile
+</code></pre></div>
+<ul>
+<li>Remove the file:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>rm<span class="w"> </span>/swapfile
+</code></pre></div>
+<h4 id="list_all_available_swap">List all available SWAP<a class="headerlink" href="#list_all_available_swap" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>swapon<span class="w"> </span>--show
 </code></pre></div></div>
 
               </article>
