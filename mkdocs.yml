@@ -42,6 +42,7 @@ nav:
       - Tutorials/Install-Firefox.md
       - Tutorials/Fedora-38-Post.md
       - Tutorials/HS-NPM.md
+      - Tutorials/RAM-SWAP-ZRAM.md
   - About: about.md
 
 theme:
