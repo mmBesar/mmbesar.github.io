@@ -43,6 +43,7 @@ nav:
       - Tutorials/Fedora-38-Post.md
       - Tutorials/HS-NPM.md
       - Tutorials/RAM-SWAP-ZRAM.md
+      - Tutorials/HS-Tailscale.md
   - About: about.md
 
 theme:
