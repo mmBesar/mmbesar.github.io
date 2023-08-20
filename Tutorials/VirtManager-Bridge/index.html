@@ -1121,21 +1121,25 @@
 <h4 id="edit_br0nmconnection">Edit <code>br0.nmconnection</code><a class="headerlink" href="#edit_br0nmconnection" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/NetworkManager/system-connections/br0.nmconnection
 </code></pre></div>
-<p>add </p>
+<p>add the following</p>
+<blockquote>
+<p>NOTE:<br>
+Set your MAC address</p>
+</blockquote>
 <div class="highlight"><pre><span></span><code><span class="k">[bridge]</span>
 <span class="na">stp</span><span class="o">=</span><span class="s">false</span>
-<span class="na">mac-address</span><span class="o">=</span><span class="s">40:16:7e:0e:9c:65</span>
+<span class="na">mac-address</span><span class="o">=</span><span class="s">FF:FF:FF:FF:FF:FF</span>
 </code></pre></div>
 <p>to be as shown below</p>
 <div class="highlight"><pre><span></span><code><span class="k">[connection]</span>
 <span class="na">id</span><span class="o">=</span><span class="s">br0</span>
-<span class="na">uuid</span><span class="o">=</span><span class="s">def9a010-9e6a-4302-8fe7-97c2a0568816</span>
+<span class="na">uuid</span><span class="o">=</span><span class="s">caf8d11-8f7b-5401-7ef1-87d1b5076624</span>
 <span class="na">type</span><span class="o">=</span><span class="s">bridge</span>
 <span class="na">interface-name</span><span class="o">=</span><span class="s">br0</span>
 
 <span class="k">[bridge]</span>
 <span class="na">stp</span><span class="o">=</span><span class="s">false</span>
-<span class="na">mac-address</span><span class="o">=</span><span class="s">40:16:7e:0e:9c:65</span>
+<span class="na">mac-address</span><span class="o">=</span><span class="s">FF:FF:FF:FF:FF:FF</span>
 
 <span class="k">[ipv4]</span>
 <span class="na">method</span><span class="o">=</span><span class="s">auto</span>
