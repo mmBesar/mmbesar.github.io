@@ -52,12 +52,15 @@ nmtui
 sudo nano /etc/NetworkManager/system-connections/br0.nmconnection
 ```
 
-add 
+add the following
+
+> NOTE:  
+Set your MAC address
 
 ```ini
 [bridge]
 stp=false
-mac-address=40:16:7e:0e:9c:65
+mac-address=FF:FF:FF:FF:FF:FF
 ```
 
 to be as shown below
@@ -65,13 +68,13 @@ to be as shown below
 ```ini
 [connection]
 id=br0
-uuid=def9a010-9e6a-4302-8fe7-97c2a0568816
+uuid=caf8d11-8f7b-5401-7ef1-87d1b5076624
 type=bridge
 interface-name=br0
 
 [bridge]
 stp=false
-mac-address=40:16:7e:0e:9c:65
+mac-address=FF:FF:FF:FF:FF:FF
 
 [ipv4]
 method=auto
