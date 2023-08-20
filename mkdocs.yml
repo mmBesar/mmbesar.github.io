@@ -44,6 +44,7 @@ nav:
       - Tutorials/HS-NPM.md
       - Tutorials/RAM-SWAP-ZRAM.md
       - Tutorials/HS-Tailscale.md
+      - Tutorials/VirtManager-Bridge.md
   - About: about.md
 
 theme:
