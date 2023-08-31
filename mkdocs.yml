@@ -45,6 +45,7 @@ nav:
       - Tutorials/RAM-SWAP-ZRAM.md
       - Tutorials/HS-Tailscale.md
       - Tutorials/VirtManager-Bridge.md
+      - Tutorials/NixOS-Minimal-Install-GNOME.md
   - About: about.md
 
 theme:
