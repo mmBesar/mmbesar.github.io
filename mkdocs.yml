@@ -46,6 +46,7 @@ nav:
       - Tutorials/HS-Tailscale.md
       - Tutorials/VirtManager-Bridge.md
       - Tutorials/NixOS-Minimal-Install-GNOME.md
+      - Tutorials/HS-Syncthing.md
   - About: about.md
 
 theme:
