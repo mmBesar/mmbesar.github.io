@@ -5,7 +5,7 @@ description: Debian 12 | خطوات يجب تنفيذها بعد التنصيب
 date: 2023-09-20
 ---
 
-# Debian 11 Post Install
+# Debian 12 Post Install
 
 ![type:video](https://www.youtube.com/embed/1efTU3Bs2-I)
 
