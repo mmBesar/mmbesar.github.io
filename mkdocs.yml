@@ -48,6 +48,7 @@ nav:
       - Tutorials/NixOS-Minimal-Install-GNOME.md
       - Tutorials/HS-Syncthing.md
       - Tutorials/Debian-12-Post-Install.md
+      - Tutorials/HS-Upgrade-to-Debian-12.md
   - About: about.md
 
 theme:
