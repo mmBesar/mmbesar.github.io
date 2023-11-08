@@ -2,12 +2,12 @@
 template: blog_post.html
 title: Home Server - Upgrade to Debian 12
 description: Home Server | Debian 12 | ترقية نظام تشغيل السيرفر المنزلي إلى ديبيان 12
-date: 2023-11-07
+date: 2023-11-08
 ---
 
 # <div dir="rtl">ترقية نظام تشغيل السيرفر المنزلي إلى ديبيان 12</div>
 
-![type:video](https://www.youtube.com/embed/00000)
+![type:video](https://www.youtube.com/embed/nFUa3xbBX5w)
 
 <div dir="rtl">
 ترقية نظام تشغيل السيرفر المنزلي، من ديبيان 11 إلى ديبيان 12.
