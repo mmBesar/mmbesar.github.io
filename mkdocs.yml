@@ -3,7 +3,7 @@ site_author: Mohammed Besar
 site_description: Linux and Open Source Software.
 copyright: Copyright &copy; 2022 Mohammed Besar
 
-repo_url: https://github.com/mmBesar/Tutorials
+repo_url: https://github.com/mmBesar/mmbesar.github.io
 
 extra_css:
   - stylesheets/extra.css
