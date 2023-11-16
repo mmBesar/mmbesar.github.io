@@ -49,6 +49,7 @@ nav:
       - Tutorials/HS-Syncthing.md
       - Tutorials/Debian-12-Post-Install.md
       - Tutorials/HS-Upgrade-to-Debian-12.md
+      - Tutorials/Fedora-39-Post.md
   - About: about.md
 
 theme:
