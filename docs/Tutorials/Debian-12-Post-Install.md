@@ -186,7 +186,7 @@ Settings > Input Devices
 
 - Set Keyboard shortcut for 3rd level
 
-## Better Software center (for Xfce Only)
+## Better Software center **Xfce Only**
 
 ```sh
 sudo apt install gnome-software
@@ -197,4 +197,10 @@ sudo apt install gnome-software-plugin-flatpak
 
 ```sh
 sudo apt install tlp
+```
+
+## Better Samba access **KDE Plasma Only**
+
+```sh
+sudo apt install kio-fuse
 ```
