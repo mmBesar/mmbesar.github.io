@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="/assets/logo.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -1437,8 +1437,6 @@
       <!--Min reading time is 1 minute-->
       
       
-        
-      
       1 min read
     </span>
   </p>
@@ -1462,9 +1460,17 @@
 </ul>
 <div class="highlight"><pre><span></span><code>gsettings<span class="w"> </span><span class="nb">set</span><span class="w"> </span>org.gnome.desktop.wm.keybindings<span class="w"> </span>switch-input-source-backward<span class="w"> </span><span class="s2">"['&lt;Alt&gt;Shift_L']"</span>
 </code></pre></div>
-<p>to view current keybindings run:</p>
+<ul>
+<li>to view current keybindings run:</li>
+</ul>
 <div class="highlight"><pre><span></span><code>gsettings<span class="w"> </span>get<span class="w"> </span>org.gnome.desktop.wm.keybindings<span class="w"> </span>switch-input-source
 gsettings<span class="w"> </span>get<span class="w"> </span>org.gnome.desktop.wm.keybindings<span class="w"> </span>switch-input-source-backward
+</code></pre></div>
+<ul>
+<li>to reset:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>gsettings<span class="w"> </span><span class="nb">set</span><span class="w"> </span>org.gnome.desktop.wm.keybindings<span class="w"> </span>switch-input-source<span class="w"> </span><span class="s2">"['&lt;Super&gt;space', 'XF86Keyboard']"</span>
+gsettings<span class="w"> </span><span class="nb">set</span><span class="w"> </span>org.gnome.desktop.wm.keybindings<span class="w"> </span>switch-input-source-backward<span class="w"> </span><span class="s2">"['&lt;Shift&gt;&lt;Super&gt;space', '&lt;Shift&gt;XF86Keyboard']"</span>
 </code></pre></div></div>
 
               </article>
