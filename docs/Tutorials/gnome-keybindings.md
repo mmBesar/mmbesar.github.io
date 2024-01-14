@@ -27,9 +27,16 @@ gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Shift>Alt
 gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward "['<Alt>Shift_L']"
 ```
 
-to view current keybindings run:
+* to view current keybindings run:
 
 ```bash
 gsettings get org.gnome.desktop.wm.keybindings switch-input-source
 gsettings get org.gnome.desktop.wm.keybindings switch-input-source-backward
+```
+
+* to reset:
+
+```sh
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Super>space', 'XF86Keyboard']"
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward "['<Shift><Super>space', '<Shift>XF86Keyboard']"
 ```
