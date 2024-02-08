@@ -5,7 +5,7 @@ description: Home Server | خدمة مشاركة الملفات
 date: 2022-12-06
 ---
 
-# Home Server | مشاركة الملفات بين ويندوز وأندرويد ولينكس من خلال السيرفر المنزلي
+# <div dir="rtl">مشاركة الملفات بين ويندوز وأندرويد ولينكس من خلال السيرفر المنزلي</div>
 
 ![type:video](https://www.youtube.com/embed/ZeeaScxN3ZQ)
 

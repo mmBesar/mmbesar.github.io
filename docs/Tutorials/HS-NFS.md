@@ -1,79 +1,94 @@
 ---
 template: blog_post.html
-title: Home Server - Syncthing
-description: Home Server | Syncthing | مزامنة ملفاتك مع السيرفر المنزلي
-date: 2023-09-05
+title: Home Server - NFS
+description: Home Server | تنصيب وضبط خدمة NFS لمشاركة ملفات السيرفر
+date: 2024-02-09
 ---
 
-# <div dir="rtl"></div>
+# <div dir="rtl">تنصيب وضبط خدمة NFS لمشاركة ملفات السيرفر</div>
 
-![type:video](https://www.youtube.com/embed/Hy10VuIUuFI)
+![type:video](https://www.youtube.com/embed/aeoD503cGdg)
 
 <div dir="rtl">
-تنصيب وضبط خدمة Syncthing على السيرفر المنزلي، لمزامنة الملفات بشكل آمن، ومن أي مكان في العالم.
+شرح كيفية تنصيب وضبط خدمة NFS لوصول أسرع لملفات السيرفر المنزلي، نشرح بشكل عملي تنصيب الخدمة على السيرفر، وتنصيب الحزم والإعدادات اللازمة في جانب العميل "الجهاز الآخر".
 </div>
 
 <p hidden>#more</p>
 
-## <div dir="rtl">إعداد مجلدات الخدمة</div>
+## Server side
+
+- Install
 
 ```sh
-mkdir -p /mnt/srv/docker/cont/syncthing/config
+sudo apt install nfs-kernel-server
 ```
 
-## <div dir="rtl">إضافة الخدمة إلى docker-compose file</div>
-
-<div dir="rtl">بالأمر:</div>
+- create the share
 
 ```sh
-nano /mnt/srv/docker/comp/docker-compose.yml
+sudo nano /etc/exports
 ```
 
-<div dir="rtl">وإضافة ما يلي:</div>
+```
+/home/mbesar     192.168.101.0/24(rw,sync,no_root_squash,no_subtree_check)
+/mnt/srv    192.168.101.0/24(rw,sync,no_root_squash,no_subtree_check)
 
-``` yaml title="docker-compose.yml"
-
- # =====================================
-  syncthing:
-    image: lscr.io/linuxserver/syncthing:latest
-    container_name: syncthing
-    networks:
-      - hs
-    environment:
-      PUID: 1000
-      PGID: 1000
-      TZ: Africa/Cairo
-    volumes:
-      - /mnt/srv/docker/cont/syncthing/config:/config
-      - /mnt/srv/data:/data
-    ports:
-      - 8384:8384
-      - 22000:22000/tcp
-      - 22000:22000/udp
-      - 21027:21027/udp
-    restart: always
 ```
 
-## <div dir="rtl">إنشاء وتشغيل الخدمة</div>
+- Restart the server
 
 ```sh
-docker compose -f /mnt/srv/docker/comp/docker-compose.yml up -d
+sudo systemctl restart nfs-kernel-server
 ```
 
-## <div dir="rtl">الوصول للخدمة عبر المُتصفح:</div>
+## Client side
 
-http://SERVER-IP:8384
+- Install autofs
 
-## <div dir="rtl">وصول أسرع عبر اسم مُختصر:</div>
+```sh
+sudo apt install autofs
+```
 
-<div dir="rtl">راجع الحلقات التالية ثم الحلقة أعلاه</div>
+- Edit the Master map file `/etc/auto.master`
 
-![type:video](https://www.youtube.com/embed/3MJxOnf0Hlc)
+```sh
+sudo nano /etc/auto.master
+```
 
-![type:video](https://www.youtube.com/embed/emLFTyf31MQ)
+add the below
 
-## <div dir="rtl">مراجع</div>
+```ini
+/vs  /etc/auto.vs --ghost --timeout=180
+```
 
-- [Syncthing](https://syncthing.net/)
-- [Syncthing Docker Image](https://github.com/linuxserver/docker-syncthing)
-- [Nginx Proxy Manager on GitHub](https://github.com/NginxProxyManager/nginx-proxy-manager)
+- Create a map file `/etc/auto.vs`
+
+```sh
+sudo nano /etc/auto.vs
+```
+add the below
+
+```ini                                            
+vs-home -rw,intr,rsize=8192,wsize=8192,retrans=1,_netdev,timeo=900  192.168.101.101:/home/mbesar
+vs-srv -rw,intr,rsize=8192,wsize=8192,retrans=1,_netdev,timeo=900  192.168.101.101:/mnt/srv
+```
+
+- Enable auotfs service
+```sh
+sudo systemctl enable autofs.service
+```
+
+- Start auotfs service
+```sh
+sudo systemctl start autofs.service
+```
+
+- Check service status
+```sh
+sudo systemctl status autofs.service
+```
+
+- Reload auotfs service
+```sh
+sudo systemctl reload autofs.service
+```
