@@ -5,7 +5,7 @@ description: Home Server | Syncthing | مزامنة ملفاتك مع السير
 date: 2023-09-05
 ---
 
-# <div dir="rtl">مزامنة ملفاتك مع السيرفر المنزلي باستخدام Syncthing</div>
+# <div dir="rtl"></div>
 
 ![type:video](https://www.youtube.com/embed/Hy10VuIUuFI)
 

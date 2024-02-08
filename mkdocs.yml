@@ -50,6 +50,7 @@ nav:
       - Tutorials/Debian-12-Post-Install.md
       - Tutorials/HS-Upgrade-to-Debian-12.md
       - Tutorials/Fedora-39-Post.md
+      - Tutorials/HS-NFS.md
   - About: about.md
 
 theme:
