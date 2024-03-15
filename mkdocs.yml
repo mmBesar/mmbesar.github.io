@@ -51,6 +51,7 @@ nav:
       - Tutorials/HS-Upgrade-to-Debian-12.md
       - Tutorials/Fedora-39-Post.md
       - Tutorials/HS-NFS.md
+      - Tutorials/HS-FileBrowser.md
   - About: about.md
 
 theme:
