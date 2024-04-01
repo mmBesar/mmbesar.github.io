@@ -52,6 +52,7 @@ nav:
       - Tutorials/Fedora-39-Post.md
       - Tutorials/HS-NFS.md
       - Tutorials/HS-FileBrowser.md
+      - Tutorials/Free-Site-GitHub-MkDocs.md
   - About: about.md
 
 theme:
