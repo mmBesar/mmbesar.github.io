@@ -7,7 +7,7 @@ date: 2024-05-29
 
 # Ubuntu 24.04 Post Installation
 
-![type:video](https://www.youtube.com/embed/0000000)
+![type:video](https://www.youtube.com/embed/RGNtZu5nIRM)
 
 <div dir="rtl">
 شرح مبسط لأهم الخطوات بعد تنصيب أوبونتو 24.04ـ للحصول على أفضل تجربة مستخدم،
@@ -20,61 +20,6 @@ date: 2024-05-29
 
 ```sh
 sudo apt update && sudo apt upgrade -y
-```
-
-## Remove Firefox Snap and Install Firefox Deb
-
-- Remove Firefox Snap
-
-```sh
-sudo apt remove --autoremove firefox
-```
-
-```sh
-sudo snap remove --purge firefox
-```
-
-- Add Mozilla Team PPA
-
-```sh
-sudo add-apt-repository ppa:mozillateam/ppa
-```
-
-- Set Mozilla team PPA as high Priority
-
-```sh
-echo '
-Package: *
-Pin: release o=LP-PPA-mozillateam
-Pin-Priority: 1001
-' | sudo tee /etc/apt/preferences.d/firefox-ppa-priority
-```
-
-- Block the Ubuntu repo
-
-```sh
-echo '
-Package: firefox*
-Pin: release o=Ubuntu*
-Pin-Priority: -1
-' | sudo tee /etc/apt/preferences.d/firefox-ubuntu-block
-```
-
-- Set Firefox for automatic updates
-```sh
-echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
-```
-
-- Update
-
-```sh
-sudo apt update
-```
-
-- Install Firefox DEB
-
-```sh
-sudo apt install firefox
 ```
 
 ## Install Ubuntu Restricted Extras
@@ -136,13 +81,33 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'focus-minimi
 touch ~/Templates/new
 ```
 
-## Arabic Keyboard
-
 ## Set Keyboard Input Source Switching
 
-## Show Battary Percentage in the Top Bar
+* Set `switch-input-source` switch to Shift+Alt LEFT
 
-## Enable Tab to Click on Touchpad
+```bash
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Shift>Alt_L']"
+```
+
+* set `switch-input-source-backward` to Alt+Shift LEFT
+
+```bash
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward "['<Alt>Shift_L']"
+```
+
+* to view current keybindings run:
+
+```bash
+gsettings get org.gnome.desktop.wm.keybindings switch-input-source
+gsettings get org.gnome.desktop.wm.keybindings switch-input-source-backward
+```
+
+* to reset:
+
+```sh
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Super>space', 'XF86Keyboard']"
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward "['<Shift><Super>space', '<Shift>XF86Keyboard']"
+```
 
 ## System Backup with Timeshift
 
