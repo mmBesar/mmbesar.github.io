@@ -1345,15 +1345,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#remove_firefox_snap_and_install_firefox_deb" class="md-nav__link">
-    <span class="md-ellipsis">
-      Remove Firefox Snap and Install Firefox Deb
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#install_ubuntu_restricted_extras" class="md-nav__link">
     <span class="md-ellipsis">
       Install Ubuntu Restricted Extras
@@ -1426,36 +1417,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#arabic_keyboard" class="md-nav__link">
-    <span class="md-ellipsis">
-      Arabic Keyboard
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#set_keyboard_input_source_switching" class="md-nav__link">
     <span class="md-ellipsis">
       Set Keyboard Input Source Switching
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#show_battary_percentage_in_the_top_bar" class="md-nav__link">
-    <span class="md-ellipsis">
-      Show Battary Percentage in the Top Bar
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enable_tab_to_click_on_touchpad" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enable Tab to Click on Touchpad
     </span>
   </a>
   
@@ -1584,15 +1548,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#remove_firefox_snap_and_install_firefox_deb" class="md-nav__link">
-    <span class="md-ellipsis">
-      Remove Firefox Snap and Install Firefox Deb
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#install_ubuntu_restricted_extras" class="md-nav__link">
     <span class="md-ellipsis">
       Install Ubuntu Restricted Extras
@@ -1665,36 +1620,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#arabic_keyboard" class="md-nav__link">
-    <span class="md-ellipsis">
-      Arabic Keyboard
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#set_keyboard_input_source_switching" class="md-nav__link">
     <span class="md-ellipsis">
       Set Keyboard Input Source Switching
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#show_battary_percentage_in_the_top_bar" class="md-nav__link">
-    <span class="md-ellipsis">
-      Show Battary Percentage in the Top Bar
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enable_tab_to_click_on_touchpad" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enable Tab to Click on Touchpad
     </span>
   </a>
   
@@ -1839,7 +1767,7 @@
 </aside>
   <hr>
   <div><h3 id="ubuntu_2404_post_installation">Ubuntu 24.04 Post Installation<a class="headerlink" href="#ubuntu_2404_post_installation" title="Permanent link">⚓︎</a></h3>
-<p><div class="video-container"><iframe src="https://www.youtube.com/embed/0000000" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/RGNtZu5nIRM" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
 <div dir="rtl">
 شرح مبسط لأهم الخطوات بعد تنصيب أوبونتو 24.04ـ للحصول على أفضل تجربة مستخدم،
 سوف أشرح كل خطوة، وتخير ما يناسبك.
@@ -1849,54 +1777,6 @@
 
 <h4 id="update">Update<a class="headerlink" href="#update" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
-</code></pre></div>
-<h4 id="remove_firefox_snap_and_install_firefox_deb">Remove Firefox Snap and Install Firefox Deb<a class="headerlink" href="#remove_firefox_snap_and_install_firefox_deb" title="Permanent link">⚓︎</a></h4>
-<ul>
-<li>Remove Firefox Snap</li>
-</ul>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>remove<span class="w"> </span>--autoremove<span class="w"> </span>firefox
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>snap<span class="w"> </span>remove<span class="w"> </span>--purge<span class="w"> </span>firefox
-</code></pre></div>
-<ul>
-<li>Add Mozilla Team PPA</li>
-</ul>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>add-apt-repository<span class="w"> </span>ppa:mozillateam/ppa
-</code></pre></div>
-<ul>
-<li>Set Mozilla team PPA as high Priority</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">'</span>
-<span class="s1">Package: *</span>
-<span class="s1">Pin: release o=LP-PPA-mozillateam</span>
-<span class="s1">Pin-Priority: 1001</span>
-<span class="s1">'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/preferences.d/firefox-ppa-priority
-</code></pre></div>
-<ul>
-<li>Block the Ubuntu repo</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">'</span>
-<span class="s1">Package: firefox*</span>
-<span class="s1">Pin: release o=Ubuntu*</span>
-<span class="s1">Pin-Priority: -1</span>
-<span class="s1">'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/preferences.d/firefox-ubuntu-block
-</code></pre></div>
-<ul>
-<li>
-<p>Set Firefox for automatic updates
-</p><div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/apt.conf.d/51unattended-upgrades-firefox
-</code></pre></div>
-</li>
-<li>
-<p>Update</p>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
-</code></pre></div>
-<ul>
-<li>Install Firefox DEB</li>
-</ul>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>firefox
 </code></pre></div>
 <h4 id="install_ubuntu_restricted_extras">Install Ubuntu Restricted Extras<a class="headerlink" href="#install_ubuntu_restricted_extras" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ubuntu-restricted-extras
@@ -1932,10 +1812,29 @@
 <h4 id="enable_new_documents_context_menu">Enable ‘New Documents’ context menu<a class="headerlink" href="#enable_new_documents_context_menu" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>touch<span class="w"> </span>~/Templates/new
 </code></pre></div>
-<h4 id="arabic_keyboard">Arabic Keyboard<a class="headerlink" href="#arabic_keyboard" title="Permanent link">⚓︎</a></h4>
 <h4 id="set_keyboard_input_source_switching">Set Keyboard Input Source Switching<a class="headerlink" href="#set_keyboard_input_source_switching" title="Permanent link">⚓︎</a></h4>
-<h4 id="show_battary_percentage_in_the_top_bar">Show Battary Percentage in the Top Bar<a class="headerlink" href="#show_battary_percentage_in_the_top_bar" title="Permanent link">⚓︎</a></h4>
-<h4 id="enable_tab_to_click_on_touchpad">Enable Tab to Click on Touchpad<a class="headerlink" href="#enable_tab_to_click_on_touchpad" title="Permanent link">⚓︎</a></h4>
+<ul>
+<li>Set <code>switch-input-source</code> switch to Shift+Alt LEFT</li>
+</ul>
+<div class="highlight"><pre><span></span><code>gsettings<span class="w"> </span><span class="nb">set</span><span class="w"> </span>org.gnome.desktop.wm.keybindings<span class="w"> </span>switch-input-source<span class="w"> </span><span class="s2">"['&lt;Shift&gt;Alt_L']"</span>
+</code></pre></div>
+<ul>
+<li>set <code>switch-input-source-backward</code> to Alt+Shift LEFT</li>
+</ul>
+<div class="highlight"><pre><span></span><code>gsettings<span class="w"> </span><span class="nb">set</span><span class="w"> </span>org.gnome.desktop.wm.keybindings<span class="w"> </span>switch-input-source-backward<span class="w"> </span><span class="s2">"['&lt;Alt&gt;Shift_L']"</span>
+</code></pre></div>
+<ul>
+<li>to view current keybindings run:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>gsettings<span class="w"> </span>get<span class="w"> </span>org.gnome.desktop.wm.keybindings<span class="w"> </span>switch-input-source
+gsettings<span class="w"> </span>get<span class="w"> </span>org.gnome.desktop.wm.keybindings<span class="w"> </span>switch-input-source-backward
+</code></pre></div>
+<ul>
+<li>to reset:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>gsettings<span class="w"> </span><span class="nb">set</span><span class="w"> </span>org.gnome.desktop.wm.keybindings<span class="w"> </span>switch-input-source<span class="w"> </span><span class="s2">"['&lt;Super&gt;space', 'XF86Keyboard']"</span>
+gsettings<span class="w"> </span><span class="nb">set</span><span class="w"> </span>org.gnome.desktop.wm.keybindings<span class="w"> </span>switch-input-source-backward<span class="w"> </span><span class="s2">"['&lt;Shift&gt;&lt;Super&gt;space', '&lt;Shift&gt;XF86Keyboard']"</span>
+</code></pre></div>
 <h4 id="system_backup_with_timeshift">System Backup with Timeshift<a class="headerlink" href="#system_backup_with_timeshift" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>timeshift
 </code></pre></div>
