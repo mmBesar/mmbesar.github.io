@@ -53,6 +53,7 @@ nav:
       - Tutorials/HS-NFS.md
       - Tutorials/HS-FileBrowser.md
       - Tutorials/Free-Site-GitHub-MkDocs.md
+      - Tutorials/Ubuntu-24.04-Post.md
   - About: about.md
 
 theme:
