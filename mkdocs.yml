@@ -54,6 +54,7 @@ nav:
       - Tutorials/HS-FileBrowser.md
       - Tutorials/Free-Site-GitHub-MkDocs.md
       - Tutorials/Ubuntu-24.04-Post.md
+      - Tutorials/Top-3-Terminal-Apps.md
   - About: about.md
 
 theme:
