@@ -57,18 +57,21 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
 
-2. And add the following line to your shell configuration file.
-bash
-```sh
-# Set up fzf key bindings and fuzzy completion
-eval "$(fzf --bash)"
-```
+2. And add the following line to your shell configuration file
 
-zsh
-```sh
-# Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
-```
+=== "bash"
+
+    ``` sh
+    # Set up fzf key bindings and fuzzy completion
+    eval "$(fzf --bash)"
+    ```
+
+=== "zsh"
+
+    ``` sh
+    # Set up fzf key bindings and fuzzy completion
+    source <(fzf --zsh)
+    ```
 
 ## eza
 
@@ -88,7 +91,7 @@ sudo mkdir -p /etc/apt/keyrings \
 nano ~/.bashrc
 ```
 
-```sh
+``` ini title="~/.bashrc"
 alias ls='eza --color=auto --icons=auto'
 alias eza='eza --color=auto --icons=auto'
 alias ll='eza -l'
