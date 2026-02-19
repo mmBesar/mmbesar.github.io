@@ -56,6 +56,7 @@ nav:
       - Tutorials/Ubuntu-24.04-Post.md
       - Tutorials/Top-3-Terminal-Apps.md
       - Tutorials/HS-Radicale.md
+      - Tutorials/9.5-Terminal-Apps.md
   - About: about.md
 
 theme:
