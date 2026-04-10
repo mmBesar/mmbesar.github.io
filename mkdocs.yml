@@ -57,6 +57,7 @@ nav:
       - Tutorials/Top-3-Terminal-Apps.md
       - Tutorials/HS-Radicale.md
       - Tutorials/9.5-Terminal-Apps.md
+      - Tutorials/HS-Tvheadend.md
   - About: about.md
 
 theme:
