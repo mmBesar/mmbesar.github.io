@@ -7,7 +7,7 @@ date: 2026-04-10
 
 # <div dir="rtl">التليفزيون على أي جهاز</div>
 
-![type:video](https://www.youtube.com/embed/000000000000000)
+![type:video](https://www.youtube.com/embed/K6P_xSLafE0)
 
 <div dir="rtl">
 
