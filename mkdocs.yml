@@ -58,6 +58,7 @@ nav:
       - Tutorials/HS-Radicale.md
       - Tutorials/9.5-Terminal-Apps.md
       - Tutorials/HS-Tvheadend.md
+      - Tutorials/HS-AdGuard.md
   - About: about.md
 
 theme:
