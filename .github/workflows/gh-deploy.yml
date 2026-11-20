@@ -1,3 +1,4 @@
+
 name: gh-deploy
 
 on:
@@ -5,24 +6,28 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
-  build:
-    name: MkDocs Github Pages automatic deployment
+  deploy:
+    name: MkDocs GitHub Pages automatic deployment
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout main
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
 
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v2
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v7
         with:
-          python-version: '3.9'
+          python-version: '3.13'
+          cache: pip
 
       - name: Install requirements
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-      - name: MkDocs gh-deploy
-        run: |
-          git pull
-          mkdocs gh-deploy
+          python -m pip install -r requirements.txt
+
+      - name: Deploy MkDocs
+        run: mkdocs gh-deploy --force
